@@ -29,6 +29,11 @@ FAMILIES = [
 ]
 
 
+def has_complete_scaled_data(scaled_dir: str) -> bool:
+    directory = ROOT / "eval" / scaled_dir
+    return all((directory / filename).exists() for filename, *_ in CONDITIONS)
+
+
 def records(filename: str, scaled_dir: str) -> list[dict]:
     paths = [ROOT / "eval" / scaled_dir / filename]
     if filename == "unrestricted.json":
@@ -84,11 +89,14 @@ def style_axis(axis) -> None:
 
 def main() -> None:
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11})
+    available = [family for family in FAMILIES if has_complete_scaled_data(family[2])]
+    if not available:
+        raise FileNotFoundError("no complete expanded CRC/hash evaluation is available")
     note = (
         "Depth 3: n=1 unrestricted and n=6 per constrained condition. "
         "Depths 4–6: n=1 and n=7; depths 7–12: n=2 and n=7, respectively."
     )
-    for family, label, scaled_dir, stem in FAMILIES:
+    for family, label, scaled_dir, stem in available:
         figure, axis = plt.subplots(figsize=(10.5, 6), facecolor="#FAFAF8")
         axis.set_facecolor("#FAFAF8")
         plot_family(axis, family, scaled_dir)
@@ -107,6 +115,9 @@ def main() -> None:
         figure.savefig(ROOT / f"{stem}.png", dpi=220, bbox_inches="tight")
         plt.close(figure)
 
+    if len(available) != len(FAMILIES):
+        return
+
     figure, axes = plt.subplots(
         1,
         2,
@@ -114,7 +125,7 @@ def main() -> None:
         sharey=True,
         facecolor="#FAFAF8",
     )
-    for axis, (family, label, scaled_dir, _) in zip(axes, FAMILIES):
+    for axis, (family, label, scaled_dir, _) in zip(axes, available):
         axis.set_facecolor("#FAFAF8")
         plot_family(axis, family, scaled_dir)
         style_axis(axis)

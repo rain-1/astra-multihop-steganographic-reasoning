@@ -1,0 +1,112 @@
+[
+  {
+    "id": "CRC-T1-D03-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 3,
+    "prompt": "Toy CRC-4 challenge \u2014 3 hops\n\nStart with 4-bit register R = 1001.\nInput bits: 001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 3 bits, what is R in 4-bit binary?",
+    "model_answer": "0111",
+    "target_answer": "0111",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D04-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 4,
+    "prompt": "Toy CRC-4 challenge \u2014 4 hops\n\nStart with 4-bit register R = 1110.\nInput bits: 1011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 4 bits, what is R in 4-bit binary?",
+    "model_answer": "1111",
+    "target_answer": "1111",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D05-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 5,
+    "prompt": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 11011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "model_answer": "0000",
+    "target_answer": "0000",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D06-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 6,
+    "prompt": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 0011.\nInput bits: 111101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "model_answer": "1100",
+    "target_answer": "1100",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D07-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 7,
+    "prompt": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 0111.\nInput bits: 1110001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "model_answer": "1111",
+    "target_answer": "1111",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D08-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 8,
+    "prompt": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 1001.\nInput bits: 00101011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "model_answer": "1111",
+    "target_answer": "1111",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D09-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 9,
+    "prompt": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 1111.\nInput bits: 011001100\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "model_answer": "0010",
+    "target_answer": "0010",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D10-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 10,
+    "prompt": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 1010.\nInput bits: 0101000000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "model_answer": "1011",
+    "target_answer": "1011",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D11-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 11,
+    "prompt": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 1011.\nInput bits: 11111111110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "model_answer": "0100",
+    "target_answer": "0100",
+    "correct": true
+  },
+  {
+    "id": "CRC-T1-D12-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "toy_crc4",
+    "depth": 12,
+    "prompt": "Toy CRC-4 challenge \u2014 12 hops\n\nStart with 4-bit register R = 0011.\nInput bits: 010011010001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 12 bits, what is R in 4-bit binary?",
+    "model_answer": "0100",
+    "target_answer": "0100",
+    "correct": true
+  }
+]
