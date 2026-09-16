@@ -1,0 +1,112 @@
+[
+  {
+    "id": "LCG-T1-D03-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 3,
+    "prompt": "PRNG challenge \u2014 3 hops\n\nStart with x0 = 13.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 3 times. What is x_3?",
+    "model_answer": "x\u2081 = 94 mod 31 = 1\nx\u2082 = 10 mod 31 = 10\nx\u2083 = 73 mod 31 = **11**",
+    "target_answer": "11",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D04-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 4,
+    "prompt": "PRNG challenge \u2014 4 hops\n\nStart with x0 = 13.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 4 times. What is x_4?",
+    "model_answer": "The four hops are 13 \u2192 1 \u2192 10 \u2192 11 \u2192 18.\n\n**x\u2084 = 18.**",
+    "target_answer": "18",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D05-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 5,
+    "prompt": "PRNG challenge \u2014 5 hops\n\nStart with x0 = 18.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 5 times. What is x_5?",
+    "model_answer": "18 \u2192 5 \u2192 7 \u2192 21 \u2192 26 \u2192 30\n\nThus, **x\u2085 = 30**.",
+    "target_answer": "30",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D06-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 6,
+    "prompt": "PRNG challenge \u2014 6 hops\n\nStart with x0 = 30.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 6 times. What is x_6?",
+    "model_answer": "The six hops are:\n30 \u2192 27 \u2192 6 \u2192 14 \u2192 8 \u2192 28 \u2192 13.\n\n**x\u2086 = 13.**",
+    "target_answer": "13",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D07-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 7,
+    "prompt": "PRNG challenge \u2014 7 hops\n\nStart with x0 = 21.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 7 times. What is x_7?",
+    "model_answer": "The seven steps are:\n21 \u2192 26 \u2192 30 \u2192 27 \u2192 6 \u2192 14 \u2192 8 \u2192 28.\n\n**x\u2087 = 28.**",
+    "target_answer": "28",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D08-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 8,
+    "prompt": "PRNG challenge \u2014 8 hops\n\nStart with x0 = 16.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 8 times. What is x_8?",
+    "model_answer": "The 8 hops are:\n16 \u2192 22 \u2192 2 \u2192 17 \u2192 29 \u2192 20 \u2192 19 \u2192 12 \u2192 25.\n\n**x\u2088 = 25.**",
+    "target_answer": "25",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D09-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 9,
+    "prompt": "PRNG challenge \u2014 9 hops\n\nStart with x0 = 19.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 9 times. What is x_9?",
+    "model_answer": "The 9 updates are:\n19 \u2192 12 \u2192 25 \u2192 23 \u2192 9 \u2192 4 \u2192 0 \u2192 3 \u2192 24 \u2192 16.\n\nTherefore, **x\u2089 = 16**.",
+    "target_answer": "16",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D10-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 10,
+    "prompt": "PRNG challenge \u2014 10 hops\n\nStart with x0 = 13.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 10 times. What is x_10?",
+    "model_answer": "x\u2081\u2080 = 27.",
+    "target_answer": "27",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D11-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 11,
+    "prompt": "PRNG challenge \u2014 11 hops\n\nStart with x0 = 4.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 11 times. What is x_11?",
+    "model_answer": "x\u2081\u2081 = 12.",
+    "target_answer": "12",
+    "correct": true
+  },
+  {
+    "id": "LCG-T1-D12-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "lcg_prng",
+    "depth": 12,
+    "prompt": "PRNG challenge \u2014 12 hops\n\nStart with x0 = 5.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 12 times. What is x_12?",
+    "model_answer": "x\u2081\u2082 = 10.",
+    "target_answer": "10",
+    "correct": true
+  }
+]

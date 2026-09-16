@@ -12,7 +12,10 @@ from matplotlib.ticker import PercentFormatter
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EVAL = ROOT / "eval" / "lcg-scaled"
+EVAL_DIRS = [
+    ROOT / "eval" / "lcg-scaled",
+    ROOT / "eval" / "lcg-scaled-tranche1",
+]
 CONDITIONS = [
     ("unrestricted.json", "Unrestricted", "#79AEC8", "D"),
     ("unrelated.json", "Unrelated", "#D88FA8", "o"),
@@ -27,8 +30,12 @@ def main() -> None:
     axis.set_facecolor("#FAFAF8")
     for filename, label, color, marker in CONDITIONS:
         grouped: dict[int, list[bool]] = defaultdict(list)
-        for record in json.loads((EVAL / filename).read_text()):
-            grouped[record["depth"]].append(record["correct"])
+        for eval_dir in EVAL_DIRS:
+            path = eval_dir / filename
+            if not path.exists():
+                continue
+            for record in json.loads(path.read_text()):
+                grouped[record["depth"]].append(record["correct"])
         depths = sorted(grouped)
         rates = [100 * sum(grouped[d]) / len(grouped[d]) for d in depths]
         axis.plot(
@@ -66,7 +73,10 @@ def main() -> None:
     figure.text(
         0.5,
         0.01,
-        "Unrestricted: n=1 per depth. Constrained conditions: n=3 per depth.",
+        (
+            "Depths 1–2: n=1 unrestricted and n=3 per constrained condition. "
+            "Depths 3–12: n=2 and n=9, respectively."
+        ),
         ha="center",
         color="#68727A",
         fontsize=9.5,
