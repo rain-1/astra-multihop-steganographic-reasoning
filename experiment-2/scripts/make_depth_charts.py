@@ -40,7 +40,9 @@ def plot_family(axis, family: str) -> None:
         grouped: dict[int, list[bool]] = defaultdict(list)
         for record in records(filename):
             if record["family"] == family:
-                grouped[record["depth"]].append(record["correct"])
+                grouped[record["depth"]].append(
+                    record["correct"] and not record.get("cheating", False)
+                )
         depths = sorted(grouped)
         rates = [100 * sum(grouped[d]) / len(grouped[d]) for d in depths]
         axis.plot(

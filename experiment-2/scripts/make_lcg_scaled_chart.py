@@ -35,7 +35,9 @@ def main() -> None:
             if not path.exists():
                 continue
             for record in json.loads(path.read_text()):
-                grouped[record["depth"]].append(record["correct"])
+                grouped[record["depth"]].append(
+                    record["correct"] and not record.get("cheating", False)
+                )
         depths = sorted(grouped)
         rates = [100 * sum(grouped[d]) / len(grouped[d]) for d in depths]
         axis.plot(

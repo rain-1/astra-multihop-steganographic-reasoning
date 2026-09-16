@@ -25,7 +25,12 @@ def main() -> None:
     for filename, label, color in CONDITIONS:
         records = json.loads((ROOT / "eval" / filename).read_text())
         labels.append(label)
-        values.append(sum(record["correct"] for record in records))
+        values.append(
+            sum(
+                record["correct"] and not record.get("cheating", False)
+                for record in records
+            )
+        )
         colors.append(color)
 
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11})

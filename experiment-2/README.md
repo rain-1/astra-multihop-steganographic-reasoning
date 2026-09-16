@@ -18,6 +18,11 @@ experiments.
 Each evaluation JSON record contains the model identifier, prompt, model
 answer, target answer, and correctness value.
 
+Constrained responses that exposed intermediate task computation in the visible
+answer are marked with `"cheating": true`. Their raw answers were correct, but
+they are excluded from compliant-success counts and shown separately in the
+summary charts.
+
 The corresponding generated question datasets and answer keys are in
 `../question sets/set2 cryptographic operations lcg depths1to12/`.
 
@@ -30,7 +35,13 @@ python3 experiment-2/scripts/make_chart.py
 python3 experiment-2/scripts/make_depth_charts.py
 python3 experiment-2/scripts/make_lcg_scaled_chart.py
 python3 experiment-2/scripts/make_cryptographic_operations_charts.py
+python3 experiment-2/scripts/make_average_instruction_chart.py
 ```
 
-The final script generates the individual expanded CRC-4 and Mini-hash charts,
-plus the combined LCG PRNG, CRC-4, and Mini-hash comparison.
+`make_cryptographic_operations_charts.py` generates the individual expanded
+CRC-4 and Mini-hash charts, plus the combined LCG PRNG, CRC-4, and Mini-hash
+comparison.
+
+`make_average_instruction_chart.py` generates alternative grouped-bar, dot,
+faceted depth-bucket, and equal-task-weight depth-summary comparisons of all four
+thinking instructions.
