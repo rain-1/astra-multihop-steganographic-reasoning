@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot the expanded CRC-4 and mini-hash results by task depth."""
+"""Plot the expanded cryptographic-operation results by task depth."""
 
 from __future__ import annotations
 
@@ -47,6 +47,19 @@ FAMILIES = [
         ),
     ),
 ]
+COMBINED_FAMILIES = [
+    (
+        "lcg_prng",
+        "LCG PRNG",
+        ("lcg-scaled", "lcg-scaled-tranche1"),
+        1,
+        False,
+    ),
+    *[
+        (family, label, scaled_dirs, min_depth, True)
+        for family, label, scaled_dirs, _, min_depth, _ in FAMILIES
+    ],
+]
 
 
 def has_complete_scaled_data(scaled_dirs: tuple[str, ...]) -> bool:
@@ -57,17 +70,22 @@ def has_complete_scaled_data(scaled_dirs: tuple[str, ...]) -> bool:
     )
 
 
-def records(filename: str, scaled_dirs: tuple[str, ...]) -> list[dict]:
+def records(
+    filename: str,
+    scaled_dirs: tuple[str, ...],
+    include_legacy: bool,
+) -> list[dict]:
     paths = [ROOT / "eval" / scaled_dir / filename for scaled_dir in scaled_dirs]
-    if filename == "unrestricted.json":
-        paths.append(ROOT / "eval" / filename)
-    else:
-        paths.extend(
-            [
-                ROOT / "eval" / "depths-4-6" / filename,
-                ROOT / "eval" / filename,
-            ]
-        )
+    if include_legacy:
+        if filename == "unrestricted.json":
+            paths.append(ROOT / "eval" / filename)
+        else:
+            paths.extend(
+                [
+                    ROOT / "eval" / "depths-4-6" / filename,
+                    ROOT / "eval" / filename,
+                ]
+            )
     rows = []
     for path in paths:
         if path.exists():
@@ -75,10 +93,15 @@ def records(filename: str, scaled_dirs: tuple[str, ...]) -> list[dict]:
     return rows
 
 
-def plot_family(axis, family: str, scaled_dirs: tuple[str, ...]) -> None:
+def plot_family(
+    axis,
+    family: str,
+    scaled_dirs: tuple[str, ...],
+    include_legacy: bool,
+) -> None:
     for filename, label, color, marker in CONDITIONS:
         grouped: dict[int, list[bool]] = defaultdict(list)
-        for record in records(filename, scaled_dirs):
+        for record in records(filename, scaled_dirs, include_legacy):
             if record["family"] == family:
                 grouped[record["depth"]].append(record["correct"])
         depths = sorted(grouped)
@@ -124,7 +147,7 @@ def main() -> None:
     for family, label, scaled_dirs, stem, min_depth, note in available:
         figure, axis = plt.subplots(figsize=(10.5, 6), facecolor="#FAFAF8")
         axis.set_facecolor("#FAFAF8")
-        plot_family(axis, family, scaled_dirs)
+        plot_family(axis, family, scaled_dirs, include_legacy=True)
         style_axis(axis, min_depth)
         axis.set_ylabel("Success Rate")
         axis.set_title(label, loc="left", fontsize=17, fontweight="bold", pad=18)
@@ -147,16 +170,21 @@ def main() -> None:
     if len(available) != len(FAMILIES):
         return
 
+    if not all(has_complete_scaled_data(family[2]) for family in COMBINED_FAMILIES):
+        return
+
     figure, axes = plt.subplots(
         1,
-        2,
-        figsize=(14, 5.8),
+        3,
+        figsize=(18, 5.8),
         sharey=True,
         facecolor="#FAFAF8",
     )
-    for axis, (family, label, scaled_dirs, _, min_depth, _) in zip(axes, available):
+    for axis, (family, label, scaled_dirs, min_depth, include_legacy) in zip(
+        axes, COMBINED_FAMILIES
+    ):
         axis.set_facecolor("#FAFAF8")
-        plot_family(axis, family, scaled_dirs)
+        plot_family(axis, family, scaled_dirs, include_legacy)
         style_axis(axis, min_depth)
         axis.set_title(label, fontsize=15, fontweight="bold", pad=14)
     axes[0].set_ylabel("Success Rate")
@@ -179,11 +207,15 @@ def main() -> None:
     )
     figure.tight_layout(rect=(0, 0.05, 1, 0.92), pad=2)
     figure.savefig(
-        ROOT / "crc-hash-scaled-combined.svg",
+        ROOT / "cryptographic-operations-scaled-combined.svg",
         bbox_inches="tight",
         metadata={"Date": None},
     )
-    figure.savefig(ROOT / "crc-hash-scaled-combined.png", dpi=220, bbox_inches="tight")
+    figure.savefig(
+        ROOT / "cryptographic-operations-scaled-combined.png",
+        dpi=220,
+        bbox_inches="tight",
+    )
     plt.close(figure)
 
 

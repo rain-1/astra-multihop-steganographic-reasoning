@@ -29,7 +29,8 @@ Run the scripts from the repository root:
 python3 experiment-2/scripts/make_chart.py
 python3 experiment-2/scripts/make_depth_charts.py
 python3 experiment-2/scripts/make_lcg_scaled_chart.py
+python3 experiment-2/scripts/make_cryptographic_operations_charts.py
 ```
 
-`make_crc_hash_scaled_charts.py` generates the expanded CRC-4 and Mini-hash
-charts after their public evaluation JSON files are present.
+The final script generates the individual expanded CRC-4 and Mini-hash charts,
+plus the combined LCG PRNG, CRC-4, and Mini-hash comparison.
