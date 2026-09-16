@@ -1,0 +1,218 @@
+[
+  {
+    "id": "HASH-E1-D01-R01",
+    "family": "mini_hash",
+    "depth": 1,
+    "replicate": 1,
+    "question": "Mini-hash challenge \u2014 1 hops\n\nStart with H = 128.\nData values: 27\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 1 rounds, what is H?",
+    "answer": "14",
+    "trace": [
+      14
+    ]
+  },
+  {
+    "id": "HASH-E1-D01-R02",
+    "family": "mini_hash",
+    "depth": 1,
+    "replicate": 2,
+    "question": "Mini-hash challenge \u2014 1 hops\n\nStart with H = 94.\nData values: 24\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 1 rounds, what is H?",
+    "answer": "101",
+    "trace": [
+      101
+    ]
+  },
+  {
+    "id": "HASH-E1-D01-R03",
+    "family": "mini_hash",
+    "depth": 1,
+    "replicate": 3,
+    "question": "Mini-hash challenge \u2014 1 hops\n\nStart with H = 252.\nData values: 30\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 1 rounds, what is H?",
+    "answer": "113",
+    "trace": [
+      113
+    ]
+  },
+  {
+    "id": "HASH-E1-D01-R04",
+    "family": "mini_hash",
+    "depth": 1,
+    "replicate": 4,
+    "question": "Mini-hash challenge \u2014 1 hops\n\nStart with H = 112.\nData values: 20\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 1 rounds, what is H?",
+    "answer": "251",
+    "trace": [
+      251
+    ]
+  },
+  {
+    "id": "HASH-E1-D01-R05",
+    "family": "mini_hash",
+    "depth": 1,
+    "replicate": 5,
+    "question": "Mini-hash challenge \u2014 1 hops\n\nStart with H = 255.\nData values: 22\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 1 rounds, what is H?",
+    "answer": "148",
+    "trace": [
+      148
+    ]
+  },
+  {
+    "id": "HASH-E1-D01-R06",
+    "family": "mini_hash",
+    "depth": 1,
+    "replicate": 6,
+    "question": "Mini-hash challenge \u2014 1 hops\n\nStart with H = 239.\nData values: 14\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 1 rounds, what is H?",
+    "answer": "108",
+    "trace": [
+      108
+    ]
+  },
+  {
+    "id": "HASH-E1-D02-R01",
+    "family": "mini_hash",
+    "depth": 2,
+    "replicate": 1,
+    "question": "Mini-hash challenge \u2014 2 hops\n\nStart with H = 250.\nData values: 17, 22\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 2 rounds, what is H?",
+    "answer": "175",
+    "trace": [
+      158,
+      175
+    ]
+  },
+  {
+    "id": "HASH-E1-D02-R02",
+    "family": "mini_hash",
+    "depth": 2,
+    "replicate": 2,
+    "question": "Mini-hash challenge \u2014 2 hops\n\nStart with H = 241.\nData values: 9, 10\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 2 rounds, what is H?",
+    "answer": "48",
+    "trace": [
+      223,
+      48
+    ]
+  },
+  {
+    "id": "HASH-E1-D02-R03",
+    "family": "mini_hash",
+    "depth": 2,
+    "replicate": 3,
+    "question": "Mini-hash challenge \u2014 2 hops\n\nStart with H = 216.\nData values: 28, 6\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 2 rounds, what is H?",
+    "answer": "88",
+    "trace": [
+      219,
+      88
+    ]
+  },
+  {
+    "id": "HASH-E1-D02-R04",
+    "family": "mini_hash",
+    "depth": 2,
+    "replicate": 4,
+    "question": "Mini-hash challenge \u2014 2 hops\n\nStart with H = 15.\nData values: 8, 30\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 2 rounds, what is H?",
+    "answer": "11",
+    "trace": [
+      42,
+      11
+    ]
+  },
+  {
+    "id": "HASH-E1-D02-R05",
+    "family": "mini_hash",
+    "depth": 2,
+    "replicate": 5,
+    "question": "Mini-hash challenge \u2014 2 hops\n\nStart with H = 92.\nData values: 7, 30\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 2 rounds, what is H?",
+    "answer": "23",
+    "trace": [
+      206,
+      23
+    ]
+  },
+  {
+    "id": "HASH-E1-D02-R06",
+    "family": "mini_hash",
+    "depth": 2,
+    "replicate": 6,
+    "question": "Mini-hash challenge \u2014 2 hops\n\nStart with H = 86.\nData values: 4, 3\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 2 rounds, what is H?",
+    "answer": "49",
+    "trace": [
+      161,
+      49
+    ]
+  },
+  {
+    "id": "HASH-E1-D03-R01",
+    "family": "mini_hash",
+    "depth": 3,
+    "replicate": 1,
+    "question": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 233.\nData values: 22, 1, 0\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "answer": "117",
+    "trace": [
+      2,
+      22,
+      117
+    ]
+  },
+  {
+    "id": "HASH-E1-D03-R02",
+    "family": "mini_hash",
+    "depth": 3,
+    "replicate": 2,
+    "question": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 10.\nData values: 5, 19, 29\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "answer": "156",
+    "trace": [
+      82,
+      76,
+      156
+    ]
+  },
+  {
+    "id": "HASH-E1-D03-R03",
+    "family": "mini_hash",
+    "depth": 3,
+    "replicate": 3,
+    "question": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 23.\nData values: 26, 18, 2\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "answer": "254",
+    "trace": [
+      72,
+      201,
+      254
+    ]
+  },
+  {
+    "id": "HASH-E1-D03-R04",
+    "family": "mini_hash",
+    "depth": 3,
+    "replicate": 4,
+    "question": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 138.\nData values: 28, 22, 13\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "answer": "110",
+    "trace": [
+      245,
+      118,
+      110
+    ]
+  },
+  {
+    "id": "HASH-E1-D03-R05",
+    "family": "mini_hash",
+    "depth": 3,
+    "replicate": 5,
+    "question": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 229.\nData values: 11, 8, 24\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "answer": "191",
+    "trace": [
+      173,
+      64,
+      191
+    ]
+  },
+  {
+    "id": "HASH-E1-D03-R06",
+    "family": "mini_hash",
+    "depth": 3,
+    "replicate": 6,
+    "question": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 2.\nData values: 20, 6, 7\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "answer": "76",
+    "trace": [
+      117,
+      70,
+      76
+    ]
+  }
+]

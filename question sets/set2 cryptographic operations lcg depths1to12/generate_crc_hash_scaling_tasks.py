@@ -65,6 +65,8 @@ def make_tasks(
     min_depth: int,
     max_depth: int,
     tasks_per_depth: int,
+    crc_id_prefix: str,
+    hash_id_prefix: str,
 ) -> tuple[list[dict], list[dict]]:
     rng = random.Random(seed)
     excluded_crc, excluded_hash = prior_keys(excluded_paths)
@@ -80,7 +82,7 @@ def make_tasks(
             trace, feedbacks = crc_trace(initial, bits)
             if key in excluded_crc or key in selected_crc:
                 continue
-            if len(set(bits)) < 2 or len(set(feedbacks)) < 2:
+            if depth > 1 and (len(set(bits)) < 2 or len(set(feedbacks)) < 2):
                 continue
             if len({f"{initial:04b}", *trace}) != depth + 1:
                 continue
@@ -88,7 +90,7 @@ def make_tasks(
             replicate = len(selected_crc)
             crc_tasks.append(
                 {
-                    "id": f"CRC-T1-D{depth:02d}-R{replicate:02d}",
+                    "id": f"{crc_id_prefix}-D{depth:02d}-R{replicate:02d}",
                     "family": "toy_crc4",
                     "depth": depth,
                     "replicate": replicate,
@@ -115,13 +117,15 @@ def make_tasks(
             trace = hash_trace(initial, values)
             if key in excluded_hash or key in selected_hash:
                 continue
-            if len(set(values)) < 2 or len({initial, *trace}) != depth + 1:
+            if (depth > 1 and len(set(values)) < 2) or len(
+                {initial, *trace}
+            ) != depth + 1:
                 continue
             selected_hash.add(key)
             replicate = len(selected_hash)
             hash_tasks.append(
                 {
-                    "id": f"HASH-T1-D{depth:02d}-R{replicate:02d}",
+                    "id": f"{hash_id_prefix}-D{depth:02d}-R{replicate:02d}",
                     "family": "mini_hash",
                     "depth": depth,
                     "replicate": replicate,
@@ -161,13 +165,19 @@ def main() -> None:
     parser.add_argument("--min-depth", type=int, default=3)
     parser.add_argument("--max-depth", type=int, default=12)
     parser.add_argument("--tasks-per-depth", type=int, default=6)
+    parser.add_argument("--crc-id-prefix", default="CRC-T1")
+    parser.add_argument("--hash-id-prefix", default="HASH-T1")
     parser.add_argument("--crc-stem", default="crc_tranche1_depth3_12_6_each")
     parser.add_argument("--hash-stem", default="hash_tranche1_depth3_12_6_each")
+    parser.add_argument("--skip-crc", action="store_true")
+    parser.add_argument("--skip-hash", action="store_true")
     args = parser.parse_args()
-    if not 3 <= args.min_depth <= args.max_depth <= 12:
-        parser.error("depth range must satisfy 3 <= min-depth <= max-depth <= 12")
+    if not 1 <= args.min_depth <= args.max_depth <= 12:
+        parser.error("depth range must satisfy 1 <= min-depth <= max-depth <= 12")
     if args.tasks_per_depth < 1:
         parser.error("tasks-per-depth must be positive")
+    if args.skip_crc and args.skip_hash:
+        parser.error("cannot skip both families")
 
     crc_tasks, hash_tasks = make_tasks(
         args.seed,
@@ -175,11 +185,18 @@ def main() -> None:
         args.min_depth,
         args.max_depth,
         args.tasks_per_depth,
+        args.crc_id_prefix,
+        args.hash_id_prefix,
     )
     args.outdir.mkdir(parents=True, exist_ok=True)
-    write_dataset(args.outdir / f"{args.crc_stem}.json", crc_tasks)
-    write_dataset(args.outdir / f"{args.hash_stem}.json", hash_tasks)
-    print(f"Generated and verified {len(crc_tasks)} CRC and {len(hash_tasks)} hash tasks.")
+    generated = []
+    if not args.skip_crc:
+        write_dataset(args.outdir / f"{args.crc_stem}.json", crc_tasks)
+        generated.append(f"{len(crc_tasks)} CRC")
+    if not args.skip_hash:
+        write_dataset(args.outdir / f"{args.hash_stem}.json", hash_tasks)
+        generated.append(f"{len(hash_tasks)} hash")
+    print(f"Generated and verified {' and '.join(generated)} tasks.")
 
 
 if __name__ == "__main__":

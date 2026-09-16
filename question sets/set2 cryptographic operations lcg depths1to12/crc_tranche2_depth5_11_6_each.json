@@ -1,0 +1,758 @@
+[
+  {
+    "id": "CRC-T2-D05-R01",
+    "family": "toy_crc4",
+    "depth": 5,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 0011.\nInput bits: 10111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "answer": "0110",
+    "trace": [
+      "0101",
+      "1010",
+      "0100",
+      "1011",
+      "0110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D05-R02",
+    "family": "toy_crc4",
+    "depth": 5,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 1000.\nInput bits: 00111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "answer": "1100",
+    "trace": [
+      "0011",
+      "0110",
+      "1111",
+      "1110",
+      "1100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D05-R03",
+    "family": "toy_crc4",
+    "depth": 5,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 0000.\nInput bits: 11000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "answer": "1110",
+    "trace": [
+      "0011",
+      "0101",
+      "1010",
+      "0111",
+      "1110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D05-R04",
+    "family": "toy_crc4",
+    "depth": 5,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 0010.\nInput bits: 00010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "answer": "1010",
+    "trace": [
+      "0100",
+      "1000",
+      "0011",
+      "0101",
+      "1010"
+    ]
+  },
+  {
+    "id": "CRC-T2-D05-R05",
+    "family": "toy_crc4",
+    "depth": 5,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 11001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "answer": "0000",
+    "trace": [
+      "1001",
+      "0010",
+      "0100",
+      "1000",
+      "0000"
+    ]
+  },
+  {
+    "id": "CRC-T2-D05-R06",
+    "family": "toy_crc4",
+    "depth": 5,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 01000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 5 bits, what is R in 4-bit binary?",
+    "answer": "0110",
+    "trace": [
+      "1010",
+      "0100",
+      "1000",
+      "0011",
+      "0110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D06-R01",
+    "family": "toy_crc4",
+    "depth": 6,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 100101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "answer": "1100",
+    "trace": [
+      "1001",
+      "0001",
+      "0010",
+      "0111",
+      "1110",
+      "1100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D06-R02",
+    "family": "toy_crc4",
+    "depth": 6,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 1100.\nInput bits: 000101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "answer": "0000",
+    "trace": [
+      "1011",
+      "0101",
+      "1010",
+      "0100",
+      "1000",
+      "0000"
+    ]
+  },
+  {
+    "id": "CRC-T2-D06-R03",
+    "family": "toy_crc4",
+    "depth": 6,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 010001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "answer": "1111",
+    "trace": [
+      "1010",
+      "0100",
+      "1000",
+      "0011",
+      "0110",
+      "1111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D06-R04",
+    "family": "toy_crc4",
+    "depth": 6,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 0000.\nInput bits: 111001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "answer": "0111",
+    "trace": [
+      "0011",
+      "0101",
+      "1001",
+      "0001",
+      "0010",
+      "0111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D06-R05",
+    "family": "toy_crc4",
+    "depth": 6,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 0010.\nInput bits: 010001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "answer": "1101",
+    "trace": [
+      "0100",
+      "1011",
+      "0101",
+      "1010",
+      "0111",
+      "1101"
+    ]
+  },
+  {
+    "id": "CRC-T2-D06-R06",
+    "family": "toy_crc4",
+    "depth": 6,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with 4-bit register R = 0110.\nInput bits: 100001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 6 bits, what is R in 4-bit binary?",
+    "answer": "0111",
+    "trace": [
+      "1111",
+      "1101",
+      "1001",
+      "0001",
+      "0010",
+      "0111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D07-R01",
+    "family": "toy_crc4",
+    "depth": 7,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 1001.\nInput bits: 1101101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "0101",
+    "trace": [
+      "0010",
+      "0111",
+      "1110",
+      "1100",
+      "1000",
+      "0011",
+      "0101"
+    ]
+  },
+  {
+    "id": "CRC-T2-D07-R02",
+    "family": "toy_crc4",
+    "depth": 7,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 0110.\nInput bits: 1010010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "1011",
+    "trace": [
+      "1111",
+      "1101",
+      "1010",
+      "0111",
+      "1110",
+      "1100",
+      "1011"
+    ]
+  },
+  {
+    "id": "CRC-T2-D07-R03",
+    "family": "toy_crc4",
+    "depth": 7,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 0000.\nInput bits: 1111011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "0110",
+    "trace": [
+      "0011",
+      "0101",
+      "1001",
+      "0010",
+      "0100",
+      "1011",
+      "0110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D07-R04",
+    "family": "toy_crc4",
+    "depth": 7,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 1011101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "1100",
+    "trace": [
+      "1011",
+      "0101",
+      "1001",
+      "0010",
+      "0111",
+      "1110",
+      "1100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D07-R05",
+    "family": "toy_crc4",
+    "depth": 7,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 1010.\nInput bits: 1101001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "0111",
+    "trace": [
+      "0100",
+      "1011",
+      "0101",
+      "1001",
+      "0001",
+      "0010",
+      "0111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D07-R06",
+    "family": "toy_crc4",
+    "depth": 7,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 1011.\nInput bits: 1010101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "0100",
+    "trace": [
+      "0110",
+      "1100",
+      "1000",
+      "0011",
+      "0101",
+      "1010",
+      "0100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D08-R01",
+    "family": "toy_crc4",
+    "depth": 8,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 1001.\nInput bits: 10000101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "1010",
+    "trace": [
+      "0010",
+      "0100",
+      "1000",
+      "0011",
+      "0110",
+      "1111",
+      "1101",
+      "1010"
+    ]
+  },
+  {
+    "id": "CRC-T2-D08-R02",
+    "family": "toy_crc4",
+    "depth": 8,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 1000.\nInput bits: 01111010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "1011",
+    "trace": [
+      "0011",
+      "0101",
+      "1001",
+      "0010",
+      "0111",
+      "1110",
+      "1100",
+      "1011"
+    ]
+  },
+  {
+    "id": "CRC-T2-D08-R03",
+    "family": "toy_crc4",
+    "depth": 8,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 00011001\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "1111",
+    "trace": [
+      "1010",
+      "0111",
+      "1110",
+      "1100",
+      "1000",
+      "0011",
+      "0110",
+      "1111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D08-R04",
+    "family": "toy_crc4",
+    "depth": 8,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 1100.\nInput bits: 00010110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "0110",
+    "trace": [
+      "1011",
+      "0101",
+      "1010",
+      "0100",
+      "1000",
+      "0000",
+      "0011",
+      "0110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D08-R05",
+    "family": "toy_crc4",
+    "depth": 8,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 1110.\nInput bits: 00010000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "0110",
+    "trace": [
+      "1111",
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1000",
+      "0011",
+      "0110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D08-R06",
+    "family": "toy_crc4",
+    "depth": 8,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 0111.\nInput bits: 01100101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "1010",
+    "trace": [
+      "1110",
+      "1100",
+      "1000",
+      "0011",
+      "0110",
+      "1111",
+      "1101",
+      "1010"
+    ]
+  },
+  {
+    "id": "CRC-T2-D09-R01",
+    "family": "toy_crc4",
+    "depth": 9,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 1101.\nInput bits: 000011111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "1100",
+    "trace": [
+      "1001",
+      "0001",
+      "0010",
+      "0100",
+      "1011",
+      "0110",
+      "1111",
+      "1110",
+      "1100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D09-R02",
+    "family": "toy_crc4",
+    "depth": 9,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 1111.\nInput bits: 000010111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "0000",
+    "trace": [
+      "1101",
+      "1001",
+      "0001",
+      "0010",
+      "0111",
+      "1110",
+      "1100",
+      "1000",
+      "0000"
+    ]
+  },
+  {
+    "id": "CRC-T2-D09-R03",
+    "family": "toy_crc4",
+    "depth": 9,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 010110100\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "1001",
+    "trace": [
+      "1010",
+      "0100",
+      "1000",
+      "0000",
+      "0011",
+      "0110",
+      "1111",
+      "1101",
+      "1001"
+    ]
+  },
+  {
+    "id": "CRC-T2-D09-R04",
+    "family": "toy_crc4",
+    "depth": 9,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 011000011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "0010",
+    "trace": [
+      "1000",
+      "0000",
+      "0011",
+      "0110",
+      "1100",
+      "1011",
+      "0101",
+      "1001",
+      "0010"
+    ]
+  },
+  {
+    "id": "CRC-T2-D09-R05",
+    "family": "toy_crc4",
+    "depth": 9,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 0111.\nInput bits: 100001111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "1110",
+    "trace": [
+      "1101",
+      "1001",
+      "0001",
+      "0010",
+      "0100",
+      "1011",
+      "0110",
+      "1111",
+      "1110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D09-R06",
+    "family": "toy_crc4",
+    "depth": 9,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 1111.\nInput bits: 011011111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "0010",
+    "trace": [
+      "1101",
+      "1010",
+      "0100",
+      "1000",
+      "0000",
+      "0011",
+      "0101",
+      "1001",
+      "0010"
+    ]
+  },
+  {
+    "id": "CRC-T2-D10-R01",
+    "family": "toy_crc4",
+    "depth": 10,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 1110.\nInput bits: 0001011011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "0000",
+    "trace": [
+      "1111",
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1011",
+      "0110",
+      "1100",
+      "1000",
+      "0000"
+    ]
+  },
+  {
+    "id": "CRC-T2-D10-R02",
+    "family": "toy_crc4",
+    "depth": 10,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 1010.\nInput bits: 0000010110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "1100",
+    "trace": [
+      "0111",
+      "1110",
+      "1111",
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1011",
+      "0110",
+      "1100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D10-R03",
+    "family": "toy_crc4",
+    "depth": 10,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 1110.\nInput bits: 1111101111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "1111",
+    "trace": [
+      "1100",
+      "1000",
+      "0000",
+      "0011",
+      "0101",
+      "1010",
+      "0100",
+      "1011",
+      "0110",
+      "1111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D10-R04",
+    "family": "toy_crc4",
+    "depth": 10,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 0111.\nInput bits: 1010011000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "1011",
+    "trace": [
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1000",
+      "0000",
+      "0011",
+      "0110",
+      "1100",
+      "1011"
+    ]
+  },
+  {
+    "id": "CRC-T2-D10-R05",
+    "family": "toy_crc4",
+    "depth": 10,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 0000.\nInput bits: 1010010100\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "1010",
+    "trace": [
+      "0011",
+      "0110",
+      "1111",
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1011",
+      "0101",
+      "1010"
+    ]
+  },
+  {
+    "id": "CRC-T2-D10-R06",
+    "family": "toy_crc4",
+    "depth": 10,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 0111100100\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "1111",
+    "trace": [
+      "1000",
+      "0000",
+      "0011",
+      "0101",
+      "1001",
+      "0001",
+      "0010",
+      "0111",
+      "1110",
+      "1111"
+    ]
+  },
+  {
+    "id": "CRC-T2-D11-R01",
+    "family": "toy_crc4",
+    "depth": 11,
+    "replicate": 1,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 0111.\nInput bits: 11101101110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "1011",
+    "trace": [
+      "1101",
+      "1010",
+      "0100",
+      "1000",
+      "0000",
+      "0011",
+      "0110",
+      "1111",
+      "1110",
+      "1100",
+      "1011"
+    ]
+  },
+  {
+    "id": "CRC-T2-D11-R02",
+    "family": "toy_crc4",
+    "depth": 11,
+    "replicate": 2,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 11011110010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "1001",
+    "trace": [
+      "1011",
+      "0110",
+      "1100",
+      "1000",
+      "0000",
+      "0011",
+      "0101",
+      "1010",
+      "0111",
+      "1101",
+      "1001"
+    ]
+  },
+  {
+    "id": "CRC-T2-D11-R03",
+    "family": "toy_crc4",
+    "depth": 11,
+    "replicate": 3,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 1010.\nInput bits: 10011001010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "1011",
+    "trace": [
+      "0100",
+      "1000",
+      "0011",
+      "0101",
+      "1001",
+      "0001",
+      "0010",
+      "0111",
+      "1110",
+      "1100",
+      "1011"
+    ]
+  },
+  {
+    "id": "CRC-T2-D11-R04",
+    "family": "toy_crc4",
+    "depth": 11,
+    "replicate": 4,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 1100.\nInput bits: 10111111111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "0110",
+    "trace": [
+      "1000",
+      "0011",
+      "0101",
+      "1001",
+      "0010",
+      "0111",
+      "1101",
+      "1010",
+      "0100",
+      "1011",
+      "0110"
+    ]
+  },
+  {
+    "id": "CRC-T2-D11-R05",
+    "family": "toy_crc4",
+    "depth": 11,
+    "replicate": 5,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 0011.\nInput bits: 00001001111\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "0100",
+    "trace": [
+      "0110",
+      "1100",
+      "1011",
+      "0101",
+      "1001",
+      "0001",
+      "0010",
+      "0111",
+      "1101",
+      "1010",
+      "0100"
+    ]
+  },
+  {
+    "id": "CRC-T2-D11-R06",
+    "family": "toy_crc4",
+    "depth": 11,
+    "replicate": 6,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 1010.\nInput bits: 01010011011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "1110",
+    "trace": [
+      "0111",
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1000",
+      "0000",
+      "0011",
+      "0110",
+      "1111",
+      "1110"
+    ]
+  }
+]
