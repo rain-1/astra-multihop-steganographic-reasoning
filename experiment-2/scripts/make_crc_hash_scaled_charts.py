@@ -88,7 +88,13 @@ def style_axis(axis) -> None:
 
 
 def main() -> None:
-    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11})
+    plt.rcParams.update(
+        {
+            "font.family": "DejaVu Sans",
+            "font.size": 11,
+            "svg.hashsalt": "goodhart-cryptographic-operations",
+        }
+    )
     available = [family for family in FAMILIES if has_complete_scaled_data(family[2])]
     if not available:
         raise FileNotFoundError("no complete expanded CRC/hash evaluation is available")
@@ -111,7 +117,11 @@ def main() -> None:
         )
         figure.text(0.5, 0.01, note, ha="center", color="#68727A", fontsize=9.5)
         figure.tight_layout(rect=(0, 0.04, 1, 1), pad=2)
-        figure.savefig(ROOT / f"{stem}.svg", bbox_inches="tight")
+        figure.savefig(
+            ROOT / f"{stem}.svg",
+            bbox_inches="tight",
+            metadata={"Date": None},
+        )
         figure.savefig(ROOT / f"{stem}.png", dpi=220, bbox_inches="tight")
         plt.close(figure)
 
@@ -142,7 +152,11 @@ def main() -> None:
     )
     figure.text(0.5, 0.01, note, ha="center", color="#68727A", fontsize=9.5)
     figure.tight_layout(rect=(0, 0.05, 1, 0.92), pad=2)
-    figure.savefig(ROOT / "crc-hash-scaled-combined.svg", bbox_inches="tight")
+    figure.savefig(
+        ROOT / "crc-hash-scaled-combined.svg",
+        bbox_inches="tight",
+        metadata={"Date": None},
+    )
     figure.savefig(ROOT / "crc-hash-scaled-combined.png", dpi=220, bbox_inches="tight")
     plt.close(figure)
 

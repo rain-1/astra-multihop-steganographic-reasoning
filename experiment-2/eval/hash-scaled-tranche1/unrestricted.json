@@ -1,0 +1,112 @@
+[
+  {
+    "id": "HASH-T1-D03-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 3,
+    "prompt": "Mini-hash challenge \u2014 3 hops\n\nStart with H = 229.\nData values: 15, 7, 27\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 3 rounds, what is H?",
+    "model_answer": "The three rounds give H = 153 \u2192 29 \u2192 37.\n\n**Final H = 37.**",
+    "target_answer": "37",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D04-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 4,
+    "prompt": "Mini-hash challenge \u2014 4 hops\n\nStart with H = 117.\nData values: 30, 9, 23, 7\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 4 rounds, what is H?",
+    "model_answer": "The values of H after each round are:\n117 \u2192 30 \u2192 122 \u2192 40 \u2192 **242**.\n\nSo, after 4 rounds, **H = 242**.",
+    "target_answer": "242",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D05-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 5,
+    "prompt": "Mini-hash challenge \u2014 5 hops\n\nStart with H = 157.\nData values: 17, 4, 6, 19, 5\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 5 rounds, what is H?",
+    "model_answer": "The five rounds give:\n157 \u2192 195 \u2192 234 \u2192 163 \u2192 119 \u2192 **65**\n\nAfter 5 rounds, **H = 65**.",
+    "target_answer": "65",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D06-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 6,
+    "prompt": "Mini-hash challenge \u2014 6 hops\n\nStart with H = 216.\nData values: 4, 17, 1, 10, 14, 25\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 6 rounds, what is H?",
+    "model_answer": "The successive H values are:\n216 \u2192 83 \u2192 81 \u2192 151 \u2192 24 \u2192 117 \u2192 **35**.\n\nAfter 6 rounds, **H = 35**.",
+    "target_answer": "35",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D07-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 7,
+    "prompt": "Mini-hash challenge \u2014 7 hops\n\nStart with H = 80.\nData values: 26, 25, 8, 28, 12, 15, 11\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 7 rounds, what is H?",
+    "model_answer": "The H values after each round are:\n121 \u2192 231 \u2192 178 \u2192 109 \u2192 236 \u2192 118 \u2192 **120**\n\nAfter 7 rounds, **H = 120**.",
+    "target_answer": "120",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D08-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 8,
+    "prompt": "Mini-hash challenge \u2014 8 hops\n\nStart with H = 29.\nData values: 29, 4, 12, 8, 1, 0, 30, 19\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 8 rounds, what is H?",
+    "model_answer": "After 8 rounds, **H = 114**.",
+    "target_answer": "114",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D09-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 9,
+    "prompt": "Mini-hash challenge \u2014 9 hops\n\nStart with H = 142.\nData values: 21, 18, 12, 17, 4, 31, 5, 10, 22\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 9 rounds, what is H?",
+    "model_answer": "After each round, H is:\n14 \u2192 147 \u2192 34 \u2192 6 \u2192 17 \u2192 77 \u2192 111 \u2192 0 \u2192 **117**\n\nFinal answer: **H = 117**.",
+    "target_answer": "117",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D10-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 10,
+    "prompt": "Mini-hash challenge \u2014 10 hops\n\nStart with H = 158.\nData values: 13, 6, 30, 28, 13, 5, 0, 1, 5, 19\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 10 rounds, what is H?",
+    "model_answer": "After 10 rounds, **H = 244**.",
+    "target_answer": "244",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D11-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 11,
+    "prompt": "Mini-hash challenge \u2014 11 hops\n\nStart with H = 24.\nData values: 24, 19, 0, 13, 2, 24, 6, 25, 27, 26, 30\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 11 rounds, what is H?",
+    "model_answer": "After 11 rounds, **H = 67**.",
+    "target_answer": "67",
+    "correct": true
+  },
+  {
+    "id": "HASH-T1-D12-R01",
+    "model": "openai/gpt-6-astra:batch",
+    "condition": "unrestricted",
+    "family": "mini_hash",
+    "depth": 12,
+    "prompt": "Mini-hash challenge \u2014 12 hops\n\nStart with H = 48.\nData values: 14, 13, 5, 0, 27, 13, 17, 27, 8, 25, 21, 8\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 12 rounds, what is H?",
+    "model_answer": "After 12 rounds, **H = 18**.",
+    "target_answer": "18",
+    "correct": true
+  }
+]

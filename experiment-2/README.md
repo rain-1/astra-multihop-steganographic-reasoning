@@ -11,6 +11,7 @@ experiments.
 - `eval/lcg-scaled/` contains the first balanced LCG scaling set.
 - `eval/lcg-scaled-tranche1/` contains the subsequent LCG expansion.
 - `eval/crc-scaled-tranche1/` contains the expanded CRC-4 evaluation.
+- `eval/hash-scaled-tranche1/` contains the expanded Mini-hash evaluation.
 
 Each evaluation JSON record contains the model identifier, prompt, model
 answer, target answer, and correctness value.
