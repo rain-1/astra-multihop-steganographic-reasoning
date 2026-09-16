@@ -1,0 +1,596 @@
+[
+  {
+    "id": "LCG-D01-R1",
+    "family": "lcg_prng",
+    "depth": 1,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 1 hops\n\nStart with x0 = 9.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 1 times. What is x_1?",
+    "answer": "4",
+    "trace": [
+      4
+    ]
+  },
+  {
+    "id": "LCG-D01-R2",
+    "family": "lcg_prng",
+    "depth": 1,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 1 hops\n\nStart with x0 = 19.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 1 times. What is x_1?",
+    "answer": "12",
+    "trace": [
+      12
+    ]
+  },
+  {
+    "id": "LCG-D01-R3",
+    "family": "lcg_prng",
+    "depth": 1,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 1 hops\n\nStart with x0 = 0.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 1 times. What is x_1?",
+    "answer": "3",
+    "trace": [
+      3
+    ]
+  },
+  {
+    "id": "LCG-D02-R1",
+    "family": "lcg_prng",
+    "depth": 2,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 2 hops\n\nStart with x0 = 13.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 2 times. What is x_2?",
+    "answer": "10",
+    "trace": [
+      1,
+      10
+    ]
+  },
+  {
+    "id": "LCG-D02-R2",
+    "family": "lcg_prng",
+    "depth": 2,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 2 hops\n\nStart with x0 = 20.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 2 times. What is x_2?",
+    "answer": "12",
+    "trace": [
+      19,
+      12
+    ]
+  },
+  {
+    "id": "LCG-D02-R3",
+    "family": "lcg_prng",
+    "depth": 2,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 2 hops\n\nStart with x0 = 3.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 2 times. What is x_2?",
+    "answer": "16",
+    "trace": [
+      24,
+      16
+    ]
+  },
+  {
+    "id": "LCG-D03-R1",
+    "family": "lcg_prng",
+    "depth": 3,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 3 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 3 times. What is x_3?",
+    "answer": "4",
+    "trace": [
+      23,
+      9,
+      4
+    ]
+  },
+  {
+    "id": "LCG-D03-R2",
+    "family": "lcg_prng",
+    "depth": 3,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 3 hops\n\nStart with x0 = 27.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 3 times. What is x_3?",
+    "answer": "8",
+    "trace": [
+      6,
+      14,
+      8
+    ]
+  },
+  {
+    "id": "LCG-D03-R3",
+    "family": "lcg_prng",
+    "depth": 3,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 3 hops\n\nStart with x0 = 12.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 3 times. What is x_3?",
+    "answer": "9",
+    "trace": [
+      25,
+      23,
+      9
+    ]
+  },
+  {
+    "id": "LCG-D04-R1",
+    "family": "lcg_prng",
+    "depth": 4,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 4 hops\n\nStart with x0 = 20.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 4 times. What is x_4?",
+    "answer": "23",
+    "trace": [
+      19,
+      12,
+      25,
+      23
+    ]
+  },
+  {
+    "id": "LCG-D04-R2",
+    "family": "lcg_prng",
+    "depth": 4,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 4 hops\n\nStart with x0 = 11.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 4 times. What is x_4?",
+    "answer": "21",
+    "trace": [
+      18,
+      5,
+      7,
+      21
+    ]
+  },
+  {
+    "id": "LCG-D04-R3",
+    "family": "lcg_prng",
+    "depth": 4,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 4 hops\n\nStart with x0 = 12.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 4 times. What is x_4?",
+    "answer": "4",
+    "trace": [
+      25,
+      23,
+      9,
+      4
+    ]
+  },
+  {
+    "id": "LCG-D05-R1",
+    "family": "lcg_prng",
+    "depth": 5,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 5 hops\n\nStart with x0 = 9.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 5 times. What is x_5?",
+    "answer": "16",
+    "trace": [
+      4,
+      0,
+      3,
+      24,
+      16
+    ]
+  },
+  {
+    "id": "LCG-D05-R2",
+    "family": "lcg_prng",
+    "depth": 5,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 5 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 5 times. What is x_5?",
+    "answer": "3",
+    "trace": [
+      23,
+      9,
+      4,
+      0,
+      3
+    ]
+  },
+  {
+    "id": "LCG-D05-R3",
+    "family": "lcg_prng",
+    "depth": 5,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 5 hops\n\nStart with x0 = 28.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 5 times. What is x_5?",
+    "answer": "18",
+    "trace": [
+      13,
+      1,
+      10,
+      11,
+      18
+    ]
+  },
+  {
+    "id": "LCG-D06-R1",
+    "family": "lcg_prng",
+    "depth": 6,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 6 hops\n\nStart with x0 = 23.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 6 times. What is x_6?",
+    "answer": "16",
+    "trace": [
+      9,
+      4,
+      0,
+      3,
+      24,
+      16
+    ]
+  },
+  {
+    "id": "LCG-D06-R2",
+    "family": "lcg_prng",
+    "depth": 6,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 6 hops\n\nStart with x0 = 22.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 6 times. What is x_6?",
+    "answer": "12",
+    "trace": [
+      2,
+      17,
+      29,
+      20,
+      19,
+      12
+    ]
+  },
+  {
+    "id": "LCG-D06-R3",
+    "family": "lcg_prng",
+    "depth": 6,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 6 hops\n\nStart with x0 = 1.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 6 times. What is x_6?",
+    "answer": "21",
+    "trace": [
+      10,
+      11,
+      18,
+      5,
+      7,
+      21
+    ]
+  },
+  {
+    "id": "LCG-D07-R1",
+    "family": "lcg_prng",
+    "depth": 7,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 7 hops\n\nStart with x0 = 5.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 7 times. What is x_7?",
+    "answer": "14",
+    "trace": [
+      7,
+      21,
+      26,
+      30,
+      27,
+      6,
+      14
+    ]
+  },
+  {
+    "id": "LCG-D07-R2",
+    "family": "lcg_prng",
+    "depth": 7,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 7 hops\n\nStart with x0 = 22.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 7 times. What is x_7?",
+    "answer": "25",
+    "trace": [
+      2,
+      17,
+      29,
+      20,
+      19,
+      12,
+      25
+    ]
+  },
+  {
+    "id": "LCG-D07-R3",
+    "family": "lcg_prng",
+    "depth": 7,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 7 hops\n\nStart with x0 = 18.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 7 times. What is x_7?",
+    "answer": "6",
+    "trace": [
+      5,
+      7,
+      21,
+      26,
+      30,
+      27,
+      6
+    ]
+  },
+  {
+    "id": "LCG-D08-R1",
+    "family": "lcg_prng",
+    "depth": 8,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 8 hops\n\nStart with x0 = 2.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 8 times. What is x_8?",
+    "answer": "9",
+    "trace": [
+      17,
+      29,
+      20,
+      19,
+      12,
+      25,
+      23,
+      9
+    ]
+  },
+  {
+    "id": "LCG-D08-R2",
+    "family": "lcg_prng",
+    "depth": 8,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 8 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 8 times. What is x_8?",
+    "answer": "22",
+    "trace": [
+      23,
+      9,
+      4,
+      0,
+      3,
+      24,
+      16,
+      22
+    ]
+  },
+  {
+    "id": "LCG-D08-R3",
+    "family": "lcg_prng",
+    "depth": 8,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 8 hops\n\nStart with x0 = 6.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 8 times. What is x_8?",
+    "answer": "18",
+    "trace": [
+      14,
+      8,
+      28,
+      13,
+      1,
+      10,
+      11,
+      18
+    ]
+  },
+  {
+    "id": "LCG-D09-R1",
+    "family": "lcg_prng",
+    "depth": 9,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 9 hops\n\nStart with x0 = 16.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 9 times. What is x_9?",
+    "answer": "23",
+    "trace": [
+      22,
+      2,
+      17,
+      29,
+      20,
+      19,
+      12,
+      25,
+      23
+    ]
+  },
+  {
+    "id": "LCG-D09-R2",
+    "family": "lcg_prng",
+    "depth": 9,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 9 hops\n\nStart with x0 = 28.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 9 times. What is x_9?",
+    "answer": "26",
+    "trace": [
+      13,
+      1,
+      10,
+      11,
+      18,
+      5,
+      7,
+      21,
+      26
+    ]
+  },
+  {
+    "id": "LCG-D09-R3",
+    "family": "lcg_prng",
+    "depth": 9,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 9 hops\n\nStart with x0 = 14.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 9 times. What is x_9?",
+    "answer": "7",
+    "trace": [
+      8,
+      28,
+      13,
+      1,
+      10,
+      11,
+      18,
+      5,
+      7
+    ]
+  },
+  {
+    "id": "LCG-D10-R1",
+    "family": "lcg_prng",
+    "depth": 10,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 10 hops\n\nStart with x0 = 23.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 10 times. What is x_10?",
+    "answer": "29",
+    "trace": [
+      9,
+      4,
+      0,
+      3,
+      24,
+      16,
+      22,
+      2,
+      17,
+      29
+    ]
+  },
+  {
+    "id": "LCG-D10-R2",
+    "family": "lcg_prng",
+    "depth": 10,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 10 hops\n\nStart with x0 = 16.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 10 times. What is x_10?",
+    "answer": "9",
+    "trace": [
+      22,
+      2,
+      17,
+      29,
+      20,
+      19,
+      12,
+      25,
+      23,
+      9
+    ]
+  },
+  {
+    "id": "LCG-D10-R3",
+    "family": "lcg_prng",
+    "depth": 10,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 10 hops\n\nStart with x0 = 7.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 10 times. What is x_10?",
+    "answer": "1",
+    "trace": [
+      21,
+      26,
+      30,
+      27,
+      6,
+      14,
+      8,
+      28,
+      13,
+      1
+    ]
+  },
+  {
+    "id": "LCG-D11-R1",
+    "family": "lcg_prng",
+    "depth": 11,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 11 hops\n\nStart with x0 = 22.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 11 times. What is x_11?",
+    "answer": "0",
+    "trace": [
+      2,
+      17,
+      29,
+      20,
+      19,
+      12,
+      25,
+      23,
+      9,
+      4,
+      0
+    ]
+  },
+  {
+    "id": "LCG-D11-R2",
+    "family": "lcg_prng",
+    "depth": 11,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 11 hops\n\nStart with x0 = 2.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 11 times. What is x_11?",
+    "answer": "3",
+    "trace": [
+      17,
+      29,
+      20,
+      19,
+      12,
+      25,
+      23,
+      9,
+      4,
+      0,
+      3
+    ]
+  },
+  {
+    "id": "LCG-D11-R3",
+    "family": "lcg_prng",
+    "depth": 11,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 11 hops\n\nStart with x0 = 29.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 11 times. What is x_11?",
+    "answer": "16",
+    "trace": [
+      20,
+      19,
+      12,
+      25,
+      23,
+      9,
+      4,
+      0,
+      3,
+      24,
+      16
+    ]
+  },
+  {
+    "id": "LCG-D12-R1",
+    "family": "lcg_prng",
+    "depth": 12,
+    "replicate": 1,
+    "question": "PRNG challenge \u2014 12 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 12 times. What is x_12?",
+    "answer": "20",
+    "trace": [
+      23,
+      9,
+      4,
+      0,
+      3,
+      24,
+      16,
+      22,
+      2,
+      17,
+      29,
+      20
+    ]
+  },
+  {
+    "id": "LCG-D12-R2",
+    "family": "lcg_prng",
+    "depth": 12,
+    "replicate": 2,
+    "question": "PRNG challenge \u2014 12 hops\n\nStart with x0 = 16.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 12 times. What is x_12?",
+    "answer": "0",
+    "trace": [
+      22,
+      2,
+      17,
+      29,
+      20,
+      19,
+      12,
+      25,
+      23,
+      9,
+      4,
+      0
+    ]
+  },
+  {
+    "id": "LCG-D12-R3",
+    "family": "lcg_prng",
+    "depth": 12,
+    "replicate": 3,
+    "question": "PRNG challenge \u2014 12 hops\n\nStart with x0 = 13.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 12 times. What is x_12?",
+    "answer": "14",
+    "trace": [
+      1,
+      10,
+      11,
+      18,
+      5,
+      7,
+      21,
+      26,
+      30,
+      27,
+      6,
+      14
+    ]
+  }
+]

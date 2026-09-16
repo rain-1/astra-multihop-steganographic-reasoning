@@ -1,0 +1,164 @@
+[
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "toy_crc4",
+    "depth": 7,
+    "prompt": "Toy CRC-4 challenge — 7 hops\n\nStart with 4-bit register R = 0011.\nInput bits: 0010110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "model_answer": "0001",
+    "target_answer": "0001",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "mini_hash",
+    "depth": 7,
+    "prompt": "Mini-hash challenge — 7 hops\n\nStart with H = 229.\nData values: 10, 2, 3, 7, 9, 12, 16\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 7 rounds, what is H?",
+    "model_answer": "H = 135",
+    "target_answer": "135",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "lcg_prng",
+    "depth": 7,
+    "prompt": "PRNG challenge — 7 hops\n\nStart with x0 = 20.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 7 times. What is x_7?",
+    "model_answer": "The seven steps are:\n20 → 19 → 12 → 25 → 23 → 9 → 4 → 0.\n\nTherefore, **x₇ = 0**.",
+    "target_answer": "0",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "toy_crc4",
+    "depth": 8,
+    "prompt": "Toy CRC-4 challenge — 8 hops\n\nStart with 4-bit register R = 0000.\nInput bits: 11101011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "model_answer": "1101",
+    "target_answer": "1101",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "mini_hash",
+    "depth": 8,
+    "prompt": "Mini-hash challenge — 8 hops\n\nStart with H = 104.\nData values: 20, 16, 8, 19, 7, 19, 29, 9\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 8 rounds, what is H?",
+    "model_answer": "After each round, H is:\n115 → 246 → 253 → 173 → 89 → 121 → 251 → 193\n\n**Final H = 193.**",
+    "target_answer": "193",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "lcg_prng",
+    "depth": 8,
+    "prompt": "PRNG challenge — 8 hops\n\nStart with x0 = 9.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 8 times. What is x_8?",
+    "model_answer": "x₈ = 17.\n\nThe 8 hops are: 9 → 4 → 0 → 3 → 24 → 16 → 22 → 2 → 17.",
+    "target_answer": "17",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "toy_crc4",
+    "depth": 9,
+    "prompt": "Toy CRC-4 challenge — 9 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 001001000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "model_answer": "0010",
+    "target_answer": "0010",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "mini_hash",
+    "depth": 9,
+    "prompt": "Mini-hash challenge — 9 hops\n\nStart with H = 85.\nData values: 9, 12, 19, 31, 23, 26, 17, 1, 19\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 9 rounds, what is H?",
+    "model_answer": "After 9 rounds, **H = 9**.",
+    "target_answer": "9",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "lcg_prng",
+    "depth": 9,
+    "prompt": "PRNG challenge — 9 hops\n\nStart with x0 = 12.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 9 times. What is x_9?",
+    "model_answer": "x₉ = 22.",
+    "target_answer": "22",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "toy_crc4",
+    "depth": 10,
+    "prompt": "Toy CRC-4 challenge — 10 hops\n\nStart with 4-bit register R = 0001.\nInput bits: 0000010010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "model_answer": "0100",
+    "target_answer": "0100",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "mini_hash",
+    "depth": 10,
+    "prompt": "Mini-hash challenge — 10 hops\n\nStart with H = 141.\nData values: 27, 30, 25, 8, 10, 19, 7, 19, 3, 15\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 10 rounds, what is H?",
+    "model_answer": "H = 232",
+    "target_answer": "232",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "lcg_prng",
+    "depth": 10,
+    "prompt": "PRNG challenge — 10 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 10 times. What is x_10?",
+    "model_answer": "\\(x_{10} = \\boxed{17}\\).\n\nThe 10 hops are:\n\\(25 \\to 23 \\to 9 \\to 4 \\to 0 \\to 3 \\to 24 \\to 16 \\to 22 \\to 2 \\to 17\\).",
+    "target_answer": "17",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "toy_crc4",
+    "depth": 11,
+    "prompt": "Toy CRC-4 challenge — 11 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 10000011110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "model_answer": "1110",
+    "target_answer": "1110",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "mini_hash",
+    "depth": 11,
+    "prompt": "Mini-hash challenge — 11 hops\n\nStart with H = 154.\nData values: 0, 7, 2, 19, 16, 0, 25, 12, 5, 27, 1\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 11 rounds, what is H?",
+    "model_answer": "After 11 rounds, **H = 249**.",
+    "target_answer": "249",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "lcg_prng",
+    "depth": 11,
+    "prompt": "PRNG challenge — 11 hops\n\nStart with x0 = 10.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 11 times. What is x_11?",
+    "model_answer": "x₁₁ = 8.",
+    "target_answer": "8",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "toy_crc4",
+    "depth": 12,
+    "prompt": "Toy CRC-4 challenge — 12 hops\n\nStart with 4-bit register R = 1011.\nInput bits: 111101100101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 12 bits, what is R in 4-bit binary?",
+    "model_answer": "1011",
+    "target_answer": "1011",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "mini_hash",
+    "depth": 12,
+    "prompt": "Mini-hash challenge — 12 hops\n\nStart with H = 50.\nData values: 30, 14, 1, 10, 18, 12, 1, 10, 25, 11, 29, 27\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 12 rounds, what is H?",
+    "model_answer": "After 12 rounds, **H = 80**.",
+    "target_answer": "80",
+    "correct": true
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "family": "lcg_prng",
+    "depth": 12,
+    "prompt": "PRNG challenge — 12 hops\n\nStart with x0 = 28.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 12 times. What is x_12?",
+    "model_answer": "x₁₂ = 6.",
+    "target_answer": "6",
+    "correct": true
+  }
+]
