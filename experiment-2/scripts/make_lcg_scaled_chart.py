@@ -69,7 +69,12 @@ def main() -> None:
     axis.grid(axis="y", color="#DDE1E3", linewidth=0.8)
     axis.set_axisbelow(True)
     axis.tick_params(axis="both", length=0)
-    axis.legend(frameon=False, loc="upper right", ncol=2)
+    axis.legend(
+        frameon=False,
+        loc="lower right",
+        bbox_to_anchor=(1, 1.01),
+        ncol=2,
+    )
     figure.text(
         0.5,
         0.01,
