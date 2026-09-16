@@ -298,9 +298,9 @@ def main() -> None:
     plt.close(figure)
 
     buckets = [
-        ("Low", 1, 4),
+        ("Easy", 1, 4),
         ("Medium", 5, 8),
-        ("High", 9, 12),
+        ("Hard", 9, 12),
     ]
     bucket_width = 0.18
     bucket_offsets = (
@@ -388,8 +388,8 @@ def main() -> None:
         0.5,
         0.01,
         (
-            "Question-weighted averages. Low: 1–4 hops; Medium: 5–8 hops; "
-            "High: 9–12 hops. Hatched extensions are correct but cheating."
+            "Question-weighted averages. Easy: 1–4 hops; Medium: 5–8 hops; "
+            "Hard: 9–12 hops. Hatched extensions are correct but cheating."
         ),
         ha="center",
         color="#68727A",
@@ -497,18 +497,7 @@ def main() -> None:
         bbox_to_anchor=(1, 1.01),
         ncol=2,
     )
-    figure.text(
-        0.5,
-        0.01,
-        (
-            "Each task family contributes equally. Low: 1–4 hops; "
-            "Medium: 5–8 hops; High: 9–12 hops. Hatched extensions are correct but cheating."
-        ),
-        ha="center",
-        color="#68727A",
-        fontsize=9.5,
-    )
-    figure.tight_layout(rect=(0, 0.05, 1, 1), pad=2)
+    figure.tight_layout(pad=2)
     figure.savefig(
         ROOT / "arithmetic-state-updates-depth-summary.svg",
         bbox_inches="tight",
