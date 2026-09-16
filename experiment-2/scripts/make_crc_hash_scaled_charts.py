@@ -24,18 +24,41 @@ CONDITIONS = [
     ),
 ]
 FAMILIES = [
-    ("toy_crc4", "Toy CRC-4", "crc-scaled-tranche1", "crc-scaled-success-by-depth"),
-    ("mini_hash", "Mini-hash", "hash-scaled-tranche1", "hash-scaled-success-by-depth"),
+    (
+        "toy_crc4",
+        "Toy CRC-4",
+        ("crc-scaled-tranche1", "crc-scaled-tranche2"),
+        "crc-scaled-success-by-depth",
+        3,
+        (
+            "Samples per depth (unrestricted/constrained): d3 1/6; d4 1/7; "
+            "d5–6 2/13; d7–11 3/13; d12 2/7."
+        ),
+    ),
+    (
+        "mini_hash",
+        "Mini-hash",
+        ("hash-scaled-tranche1", "hash-easy-tranche1"),
+        "hash-scaled-success-by-depth",
+        1,
+        (
+            "Samples per depth (unrestricted/constrained): d1–2 1/6; d3 2/12; "
+            "d4–6 1/7; d7–12 2/7."
+        ),
+    ),
 ]
 
 
-def has_complete_scaled_data(scaled_dir: str) -> bool:
-    directory = ROOT / "eval" / scaled_dir
-    return all((directory / filename).exists() for filename, *_ in CONDITIONS)
+def has_complete_scaled_data(scaled_dirs: tuple[str, ...]) -> bool:
+    return all(
+        (ROOT / "eval" / scaled_dir / filename).exists()
+        for scaled_dir in scaled_dirs
+        for filename, *_ in CONDITIONS
+    )
 
 
-def records(filename: str, scaled_dir: str) -> list[dict]:
-    paths = [ROOT / "eval" / scaled_dir / filename]
+def records(filename: str, scaled_dirs: tuple[str, ...]) -> list[dict]:
+    paths = [ROOT / "eval" / scaled_dir / filename for scaled_dir in scaled_dirs]
     if filename == "unrestricted.json":
         paths.append(ROOT / "eval" / filename)
     else:
@@ -52,10 +75,10 @@ def records(filename: str, scaled_dir: str) -> list[dict]:
     return rows
 
 
-def plot_family(axis, family: str, scaled_dir: str) -> None:
+def plot_family(axis, family: str, scaled_dirs: tuple[str, ...]) -> None:
     for filename, label, color, marker in CONDITIONS:
         grouped: dict[int, list[bool]] = defaultdict(list)
-        for record in records(filename, scaled_dir):
+        for record in records(filename, scaled_dirs):
             if record["family"] == family:
                 grouped[record["depth"]].append(record["correct"])
         depths = sorted(grouped)
@@ -73,9 +96,9 @@ def plot_family(axis, family: str, scaled_dir: str) -> None:
         )
 
 
-def style_axis(axis) -> None:
-    axis.set_xlim(2.7, 12.3)
-    axis.set_xticks(range(3, 13))
+def style_axis(axis, min_depth: int) -> None:
+    axis.set_xlim(min_depth - 0.3, 12.3)
+    axis.set_xticks(range(min_depth, 13))
     axis.set_ylim(-5, 105)
     axis.set_yticks(range(0, 101, 20))
     axis.yaxis.set_major_formatter(PercentFormatter(100))
@@ -98,15 +121,11 @@ def main() -> None:
     available = [family for family in FAMILIES if has_complete_scaled_data(family[2])]
     if not available:
         raise FileNotFoundError("no complete expanded CRC/hash evaluation is available")
-    note = (
-        "Depth 3: n=1 unrestricted and n=6 per constrained condition. "
-        "Depths 4–6: n=1 and n=7; depths 7–12: n=2 and n=7, respectively."
-    )
-    for family, label, scaled_dir, stem in available:
+    for family, label, scaled_dirs, stem, min_depth, note in available:
         figure, axis = plt.subplots(figsize=(10.5, 6), facecolor="#FAFAF8")
         axis.set_facecolor("#FAFAF8")
-        plot_family(axis, family, scaled_dir)
-        style_axis(axis)
+        plot_family(axis, family, scaled_dirs)
+        style_axis(axis, min_depth)
         axis.set_ylabel("Success Rate")
         axis.set_title(label, loc="left", fontsize=17, fontweight="bold", pad=18)
         axis.legend(
@@ -135,10 +154,10 @@ def main() -> None:
         sharey=True,
         facecolor="#FAFAF8",
     )
-    for axis, (family, label, scaled_dir, _) in zip(axes, available):
+    for axis, (family, label, scaled_dirs, _, min_depth, _) in zip(axes, available):
         axis.set_facecolor("#FAFAF8")
-        plot_family(axis, family, scaled_dir)
-        style_axis(axis)
+        plot_family(axis, family, scaled_dirs)
+        style_axis(axis, min_depth)
         axis.set_title(label, fontsize=15, fontweight="bold", pad=14)
     axes[0].set_ylabel("Success Rate")
     handles, labels = axes[0].get_legend_handles_labels()
@@ -150,7 +169,14 @@ def main() -> None:
         ncol=4,
         frameon=False,
     )
-    figure.text(0.5, 0.01, note, ha="center", color="#68727A", fontsize=9.5)
+    figure.text(
+        0.5,
+        0.01,
+        "Sample sizes vary by family and depth; see individual charts.",
+        ha="center",
+        color="#68727A",
+        fontsize=9.5,
+    )
     figure.tight_layout(rect=(0, 0.05, 1, 0.92), pad=2)
     figure.savefig(
         ROOT / "crc-hash-scaled-combined.svg",
