@@ -1,0 +1,218 @@
+[
+  {
+    "depth": 4,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 9.\n1. multiply by 4.\n2. add 4.\n3. divide by 4.\n4. subtract 4.\nWhat is the final value of x?",
+    "answer": "6"
+  },
+  {
+    "depth": 4,
+    "family": "function_composition",
+    "question": "Define:\n- r(x) = -x + 2\n- i(x) = 3x - 2\n- e(x) = 2x + 1\n- j(x) = 2x + 1\n\nWhat is j(e(i(r(1))))?",
+    "answer": "7"
+  },
+  {
+    "depth": 4,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- DFHH -> 900\n- XXY -> 328\n- ADSRZ -> UIAMG\n- VBDRAZ -> VZYL\n- FOS -> RUNPM\n- PLXNI -> XXY\n- YRT -> FEQG\n- TFJD -> BHZFN\n- VJKRPZ -> 151\n- FEQG -> PLXNI\n\nStarting from YRT, follow exactly 4 lookups. What value do you reach?",
+    "answer": "328"
+  },
+  {
+    "depth": 4,
+    "family": "function_composition",
+    "question": "Define:\n- a(x) = -x - 4\n- k(x) = -x - 4\n- d(x) = -x + 3\n- g(x) = 2x - 2\n\nWhat is g(d(k(a(5))))?",
+    "answer": "-6"
+  },
+  {
+    "depth": 4,
+    "family": "function_composition",
+    "question": "Define:\n- g(x) = -x - 3\n- s(x) = -x + 1\n- q(x) = 2x - 3\n- a(x) = 3x - 1\n\nWhat is a(q(s(g(2))))?",
+    "answer": "26"
+  },
+  {
+    "depth": 4,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- OEINN -> TRHZEO\n- VFSH -> OEINN\n- IGDRVO -> 546\n- DYS -> 592\n- XEC -> 614\n- TRHZEO -> OLTANC\n- XQGG -> FAFIBD\n- JWAFWS -> 315\n- OLTANC -> 787\n- WZMVR -> XHC\n\nStarting from VFSH, follow exactly 4 lookups. What value do you reach?",
+    "answer": "787"
+  },
+  {
+    "depth": 4,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 11.\n1. add 7.\n2. subtract 5.\n3. replace x by 2x + 1.\n4. subtract 3.\nWhat is the final value of x?",
+    "answer": "24"
+  },
+  {
+    "depth": 4,
+    "family": "mixed_state",
+    "question": "Start with x = 15.\n1. x <- x - 1.\n2. x <- x/2.\n3. x <- x - 7.\n4. x <- x + 8.\nWhat is the final value of x?",
+    "answer": "8"
+  },
+  {
+    "depth": 4,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- IDJ -> AOST\n- XIEABZ -> JNUWYI\n- PUMRC -> 429\n- PHEGMR -> NWZ\n- YWJTYG -> 693\n- JNUWYI -> 214\n- UKL -> 987\n- JVESNQ -> QWMKZD\n- WHZACY -> ZCL\n- QWMKZD -> XIEABZ\n\nStarting from JVESNQ, follow exactly 4 lookups. What value do you reach?",
+    "answer": "214"
+  },
+  {
+    "depth": 4,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- VDHULW -> 526\n- ZMJ -> BTC\n- PGQV -> 219\n- EBUIS -> VDHULW\n- BTC -> EBUIS\n- TOXO -> IHBON\n- FSLODZ -> ERKEV\n- WNQL -> 793\n- HYA -> GLR\n- PJF -> USLAMQ\n\nStarting from ZMJ, follow exactly 4 lookups. What value do you reach?",
+    "answer": "526"
+  },
+  {
+    "depth": 4,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- TOJ -> AFD\n- RLAMCP -> OUQ\n- HNAM -> 208\n- LHPR -> URLHHX\n- BMQL -> 802\n- WYPS -> WJEVKV\n- WJEVKV -> BMQL\n- WIIAM -> WYPS\n- IQPSJJ -> UGR\n- ZTK -> 152\n\nStarting from WIIAM, follow exactly 4 lookups. What value do you reach?",
+    "answer": "802"
+  },
+  {
+    "depth": 4,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 19.\n1. add 8.\n2. add 8.\n3. subtract 5.\n4. replace x by 2x - 5.\nWhat is the final value of x?",
+    "answer": "55"
+  },
+  {
+    "depth": 5,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- UHLHXZ -> VCFJZ\n- MXJ -> MBN\n- MBN -> CPIMW\n- UPNZRY -> SFT\n- OTONY -> MXJ\n- YIUF -> 969\n- CVCC -> QCPAO\n- CPIMW -> 540\n- PEX -> 589\n- TIUIB -> OTONY\n- VVZZHC -> VLHZD\n- VSADJ -> CYZE\n\nStarting from TIUIB, follow exactly 5 lookups. What value do you reach?",
+    "answer": "540"
+  },
+  {
+    "depth": 5,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- JNQC -> AHKC\n- BKQ -> JNQC\n- FXQKPG -> BKQ\n- KHTL -> BZMJN\n- AHKC -> ELTKO\n- JLMFY -> WZFO\n- ELTKO -> 859\n- LPETPH -> 443\n- ULUDT -> 257\n- WTB -> MDCY\n- TZS -> 268\n- DWI -> GQBWTA\n\nStarting from FXQKPG, follow exactly 5 lookups. What value do you reach?",
+    "answer": "859"
+  },
+  {
+    "depth": 5,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 14.\n1. multiply by 2.\n2. divide by 2.\n3. add 10.\n4. subtract 9.\n5. add 2.\nWhat is the final value of x?",
+    "answer": "17"
+  },
+  {
+    "depth": 5,
+    "family": "function_composition",
+    "question": "Define:\n- k(x) = 3x - 3\n- g(x) = x^2 + 0\n- j(x) = 3x + 3\n- v(x) = -x - 3\n- b(x) = 3x - 3\n\nWhat is b(v(j(g(k(3)))))?",
+    "answer": "-345"
+  },
+  {
+    "depth": 5,
+    "family": "function_composition",
+    "question": "Define:\n- r(x) = 2x - 4\n- n(x) = 2x + 0\n- d(x) = 2x + 1\n- v(x) = -x + 0\n- o(x) = x^2 + 4\n\nWhat is o(v(d(n(r(4)))))?",
+    "answer": "293"
+  },
+  {
+    "depth": 5,
+    "family": "mixed_state",
+    "question": "Start with x = 7.\n1. x <- x + 4.\n2. x <- 2x + 1.\n3. x <- x + 2.\n4. x <- 2x + 1.\n5. x <- x + 2.\nWhat is the final value of x?",
+    "answer": "53"
+  },
+  {
+    "depth": 5,
+    "family": "function_composition",
+    "question": "Define:\n- y(x) = x^2 + 0\n- w(x) = x^2 + 0\n- f(x) = 2x - 4\n- k(x) = -x - 5\n- e(x) = 2x + 0\n\nWhat is e(k(f(w(y(2)))))?",
+    "answer": "-66"
+  },
+  {
+    "depth": 5,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- NMU -> RZXXUG\n- BIE -> ZKKTL\n- ICZ -> MBAE\n- NIS -> 698\n- EFBPC -> WZXPKT\n- NQG -> RTN\n- ZWOT -> YFNUZX\n- CFC -> NQG\n- QDYLT -> NXKXZ\n- QFCSN -> UDHBO\n- RTN -> EFBPC\n- WZXPKT -> 410\n\nStarting from CFC, follow exactly 5 lookups. What value do you reach?",
+    "answer": "410"
+  },
+  {
+    "depth": 5,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- GZCSG -> 843\n- MMAVC -> ABZYO\n- XIT -> GIY\n- EPEX -> 661\n- LTHTAP -> HBSXJ\n- ABZYO -> POUF\n- HVZVVY -> FSKWZ\n- CWCM -> MSSCTV\n- MBQL -> MMAVC\n- OHZKW -> JWVEUV\n- POUF -> GZCSG\n- LGFJO -> PSFL\n\nStarting from MBQL, follow exactly 5 lookups. What value do you reach?",
+    "answer": "843"
+  },
+  {
+    "depth": 5,
+    "family": "function_composition",
+    "question": "Define:\n- q(x) = 3x + 1\n- r(x) = 2x - 2\n- p(x) = -x - 4\n- j(x) = 2x - 3\n- u(x) = x^2 + 4\n\nWhat is u(j(p(r(q(1)))))?",
+    "answer": "533"
+  },
+  {
+    "depth": 5,
+    "family": "function_composition",
+    "question": "Define:\n- o(x) = 3x + 1\n- z(x) = 3x - 3\n- i(x) = 3x + 0\n- a(x) = x^2 + 1\n- t(x) = -x + 2\n\nWhat is t(a(i(z(o(6)))))?",
+    "answer": "-26243"
+  },
+  {
+    "depth": 5,
+    "family": "mixed_state",
+    "question": "Start with x = 36.\n1. x <- x/2.\n2. x <- x + 6.\n3. x <- x mod 11.\n4. x <- x + 5.\n5. x <- x mod 23.\nWhat is the final value of x?",
+    "answer": "7"
+  },
+  {
+    "depth": 6,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 3.\n1. subtract 3.\n2. replace x by 3x + 5.\n3. divide by 5.\n4. add 4.\n5. add 12.\n6. multiply by 3.\nWhat is the final value of x?",
+    "answer": "51"
+  },
+  {
+    "depth": 6,
+    "family": "function_composition",
+    "question": "Define:\n- l(x) = x^2 + 3\n- z(x) = -x + 4\n- w(x) = 3x + 1\n- j(x) = x^2 + 1\n- d(x) = -x + 2\n- r(x) = 3x - 1\n\nWhat is r(d(j(w(z(l(1))))))?",
+    "answer": "-1"
+  },
+  {
+    "depth": 6,
+    "family": "function_composition",
+    "question": "Define:\n- c(x) = 2x - 3\n- a(x) = 3x - 1\n- s(x) = -x + 1\n- h(x) = -x + 1\n- p(x) = -x + 4\n- z(x) = -x - 1\n\nWhat is z(p(h(s(a(c(1))))))?",
+    "answer": "-9"
+  },
+  {
+    "depth": 6,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- XUBW -> ZXAAY\n- PNMUV -> NSM\n- YZCZTE -> UWJ\n- ELPN -> UIPC\n- WKF -> IABZP\n- MFEBC -> 382\n- OYLC -> CJED\n- NIDHUR -> XUBW\n- SPAZ -> MFEBC\n- ZXAAY -> CXQR\n- LXRVDX -> 680\n- CXQR -> SPAZ\n- DCV -> VWHVTL\n- TDUSS -> RSBQ\n\nStarting from NIDHUR, follow exactly 6 lookups. What value do you reach?",
+    "answer": "382"
+  },
+  {
+    "depth": 6,
+    "family": "function_composition",
+    "question": "Define:\n- a(x) = x^2 + 3\n- z(x) = -x - 4\n- q(x) = x^2 + 0\n- f(x) = 3x + 1\n- c(x) = -x + 2\n- m(x) = 3x - 3\n\nWhat is m(c(f(q(z(a(3))))))?",
+    "answer": "-2304"
+  },
+  {
+    "depth": 6,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- EGVKRM -> 838\n- AUWPY -> SPIF\n- EBQVR -> AZUKOE\n- JOGLEC -> FNSY\n- SPIF -> YFGU\n- OQQZ -> AUWPY\n- NKUJKL -> SQJPRR\n- KLLJ -> 881\n- FUS -> JAH\n- ZFYPZO -> 750\n- YFGU -> GRVHCP\n- BOYW -> LSFZ\n- IBH -> WULXBF\n- GRVHCP -> EGVKRM\n\nStarting from OQQZ, follow exactly 6 lookups. What value do you reach?",
+    "answer": "838"
+  },
+  {
+    "depth": 6,
+    "family": "mixed_state",
+    "question": "Start with x = 40.\n1. x <- x/2.\n2. x <- x - 7.\n3. x <- x - 5.\n4. x <- x mod 19.\n5. x <- 2x + 1.\n6. x <- x - 1.\nWhat is the final value of x?",
+    "answer": "16"
+  },
+  {
+    "depth": 6,
+    "family": "mixed_state",
+    "question": "Start with x = 24.\n1. x <- x/2.\n2. x <- x - 7.\n3. x <- x mod 11.\n4. x <- x mod 17.\n5. x <- x + 8.\n6. x <- 2x + 1.\nWhat is the final value of x?",
+    "answer": "27"
+  },
+  {
+    "depth": 6,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 16.\n1. multiply by 3.\n2. divide by 4.\n3. add 6.\n4. multiply by 4.\n5. multiply by 3.\n6. replace x by 2x - 2.\nWhat is the final value of x?",
+    "answer": "430"
+  },
+  {
+    "depth": 6,
+    "family": "arithmetic_chain",
+    "question": "Start with x = 9.\n1. multiply by 3.\n2. divide by 3.\n3. add 2.\n4. replace x by 3x + 4.\n5. subtract 9.\n6. multiply by 2.\nWhat is the final value of x?",
+    "answer": "56"
+  },
+  {
+    "depth": 6,
+    "family": "mixed_state",
+    "question": "Start with x = 39.\n1. x <- x + 5.\n2. x <- x - 5.\n3. x <- 2x + 1.\n4. x <- x - 8.\n5. x <- x - 9.\n6. x <- x + 9.\nWhat is the final value of x?",
+    "answer": "71"
+  },
+  {
+    "depth": 6,
+    "family": "lookup_chain",
+    "question": "Use this codebook:\n- ISQJ -> DLP\n- UDIPEG -> KPRA\n- LKVXED -> 369\n- JSKFSI -> RIHIBC\n- EZXH -> INVHM\n- OXUBS -> 569\n- DVY -> ZTLYPF\n- RIHIBC -> AQY\n- ZTLPZA -> 292\n- AQY -> DVY\n- JJC -> ZYC\n- AZUHC -> NXJD\n- MWF -> VXDT\n- ZTLYPF -> OXUBS\n\nStarting from JSKFSI, follow exactly 6 lookups. What value do you reach?",
+    "answer": "569"
+  }
+]

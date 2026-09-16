@@ -1,0 +1,1750 @@
+[
+  {
+    "id": "serial_5_a",
+    "answer": "Alex North",
+    "accepted_answers": [
+      "Alex North"
+    ],
+    "route_family": "a",
+    "anchor": "Misery",
+    "intended_route_edges": 5,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_74b44ceb3e",
+      "fact_660b56906a",
+      "fact_699f2d93f1",
+      "fact_37b563209a",
+      "fact_d892ee794a"
+    ],
+    "matched_anchor_variants": [
+      "serial_5_b",
+      "serial_5_c",
+      "serial_5_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Misery",
+        "output": "Stephen King",
+        "input_key": "Misery",
+        "output_key": "Stephen King",
+        "source_urls": [
+          "https://stephenking.com/works/novel/misery.html"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Stephen King",
+        "output": "The Shining",
+        "input_key": "Stephen King",
+        "output_key": "shining",
+        "source_urls": [
+          "https://catalog.afi.com/Film/67203-THE-SHINING"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Shining",
+        "output": "Stanley Kubrick",
+        "input_key": "shining",
+        "output_key": "Stanley Kubrick",
+        "source_urls": [
+          "https://catalog.afi.com/Film/67203-THE-SHINING"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Stanley Kubrick",
+        "output": "Spartacus",
+        "input_key": "Stanley Kubrick",
+        "output_key": "spartacus",
+        "source_urls": [
+          "https://catalog.afi.com/Film/53291-SPARTACUS"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Spartacus",
+        "output": "Alex North",
+        "input_key": "spartacus",
+        "output_key": "Alex North",
+        "source_urls": [
+          "https://catalog.afi.com/Film/53291-SPARTACUS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_5_b",
+    "answer": "Thomas Newman",
+    "accepted_answers": [
+      "Thomas Newman"
+    ],
+    "route_family": "b",
+    "anchor": "The Andromeda Strain",
+    "intended_route_edges": 5,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_b2b12b1796",
+      "fact_9ac0e5f830",
+      "fact_59e590ac13",
+      "fact_21dde9873c",
+      "fact_ef14f53835"
+    ],
+    "matched_anchor_variants": [
+      "serial_5_a",
+      "serial_5_c",
+      "serial_5_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Andromeda Strain",
+        "output": "Michael Crichton",
+        "input_key": "The Andromeda Strain",
+        "output_key": "Michael Crichton",
+        "source_urls": [
+          "https://michaelcrichton.com/biography/doctor/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Michael Crichton",
+        "output": "Jurassic Park",
+        "input_key": "Michael Crichton",
+        "output_key": "jurassic",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Jurassic Park",
+        "output": "Steven Spielberg",
+        "input_key": "jurassic",
+        "output_key": "Steven Spielberg",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Steven Spielberg",
+        "output": "Bridge of Spies",
+        "input_key": "Steven Spielberg",
+        "output_key": "bridge",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Spies_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Bridge of Spies",
+        "output": "Thomas Newman",
+        "input_key": "bridge",
+        "output_key": "Thomas Newman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Spies_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_5_c",
+    "answer": "David Shire",
+    "accepted_answers": [
+      "David Shire"
+    ],
+    "route_family": "c",
+    "anchor": "The Firm",
+    "intended_route_edges": 5,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_7cc6d51fbb",
+      "fact_2505245ddb",
+      "fact_a0e526d052",
+      "fact_f8ac9684f6",
+      "fact_4f4313c455"
+    ],
+    "matched_anchor_variants": [
+      "serial_5_a",
+      "serial_5_b",
+      "serial_5_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Firm",
+        "output": "John Grisham",
+        "input_key": "The Firm",
+        "output_key": "John Grisham",
+        "source_urls": [
+          "https://jgrisham.com/the-firm-35-years-later/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "John Grisham",
+        "output": "The Rainmaker",
+        "input_key": "John Grisham",
+        "output_key": "rainmaker",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rainmaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Rainmaker",
+        "output": "Francis Ford Coppola",
+        "input_key": "rainmaker",
+        "output_key": "Francis Ford Coppola",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rainmaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Francis Ford Coppola",
+        "output": "The Conversation",
+        "input_key": "Francis Ford Coppola",
+        "output_key": "conversation",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Conversation",
+        "output": "David Shire",
+        "input_key": "conversation",
+        "output_key": "David Shire",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_5_d",
+    "answer": "Bernard Herrmann",
+    "accepted_answers": [
+      "Bernard Herrmann"
+    ],
+    "route_family": "d",
+    "anchor": "The Price of Salt",
+    "intended_route_edges": 5,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_e40f93a908",
+      "fact_e43f519e56",
+      "fact_7f90a0d1d0",
+      "fact_f70767b1ef",
+      "fact_c7019da6c0"
+    ],
+    "matched_anchor_variants": [
+      "serial_5_a",
+      "serial_5_b",
+      "serial_5_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Price of Salt",
+        "output": "Patricia Highsmith",
+        "input_key": "The Price of Salt",
+        "output_key": "Patricia Highsmith",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Price_of_Salt"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Patricia Highsmith",
+        "output": "Strangers on a Train",
+        "input_key": "Patricia Highsmith",
+        "output_key": "strangers",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Strangers_on_a_Train_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Strangers on a Train",
+        "output": "Alfred Hitchcock",
+        "input_key": "strangers",
+        "output_key": "Alfred Hitchcock",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Strangers_on_a_Train_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Alfred Hitchcock",
+        "output": "Vertigo",
+        "input_key": "Alfred Hitchcock",
+        "output_key": "vertigo",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Vertigo_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Vertigo",
+        "output": "Bernard Herrmann",
+        "input_key": "vertigo",
+        "output_key": "Bernard Herrmann",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Vertigo_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_9_a",
+    "answer": "John Steinbeck",
+    "accepted_answers": [
+      "John Steinbeck"
+    ],
+    "route_family": "a",
+    "anchor": "Misery",
+    "intended_route_edges": 9,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_74b44ceb3e",
+      "fact_660b56906a",
+      "fact_699f2d93f1",
+      "fact_37b563209a",
+      "fact_d892ee794a",
+      "fact_5a55ace53f",
+      "fact_f299c4334b",
+      "fact_8c0a3a29c7",
+      "fact_50f38ddc9f"
+    ],
+    "matched_anchor_variants": [
+      "serial_9_b",
+      "serial_9_c",
+      "serial_9_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Misery",
+        "output": "Stephen King",
+        "input_key": "Misery",
+        "output_key": "Stephen King",
+        "source_urls": [
+          "https://stephenking.com/works/novel/misery.html"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Stephen King",
+        "output": "The Shining",
+        "input_key": "Stephen King",
+        "output_key": "shining",
+        "source_urls": [
+          "https://catalog.afi.com/Film/67203-THE-SHINING"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Shining",
+        "output": "Stanley Kubrick",
+        "input_key": "shining",
+        "output_key": "Stanley Kubrick",
+        "source_urls": [
+          "https://catalog.afi.com/Film/67203-THE-SHINING"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Stanley Kubrick",
+        "output": "Spartacus",
+        "input_key": "Stanley Kubrick",
+        "output_key": "spartacus",
+        "source_urls": [
+          "https://catalog.afi.com/Film/53291-SPARTACUS"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Spartacus",
+        "output": "Alex North",
+        "input_key": "spartacus",
+        "output_key": "Alex North",
+        "source_urls": [
+          "https://catalog.afi.com/Film/53291-SPARTACUS"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Alex North",
+        "output": "A Streetcar Named Desire",
+        "input_key": "Alex North",
+        "output_key": "streetcar",
+        "source_urls": [
+          "https://www.watershed.co.uk/whatson/11255/a-streetcar-named-desire"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "A Streetcar Named Desire",
+        "output": "Elia Kazan",
+        "input_key": "streetcar",
+        "output_key": "Elia Kazan",
+        "source_urls": [
+          "https://www.watershed.co.uk/whatson/11255/a-streetcar-named-desire"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Elia Kazan",
+        "output": "East of Eden",
+        "input_key": "Elia Kazan",
+        "output_key": "eden",
+        "source_urls": [
+          "https://catalog.afi.com/Catalog/moviedetails/51490"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "East of Eden",
+        "output": "John Steinbeck",
+        "input_key": "eden",
+        "output_key": "John Steinbeck",
+        "source_urls": [
+          "https://catalog.afi.com/Catalog/moviedetails/51490"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_9_b",
+    "answer": "Stephen King",
+    "accepted_answers": [
+      "Stephen King"
+    ],
+    "route_family": "b",
+    "anchor": "The Andromeda Strain",
+    "intended_route_edges": 9,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_b2b12b1796",
+      "fact_9ac0e5f830",
+      "fact_59e590ac13",
+      "fact_21dde9873c",
+      "fact_ef14f53835",
+      "fact_c6758ae268",
+      "fact_7cfb7f8ecc",
+      "fact_c763bfe92a",
+      "fact_f10c06cb91"
+    ],
+    "matched_anchor_variants": [
+      "serial_9_a",
+      "serial_9_c",
+      "serial_9_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Andromeda Strain",
+        "output": "Michael Crichton",
+        "input_key": "The Andromeda Strain",
+        "output_key": "Michael Crichton",
+        "source_urls": [
+          "https://michaelcrichton.com/biography/doctor/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Michael Crichton",
+        "output": "Jurassic Park",
+        "input_key": "Michael Crichton",
+        "output_key": "jurassic",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Jurassic Park",
+        "output": "Steven Spielberg",
+        "input_key": "jurassic",
+        "output_key": "Steven Spielberg",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Steven Spielberg",
+        "output": "Bridge of Spies",
+        "input_key": "Steven Spielberg",
+        "output_key": "bridge",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Spies_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Bridge of Spies",
+        "output": "Thomas Newman",
+        "input_key": "bridge",
+        "output_key": "Thomas Newman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Spies_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Thomas Newman",
+        "output": "The Shawshank Redemption",
+        "input_key": "Thomas Newman",
+        "output_key": "shawshank",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Shawshank Redemption",
+        "output": "Frank Darabont",
+        "input_key": "shawshank",
+        "output_key": "Frank Darabont",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Frank Darabont",
+        "output": "The Mist",
+        "input_key": "Frank Darabont",
+        "output_key": "mist",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mist_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "The Mist",
+        "output": "Stephen King",
+        "input_key": "mist",
+        "output_key": "Stephen King",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mist_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_9_c",
+    "answer": "William Styron",
+    "accepted_answers": [
+      "William Styron"
+    ],
+    "route_family": "c",
+    "anchor": "The Firm",
+    "intended_route_edges": 9,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_7cc6d51fbb",
+      "fact_2505245ddb",
+      "fact_a0e526d052",
+      "fact_f8ac9684f6",
+      "fact_4f4313c455",
+      "fact_64635844ac",
+      "fact_8c26d26876",
+      "fact_aa492d9067",
+      "fact_a66dbd8b80"
+    ],
+    "matched_anchor_variants": [
+      "serial_9_a",
+      "serial_9_b",
+      "serial_9_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Firm",
+        "output": "John Grisham",
+        "input_key": "The Firm",
+        "output_key": "John Grisham",
+        "source_urls": [
+          "https://jgrisham.com/the-firm-35-years-later/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "John Grisham",
+        "output": "The Rainmaker",
+        "input_key": "John Grisham",
+        "output_key": "rainmaker",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rainmaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Rainmaker",
+        "output": "Francis Ford Coppola",
+        "input_key": "rainmaker",
+        "output_key": "Francis Ford Coppola",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rainmaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Francis Ford Coppola",
+        "output": "The Conversation",
+        "input_key": "Francis Ford Coppola",
+        "output_key": "conversation",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Conversation",
+        "output": "David Shire",
+        "input_key": "conversation",
+        "output_key": "David Shire",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "David Shire",
+        "output": "All the President's Men",
+        "input_key": "David Shire",
+        "output_key": "presidents",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_the_President%27s_Men_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "All the President's Men",
+        "output": "Alan J. Pakula",
+        "input_key": "presidents",
+        "output_key": "Alan J. Pakula",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_the_President%27s_Men_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Alan J. Pakula",
+        "output": "Sophie's Choice",
+        "input_key": "Alan J. Pakula",
+        "output_key": "sophie",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sophie%27s_Choice_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "Sophie's Choice",
+        "output": "William Styron",
+        "input_key": "sophie",
+        "output_key": "William Styron",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sophie%27s_Choice_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_9_d",
+    "answer": "Nikos Kazantzakis",
+    "accepted_answers": [
+      "Nikos Kazantzakis"
+    ],
+    "route_family": "d",
+    "anchor": "The Price of Salt",
+    "intended_route_edges": 9,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_e40f93a908",
+      "fact_e43f519e56",
+      "fact_7f90a0d1d0",
+      "fact_f70767b1ef",
+      "fact_c7019da6c0",
+      "fact_0494f834e4",
+      "fact_4425917dfa",
+      "fact_e348fd97aa",
+      "fact_46cd0eb09a"
+    ],
+    "matched_anchor_variants": [
+      "serial_9_a",
+      "serial_9_b",
+      "serial_9_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Price of Salt",
+        "output": "Patricia Highsmith",
+        "input_key": "The Price of Salt",
+        "output_key": "Patricia Highsmith",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Price_of_Salt"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Patricia Highsmith",
+        "output": "Strangers on a Train",
+        "input_key": "Patricia Highsmith",
+        "output_key": "strangers",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Strangers_on_a_Train_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Strangers on a Train",
+        "output": "Alfred Hitchcock",
+        "input_key": "strangers",
+        "output_key": "Alfred Hitchcock",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Strangers_on_a_Train_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Alfred Hitchcock",
+        "output": "Vertigo",
+        "input_key": "Alfred Hitchcock",
+        "output_key": "vertigo",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Vertigo_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Vertigo",
+        "output": "Bernard Herrmann",
+        "input_key": "vertigo",
+        "output_key": "Bernard Herrmann",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Vertigo_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Bernard Herrmann",
+        "output": "Taxi Driver",
+        "input_key": "Bernard Herrmann",
+        "output_key": "taxi",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Taxi_Driver"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Taxi Driver",
+        "output": "Martin Scorsese",
+        "input_key": "taxi",
+        "output_key": "Martin Scorsese",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Taxi_Driver"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Martin Scorsese",
+        "output": "The Last Temptation of Christ",
+        "input_key": "Martin Scorsese",
+        "output_key": "temptation",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Last_Temptation_of_Christ_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "The Last Temptation of Christ",
+        "output": "Nikos Kazantzakis",
+        "input_key": "temptation",
+        "output_key": "Nikos Kazantzakis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Last_Temptation_of_Christ_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_a",
+    "answer": "Mark Isham",
+    "accepted_answers": [
+      "Mark Isham"
+    ],
+    "route_family": "a",
+    "anchor": "Misery",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_74b44ceb3e",
+      "fact_660b56906a",
+      "fact_699f2d93f1",
+      "fact_37b563209a",
+      "fact_d892ee794a",
+      "fact_5a55ace53f",
+      "fact_f299c4334b",
+      "fact_8c0a3a29c7",
+      "fact_50f38ddc9f",
+      "fact_526277aa5a",
+      "fact_b825db92ab",
+      "fact_93630670a4",
+      "fact_a5911f8e56",
+      "fact_84dba38c88",
+      "fact_05ff2618ea"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_b",
+      "serial_15_c",
+      "serial_15_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Misery",
+        "output": "Stephen King",
+        "input_key": "Misery",
+        "output_key": "Stephen King",
+        "source_urls": [
+          "https://stephenking.com/works/novel/misery.html"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Stephen King",
+        "output": "The Shining",
+        "input_key": "Stephen King",
+        "output_key": "shining",
+        "source_urls": [
+          "https://catalog.afi.com/Film/67203-THE-SHINING"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Shining",
+        "output": "Stanley Kubrick",
+        "input_key": "shining",
+        "output_key": "Stanley Kubrick",
+        "source_urls": [
+          "https://catalog.afi.com/Film/67203-THE-SHINING"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Stanley Kubrick",
+        "output": "Spartacus",
+        "input_key": "Stanley Kubrick",
+        "output_key": "spartacus",
+        "source_urls": [
+          "https://catalog.afi.com/Film/53291-SPARTACUS"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Spartacus",
+        "output": "Alex North",
+        "input_key": "spartacus",
+        "output_key": "Alex North",
+        "source_urls": [
+          "https://catalog.afi.com/Film/53291-SPARTACUS"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Alex North",
+        "output": "A Streetcar Named Desire",
+        "input_key": "Alex North",
+        "output_key": "streetcar",
+        "source_urls": [
+          "https://www.watershed.co.uk/whatson/11255/a-streetcar-named-desire"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "A Streetcar Named Desire",
+        "output": "Elia Kazan",
+        "input_key": "streetcar",
+        "output_key": "Elia Kazan",
+        "source_urls": [
+          "https://www.watershed.co.uk/whatson/11255/a-streetcar-named-desire"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Elia Kazan",
+        "output": "East of Eden",
+        "input_key": "Elia Kazan",
+        "output_key": "eden",
+        "source_urls": [
+          "https://catalog.afi.com/Catalog/moviedetails/51490"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "East of Eden",
+        "output": "John Steinbeck",
+        "input_key": "eden",
+        "output_key": "John Steinbeck",
+        "source_urls": [
+          "https://catalog.afi.com/Catalog/moviedetails/51490"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_source_author",
+        "candidate_group": "E",
+        "input": "John Steinbeck",
+        "output": "Of Mice and Men",
+        "input_key": "John Steinbeck",
+        "output_key": "mice",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Of_Mice_and_Men_(1992_film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "performer",
+        "candidate_group": null,
+        "input": "Of Mice and Men",
+        "output": "Gary Sinise",
+        "input_key": "mice",
+        "output_key": "Gary Sinise",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Of_Mice_and_Men_(1992_film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Gary Sinise",
+        "output": "The Green Mile",
+        "input_key": "Gary Sinise",
+        "output_key": "green",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Green_Mile_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Green Mile",
+        "output": "Frank Darabont",
+        "input_key": "green",
+        "output_key": "Frank Darabont",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Green_Mile_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_director",
+        "candidate_group": "G",
+        "input": "Frank Darabont",
+        "output": "The Mist",
+        "input_key": "Frank Darabont",
+        "output_key": "mist",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mist_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Mist",
+        "output": "Mark Isham",
+        "input_key": "mist",
+        "output_key": "Mark Isham",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mist_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_b",
+    "answer": "David Shire",
+    "accepted_answers": [
+      "David Shire"
+    ],
+    "route_family": "b",
+    "anchor": "The Andromeda Strain",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_b2b12b1796",
+      "fact_9ac0e5f830",
+      "fact_59e590ac13",
+      "fact_21dde9873c",
+      "fact_ef14f53835",
+      "fact_c6758ae268",
+      "fact_7cfb7f8ecc",
+      "fact_c763bfe92a",
+      "fact_f10c06cb91",
+      "fact_327ed3d520",
+      "fact_52b5bf87d6",
+      "fact_64c9dff173",
+      "fact_3a2a23266e",
+      "fact_6b28370994",
+      "fact_4f4313c455"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_a",
+      "serial_15_c",
+      "serial_15_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Andromeda Strain",
+        "output": "Michael Crichton",
+        "input_key": "The Andromeda Strain",
+        "output_key": "Michael Crichton",
+        "source_urls": [
+          "https://michaelcrichton.com/biography/doctor/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Michael Crichton",
+        "output": "Jurassic Park",
+        "input_key": "Michael Crichton",
+        "output_key": "jurassic",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Jurassic Park",
+        "output": "Steven Spielberg",
+        "input_key": "jurassic",
+        "output_key": "Steven Spielberg",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jurassic_Park_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Steven Spielberg",
+        "output": "Bridge of Spies",
+        "input_key": "Steven Spielberg",
+        "output_key": "bridge",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Spies_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Bridge of Spies",
+        "output": "Thomas Newman",
+        "input_key": "bridge",
+        "output_key": "Thomas Newman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bridge_of_Spies_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Thomas Newman",
+        "output": "The Shawshank Redemption",
+        "input_key": "Thomas Newman",
+        "output_key": "shawshank",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Shawshank Redemption",
+        "output": "Frank Darabont",
+        "input_key": "shawshank",
+        "output_key": "Frank Darabont",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Frank Darabont",
+        "output": "The Mist",
+        "input_key": "Frank Darabont",
+        "output_key": "mist",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mist_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "The Mist",
+        "output": "Stephen King",
+        "input_key": "mist",
+        "output_key": "Stephen King",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mist_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_source_author",
+        "candidate_group": "E",
+        "input": "Stephen King",
+        "output": "Misery",
+        "input_key": "Stephen King",
+        "output_key": "misery_film",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Misery_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "performer",
+        "candidate_group": null,
+        "input": "Misery",
+        "output": "James Caan",
+        "input_key": "misery_film",
+        "output_key": "James Caan",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Misery_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "James Caan",
+        "output": "The Godfather",
+        "input_key": "James Caan",
+        "output_key": "godfather",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Godfather"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Godfather",
+        "output": "Francis Ford Coppola",
+        "input_key": "godfather",
+        "output_key": "Francis Ford Coppola",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Godfather"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_director",
+        "candidate_group": "G",
+        "input": "Francis Ford Coppola",
+        "output": "The Conversation",
+        "input_key": "Francis Ford Coppola",
+        "output_key": "conversation",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Conversation",
+        "output": "David Shire",
+        "input_key": "conversation",
+        "output_key": "David Shire",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_c",
+    "answer": "Mark Bradshaw",
+    "accepted_answers": [
+      "Mark Bradshaw"
+    ],
+    "route_family": "c",
+    "anchor": "The Firm",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_7cc6d51fbb",
+      "fact_2505245ddb",
+      "fact_a0e526d052",
+      "fact_f8ac9684f6",
+      "fact_4f4313c455",
+      "fact_64635844ac",
+      "fact_8c26d26876",
+      "fact_aa492d9067",
+      "fact_a66dbd8b80",
+      "fact_f62b6b5b58",
+      "fact_815c4484ad",
+      "fact_6c9907da1b",
+      "fact_4a510a9f03",
+      "fact_c8e8f8077a",
+      "fact_caf254ce18"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_a",
+      "serial_15_b",
+      "serial_15_d"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Firm",
+        "output": "John Grisham",
+        "input_key": "The Firm",
+        "output_key": "John Grisham",
+        "source_urls": [
+          "https://jgrisham.com/the-firm-35-years-later/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "John Grisham",
+        "output": "The Rainmaker",
+        "input_key": "John Grisham",
+        "output_key": "rainmaker",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rainmaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Rainmaker",
+        "output": "Francis Ford Coppola",
+        "input_key": "rainmaker",
+        "output_key": "Francis Ford Coppola",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rainmaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Francis Ford Coppola",
+        "output": "The Conversation",
+        "input_key": "Francis Ford Coppola",
+        "output_key": "conversation",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Conversation",
+        "output": "David Shire",
+        "input_key": "conversation",
+        "output_key": "David Shire",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Conversation"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "David Shire",
+        "output": "All the President's Men",
+        "input_key": "David Shire",
+        "output_key": "presidents",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_the_President%27s_Men_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "All the President's Men",
+        "output": "Alan J. Pakula",
+        "input_key": "presidents",
+        "output_key": "Alan J. Pakula",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_the_President%27s_Men_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Alan J. Pakula",
+        "output": "Sophie's Choice",
+        "input_key": "Alan J. Pakula",
+        "output_key": "sophie",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sophie%27s_Choice_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "Sophie's Choice",
+        "output": "William Styron",
+        "input_key": "sophie",
+        "output_key": "William Styron",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sophie%27s_Choice_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_source_author",
+        "candidate_group": "E",
+        "input": "William Styron",
+        "output": "Shadrach",
+        "input_key": "William Styron",
+        "output_key": "shadrach",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Shadrach_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "performer",
+        "candidate_group": null,
+        "input": "Shadrach",
+        "output": "Harvey Keitel",
+        "input_key": "shadrach",
+        "output_key": "Harvey Keitel",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Shadrach_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Harvey Keitel",
+        "output": "The Piano",
+        "input_key": "Harvey Keitel",
+        "output_key": "piano",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Piano"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Piano",
+        "output": "Jane Campion",
+        "input_key": "piano",
+        "output_key": "Jane Campion",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Piano"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_director",
+        "candidate_group": "G",
+        "input": "Jane Campion",
+        "output": "Bright Star",
+        "input_key": "Jane Campion",
+        "output_key": "bright",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bright_Star_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Bright Star",
+        "output": "Mark Bradshaw",
+        "input_key": "bright",
+        "output_key": "Mark Bradshaw",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bright_Star_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_d",
+    "answer": "Malcolm Arnold",
+    "accepted_answers": [
+      "Malcolm Arnold"
+    ],
+    "route_family": "d",
+    "anchor": "The Price of Salt",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_e40f93a908",
+      "fact_e43f519e56",
+      "fact_7f90a0d1d0",
+      "fact_f70767b1ef",
+      "fact_c7019da6c0",
+      "fact_0494f834e4",
+      "fact_4425917dfa",
+      "fact_e348fd97aa",
+      "fact_46cd0eb09a",
+      "fact_5d955e0269",
+      "fact_64ee1c0895",
+      "fact_5da609935b",
+      "fact_61038be727",
+      "fact_6a8ef6dc53",
+      "fact_6f94116b51"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_a",
+      "serial_15_b",
+      "serial_15_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Price of Salt",
+        "output": "Patricia Highsmith",
+        "input_key": "The Price of Salt",
+        "output_key": "Patricia Highsmith",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Price_of_Salt"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Patricia Highsmith",
+        "output": "Strangers on a Train",
+        "input_key": "Patricia Highsmith",
+        "output_key": "strangers",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Strangers_on_a_Train_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Strangers on a Train",
+        "output": "Alfred Hitchcock",
+        "input_key": "strangers",
+        "output_key": "Alfred Hitchcock",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Strangers_on_a_Train_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Alfred Hitchcock",
+        "output": "Vertigo",
+        "input_key": "Alfred Hitchcock",
+        "output_key": "vertigo",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Vertigo_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Vertigo",
+        "output": "Bernard Herrmann",
+        "input_key": "vertigo",
+        "output_key": "Bernard Herrmann",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Vertigo_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Bernard Herrmann",
+        "output": "Taxi Driver",
+        "input_key": "Bernard Herrmann",
+        "output_key": "taxi",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Taxi_Driver"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Taxi Driver",
+        "output": "Martin Scorsese",
+        "input_key": "taxi",
+        "output_key": "Martin Scorsese",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Taxi_Driver"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_director",
+        "candidate_group": "D",
+        "input": "Martin Scorsese",
+        "output": "The Last Temptation of Christ",
+        "input_key": "Martin Scorsese",
+        "output_key": "temptation",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Last_Temptation_of_Christ_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "source_author",
+        "candidate_group": null,
+        "input": "The Last Temptation of Christ",
+        "output": "Nikos Kazantzakis",
+        "input_key": "temptation",
+        "output_key": "Nikos Kazantzakis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Last_Temptation_of_Christ_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_source_author",
+        "candidate_group": "E",
+        "input": "Nikos Kazantzakis",
+        "output": "Zorba the Greek",
+        "input_key": "Nikos Kazantzakis",
+        "output_key": "zorba",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Zorba_the_Greek_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "performer",
+        "candidate_group": null,
+        "input": "Zorba the Greek",
+        "output": "Anthony Quinn",
+        "input_key": "zorba",
+        "output_key": "Anthony Quinn",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Zorba_the_Greek_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Anthony Quinn",
+        "output": "Lawrence of Arabia",
+        "input_key": "Anthony Quinn",
+        "output_key": "lawrence",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Lawrence of Arabia",
+        "output": "David Lean",
+        "input_key": "lawrence",
+        "output_key": "David Lean",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_director",
+        "candidate_group": "G",
+        "input": "David Lean",
+        "output": "The Bridge on the River Kwai",
+        "input_key": "David Lean",
+        "output_key": "kwai",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Bridge_on_the_River_Kwai"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Bridge on the River Kwai",
+        "output": "Malcolm Arnold",
+        "input_key": "kwai",
+        "output_key": "Malcolm Arnold",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Bridge_on_the_River_Kwai"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "id": "CRC-7",
+    "family": "toy_crc4",
+    "depth": 7,
+    "question": "Toy CRC-4 challenge \u2014 7 hops\n\nStart with 4-bit register R = 0011.\nInput bits: 0010110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 7 bits, what is R in 4-bit binary?",
+    "answer": "0001",
+    "trace": [
+      "0110",
+      "1100",
+      "1000",
+      "0011",
+      "0101",
+      "1001",
+      "0001"
+    ]
+  },
+  {
+    "id": "HASH-7",
+    "family": "mini_hash",
+    "depth": 7,
+    "question": "Mini-hash challenge \u2014 7 hops\n\nStart with H = 229.\nData values: 10, 2, 3, 7, 9, 12, 16\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 7 rounds, what is H?",
+    "answer": "135",
+    "trace": [
+      178,
+      119,
+      75,
+      131,
+      185,
+      144,
+      135
+    ]
+  },
+  {
+    "id": "PRNG-7",
+    "family": "lcg_prng",
+    "depth": 7,
+    "question": "PRNG challenge \u2014 7 hops\n\nStart with x0 = 20.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 7 times. What is x_7?",
+    "answer": "0",
+    "trace": [
+      19,
+      12,
+      25,
+      23,
+      9,
+      4,
+      0
+    ]
+  },
+  {
+    "id": "CRC-8",
+    "family": "toy_crc4",
+    "depth": 8,
+    "question": "Toy CRC-4 challenge \u2014 8 hops\n\nStart with 4-bit register R = 0000.\nInput bits: 11101011\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 8 bits, what is R in 4-bit binary?",
+    "answer": "1101",
+    "trace": [
+      "0011",
+      "0101",
+      "1001",
+      "0001",
+      "0001",
+      "0010",
+      "0111",
+      "1101"
+    ]
+  },
+  {
+    "id": "HASH-8",
+    "family": "mini_hash",
+    "depth": 8,
+    "question": "Mini-hash challenge \u2014 8 hops\n\nStart with H = 104.\nData values: 20, 16, 8, 19, 7, 19, 29, 9\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 8 rounds, what is H?",
+    "answer": "193",
+    "trace": [
+      115,
+      246,
+      253,
+      173,
+      89,
+      121,
+      251,
+      193
+    ]
+  },
+  {
+    "id": "PRNG-8",
+    "family": "lcg_prng",
+    "depth": 8,
+    "question": "PRNG challenge \u2014 8 hops\n\nStart with x0 = 9.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 8 times. What is x_8?",
+    "answer": "17",
+    "trace": [
+      4,
+      0,
+      3,
+      24,
+      16,
+      22,
+      2,
+      17
+    ]
+  },
+  {
+    "id": "CRC-9",
+    "family": "toy_crc4",
+    "depth": 9,
+    "question": "Toy CRC-4 challenge \u2014 9 hops\n\nStart with 4-bit register R = 0100.\nInput bits: 001001000\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 9 bits, what is R in 4-bit binary?",
+    "answer": "0010",
+    "trace": [
+      "1000",
+      "0011",
+      "0101",
+      "1010",
+      "0111",
+      "1101",
+      "1001",
+      "0001",
+      "0010"
+    ]
+  },
+  {
+    "id": "HASH-9",
+    "family": "mini_hash",
+    "depth": 9,
+    "question": "Mini-hash challenge \u2014 9 hops\n\nStart with H = 85.\nData values: 9, 12, 19, 31, 23, 26, 17, 1, 19\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 9 rounds, what is H?",
+    "answer": "9",
+    "trace": [
+      211,
+      98,
+      60,
+      182,
+      44,
+      21,
+      27,
+      137,
+      9
+    ]
+  },
+  {
+    "id": "PRNG-9",
+    "family": "lcg_prng",
+    "depth": 9,
+    "question": "PRNG challenge \u2014 9 hops\n\nStart with x0 = 12.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 9 times. What is x_9?",
+    "answer": "22",
+    "trace": [
+      25,
+      23,
+      9,
+      4,
+      0,
+      3,
+      24,
+      16,
+      22
+    ]
+  },
+  {
+    "id": "CRC-10",
+    "family": "toy_crc4",
+    "depth": 10,
+    "question": "Toy CRC-4 challenge \u2014 10 hops\n\nStart with 4-bit register R = 0001.\nInput bits: 0000010010\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 10 bits, what is R in 4-bit binary?",
+    "answer": "0100",
+    "trace": [
+      "0010",
+      "0100",
+      "1000",
+      "0011",
+      "0110",
+      "1111",
+      "1101",
+      "1001",
+      "0010",
+      "0100"
+    ]
+  },
+  {
+    "id": "HASH-10",
+    "family": "mini_hash",
+    "depth": 10,
+    "question": "Mini-hash challenge \u2014 10 hops\n\nStart with H = 141.\nData values: 27, 30, 25, 8, 10, 19, 7, 19, 3, 15\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 10 rounds, what is H?",
+    "answer": "232",
+    "trace": [
+      245,
+      158,
+      170,
+      49,
+      46,
+      56,
+      66,
+      156,
+      34,
+      232
+    ]
+  },
+  {
+    "id": "PRNG-10",
+    "family": "lcg_prng",
+    "depth": 10,
+    "question": "PRNG challenge \u2014 10 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 10 times. What is x_10?",
+    "answer": "17",
+    "trace": [
+      23,
+      9,
+      4,
+      0,
+      3,
+      24,
+      16,
+      22,
+      2,
+      17
+    ]
+  },
+  {
+    "id": "CRC-11",
+    "family": "toy_crc4",
+    "depth": 11,
+    "question": "Toy CRC-4 challenge \u2014 11 hops\n\nStart with 4-bit register R = 0101.\nInput bits: 10000011110\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 11 bits, what is R in 4-bit binary?",
+    "answer": "1110",
+    "trace": [
+      "1001",
+      "0001",
+      "0010",
+      "0100",
+      "1000",
+      "0011",
+      "0101",
+      "1001",
+      "0010",
+      "0111",
+      "1110"
+    ]
+  },
+  {
+    "id": "HASH-11",
+    "family": "mini_hash",
+    "depth": 11,
+    "question": "Mini-hash challenge \u2014 11 hops\n\nStart with H = 154.\nData values: 0, 7, 2, 19, 16, 0, 25, 12, 5, 27, 1\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 11 rounds, what is H?",
+    "answer": "249",
+    "trace": [
+      9,
+      77,
+      146,
+      140,
+      19,
+      102,
+      130,
+      205,
+      239,
+      203,
+      249
+    ]
+  },
+  {
+    "id": "PRNG-11",
+    "family": "lcg_prng",
+    "depth": 11,
+    "question": "PRNG challenge \u2014 11 hops\n\nStart with x0 = 10.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 11 times. What is x_11?",
+    "answer": "8",
+    "trace": [
+      11,
+      18,
+      5,
+      7,
+      21,
+      26,
+      30,
+      27,
+      6,
+      14,
+      8
+    ]
+  },
+  {
+    "id": "CRC-12",
+    "family": "toy_crc4",
+    "depth": 12,
+    "question": "Toy CRC-4 challenge \u2014 12 hops\n\nStart with 4-bit register R = 1011.\nInput bits: 111101100101\n\nFor each input bit b, perform exactly one update:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter consuming all 12 bits, what is R in 4-bit binary?",
+    "answer": "1011",
+    "trace": [
+      "0110",
+      "1111",
+      "1110",
+      "1100",
+      "1011",
+      "0110",
+      "1111",
+      "1101",
+      "1001",
+      "0010",
+      "0100",
+      "1011"
+    ]
+  },
+  {
+    "id": "HASH-12",
+    "family": "mini_hash",
+    "depth": 12,
+    "question": "Mini-hash challenge \u2014 12 hops\n\nStart with H = 50.\nData values: 30, 14, 1, 10, 18, 12, 1, 10, 25, 11, 29, 27\n\nFor each data value x, perform exactly one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 12 rounds, what is H?",
+    "answer": "80",
+    "trace": [
+      227,
+      168,
+      84,
+      221,
+      18,
+      157,
+      19,
+      132,
+      24,
+      102,
+      110,
+      80
+    ]
+  },
+  {
+    "id": "PRNG-12",
+    "family": "lcg_prng",
+    "depth": 12,
+    "question": "PRNG challenge \u2014 12 hops\n\nStart with x0 = 28.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 12 times. What is x_12?",
+    "answer": "6",
+    "trace": [
+      13,
+      1,
+      10,
+      11,
+      18,
+      5,
+      7,
+      21,
+      26,
+      30,
+      27,
+      6
+    ]
+  }
+]

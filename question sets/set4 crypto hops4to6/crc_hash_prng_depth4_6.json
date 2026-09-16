@@ -1,0 +1,119 @@
+[
+  {
+    "family": "toy_crc4",
+    "depth": 4,
+    "question": "Toy CRC-4 challenge \u2014 4 hops\n\nStart with R = 0011.\nInput bits: 0010\n\nFor each input bit b:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter 4 updates, what is R in 4-bit binary?",
+    "answer": "0011",
+    "trace": [
+      "0110",
+      "1100",
+      "1000",
+      "0011"
+    ]
+  },
+  {
+    "family": "mini_hash",
+    "depth": 4,
+    "question": "Mini-hash challenge \u2014 4 hops\n\nStart with H = 206.\nData values: 18, 8, 28, 10\n\nFor each x, perform one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 4 rounds, what is H?",
+    "answer": "222",
+    "trace": [
+      83,
+      206,
+      33,
+      222
+    ]
+  },
+  {
+    "family": "lcg_prng",
+    "depth": 4,
+    "question": "PRNG challenge \u2014 4 hops\n\nStart with x0 = 1.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 4 times. What is x_4?",
+    "answer": "5",
+    "trace": [
+      10,
+      11,
+      18,
+      5
+    ]
+  },
+  {
+    "family": "toy_crc4",
+    "depth": 5,
+    "question": "Toy CRC-4 challenge \u2014 5 hops\n\nStart with R = 0001.\nInput bits: 00010\n\nFor each input bit b:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter 5 updates, what is R in 4-bit binary?",
+    "answer": "0000",
+    "trace": [
+      "0010",
+      "0100",
+      "1000",
+      "0000",
+      "0000"
+    ]
+  },
+  {
+    "family": "mini_hash",
+    "depth": 5,
+    "question": "Mini-hash challenge \u2014 5 hops\n\nStart with H = 142.\nData values: 31, 29, 10, 31, 7\n\nFor each x, perform one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 5 rounds, what is H?",
+    "answer": "173",
+    "trace": [
+      220,
+      204,
+      229,
+      233,
+      173
+    ]
+  },
+  {
+    "family": "lcg_prng",
+    "depth": 5,
+    "question": "PRNG challenge \u2014 5 hops\n\nStart with x0 = 13.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 5 times. What is x_5?",
+    "answer": "5",
+    "trace": [
+      1,
+      10,
+      11,
+      18,
+      5
+    ]
+  },
+  {
+    "family": "toy_crc4",
+    "depth": 6,
+    "question": "Toy CRC-4 challenge \u2014 6 hops\n\nStart with R = 1001.\nInput bits: 011010\n\nFor each input bit b:\n  f = MSB(R) XOR b\n  R = (R << 1), keeping only 4 bits\n  if f = 1, set R = R XOR 0011\n\nAfter 6 updates, what is R in 4-bit binary?",
+    "answer": "1110",
+    "trace": [
+      "0001",
+      "0001",
+      "0001",
+      "0010",
+      "0111",
+      "1110"
+    ]
+  },
+  {
+    "family": "mini_hash",
+    "depth": 6,
+    "question": "Mini-hash challenge \u2014 6 hops\n\nStart with H = 158.\nData values: 29, 9, 19, 9, 10, 0\n\nFor each x, perform one round:\n  H = ((H XOR x) * 5 + 7) mod 256\n\nAfter 6 rounds, what is H?",
+    "answer": "116",
+    "trace": [
+      150,
+      34,
+      252,
+      208,
+      73,
+      116
+    ]
+  },
+  {
+    "family": "lcg_prng",
+    "depth": 6,
+    "question": "PRNG challenge \u2014 6 hops\n\nStart with x0 = 25.\nUse x_(n+1) = (7*x_n + 3) mod 31.\n\nApply the recurrence exactly 6 times. What is x_6?",
+    "answer": "24",
+    "trace": [
+      23,
+      9,
+      4,
+      0,
+      3,
+      24
+    ]
+  }
+]

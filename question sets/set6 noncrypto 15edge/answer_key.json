@@ -1,0 +1,5171 @@
+[
+  {
+    "id": "serial_15_new_001",
+    "answer": "Walter Lang",
+    "accepted_answers": [
+      "Walter Lang"
+    ],
+    "route_family": "r01",
+    "anchor": "Jamaica Inn",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_dc9b71126afa",
+      "fact_7a1d43c0ced3",
+      "fact_ec71cd23fdb7",
+      "fact_61c39c520d68",
+      "fact_ca99e83a96d6",
+      "fact_af2600db65f5",
+      "fact_1497bec28be5",
+      "fact_5a006879ab57",
+      "fact_390ef08f71be",
+      "fact_5e6252bffba9",
+      "fact_1caf218140a5",
+      "fact_cb0330032d9e",
+      "fact_32dd7bcd0d76",
+      "fact_54b508a502bc",
+      "fact_5ef9eb9b55d3"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_001_anchor_a",
+      "serial_15_new_001_anchor_b",
+      "serial_15_new_001_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Jamaica Inn",
+        "output": "Daphne du Maurier",
+        "input_key": "book_r01",
+        "output_key": "Daphne du Maurier",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Jamaica_Inn_(novel)"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Daphne du Maurier",
+        "output": "Rebecca",
+        "input_key": "Daphne du Maurier",
+        "output_key": "film_r01_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rebecca_(1940_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Rebecca",
+        "output": "Alfred Hitchcock",
+        "input_key": "film_r01_a",
+        "output_key": "Alfred Hitchcock",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rebecca_(1940_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Alfred Hitchcock",
+        "output": "North by Northwest",
+        "input_key": "Alfred Hitchcock",
+        "output_key": "film_r01_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/North_by_Northwest"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "North by Northwest",
+        "output": "Bernard Herrmann",
+        "input_key": "film_r01_b",
+        "output_key": "Bernard Herrmann",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/North_by_Northwest"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Bernard Herrmann",
+        "output": "The Ghost and Mrs. Muir",
+        "input_key": "Bernard Herrmann",
+        "output_key": "film_r01_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Ghost_and_Mrs._Muir"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Ghost and Mrs. Muir",
+        "output": "Gene Tierney",
+        "input_key": "film_r01_c",
+        "output_key": "Gene Tierney",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Ghost_and_Mrs._Muir"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Gene Tierney",
+        "output": "Laura",
+        "input_key": "Gene Tierney",
+        "output_key": "film_r01_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Laura_(1944_film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Laura",
+        "output": "Otto Preminger",
+        "input_key": "film_r01_d",
+        "output_key": "Otto Preminger",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Laura_(1944_film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Otto Preminger",
+        "output": "Anatomy of a Murder",
+        "input_key": "Otto Preminger",
+        "output_key": "film_r01_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Anatomy_of_a_Murder"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Anatomy of a Murder",
+        "output": "James Stewart",
+        "input_key": "film_r01_e",
+        "output_key": "James Stewart",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Anatomy_of_a_Murder"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "James Stewart",
+        "output": "The Man Who Shot Liberty Valance",
+        "input_key": "James Stewart",
+        "output_key": "film_r01_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Man_Who_Shot_Liberty_Valance"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Man Who Shot Liberty Valance",
+        "output": "Cyril J. Mockridge",
+        "input_key": "film_r01_f",
+        "output_key": "Cyril J. Mockridge",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Man_Who_Shot_Liberty_Valance"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Cyril J. Mockridge",
+        "output": "Desk Set",
+        "input_key": "Cyril J. Mockridge",
+        "output_key": "film_r01_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Desk_Set",
+          "https://catalog.afi.com/Catalog/moviedetails/52153"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Desk Set",
+        "output": "Walter Lang",
+        "input_key": "film_r01_g",
+        "output_key": "Walter Lang",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Desk_Set",
+          "https://catalog.afi.com/Catalog/moviedetails/52153"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_002",
+    "answer": "Steve Kloves",
+    "accepted_answers": [
+      "Steve Kloves"
+    ],
+    "route_family": "r02",
+    "anchor": "Go Set a Watchman",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_c8fbf902da69",
+      "fact_22f98a3a1659",
+      "fact_180dc4bc0902",
+      "fact_c0b99b76f713",
+      "fact_fd72c755179d",
+      "fact_9cfb54191c1d",
+      "fact_d9fd827ef07a",
+      "fact_ccbdb388a5db",
+      "fact_68d1e4d345e9",
+      "fact_ccf4747daef3",
+      "fact_a8f9762b11e3",
+      "fact_c0373a6b9829",
+      "fact_3ae83ba8b208",
+      "fact_ae49aceba79f",
+      "fact_ab318398ea86"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_002_anchor_a",
+      "serial_15_new_002_anchor_b",
+      "serial_15_new_002_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Go Set a Watchman",
+        "output": "Harper Lee",
+        "input_key": "book_r02",
+        "output_key": "Harper Lee",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Go_Set_a_Watchman"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Harper Lee",
+        "output": "To Kill a Mockingbird",
+        "input_key": "Harper Lee",
+        "output_key": "film_r02_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "To Kill a Mockingbird",
+        "output": "Robert Mulligan",
+        "input_key": "film_r02_a",
+        "output_key": "Robert Mulligan",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Robert Mulligan",
+        "output": "The Other",
+        "input_key": "Robert Mulligan",
+        "output_key": "film_r02_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Other_(1972_film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Other",
+        "output": "Jerry Goldsmith",
+        "input_key": "film_r02_b",
+        "output_key": "Jerry Goldsmith",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Other_(1972_film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Jerry Goldsmith",
+        "output": "Rudy",
+        "input_key": "Jerry Goldsmith",
+        "output_key": "film_r02_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rudy_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Rudy",
+        "output": "Sean Astin",
+        "input_key": "film_r02_c",
+        "output_key": "Sean Astin",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rudy_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Sean Astin",
+        "output": "The Goonies",
+        "input_key": "Sean Astin",
+        "output_key": "film_r02_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Goonies"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Goonies",
+        "output": "Richard Donner",
+        "input_key": "film_r02_d",
+        "output_key": "Richard Donner",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Goonies"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Richard Donner",
+        "output": "Superman",
+        "input_key": "Richard Donner",
+        "output_key": "film_r02_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Superman_(1978_film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Superman",
+        "output": "Gene Hackman",
+        "input_key": "film_r02_e",
+        "output_key": "Gene Hackman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Superman_(1978_film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Gene Hackman",
+        "output": "The Firm",
+        "input_key": "Gene Hackman",
+        "output_key": "film_r02_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Firm_(1993_film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Firm",
+        "output": "Dave Grusin",
+        "input_key": "film_r02_f",
+        "output_key": "Dave Grusin",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Firm_(1993_film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Dave Grusin",
+        "output": "The Fabulous Baker Boys",
+        "input_key": "Dave Grusin",
+        "output_key": "film_r02_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Fabulous_Baker_Boys"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Fabulous Baker Boys",
+        "output": "Steve Kloves",
+        "input_key": "film_r02_g",
+        "output_key": "Steve Kloves",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Fabulous_Baker_Boys"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_003",
+    "answer": "Alex Proyas",
+    "accepted_answers": [
+      "Alex Proyas"
+    ],
+    "route_family": "r03",
+    "anchor": "An Artist of the Floating World",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_6a5e63869c03",
+      "fact_adf1a2864ade",
+      "fact_409330a908ca",
+      "fact_f44abd899358",
+      "fact_607860281471",
+      "fact_cac0e86f15df",
+      "fact_b2771ef524e2",
+      "fact_11669818bfa5",
+      "fact_b324e2a64113",
+      "fact_a0e23ec0f3f4",
+      "fact_99243b058782",
+      "fact_b68896bd7876",
+      "fact_3dcf9e47fb7c",
+      "fact_42f18303db00",
+      "fact_2a7d2a64eb16"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_003_anchor_a",
+      "serial_15_new_003_anchor_b",
+      "serial_15_new_003_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "An Artist of the Floating World",
+        "output": "Kazuo Ishiguro",
+        "input_key": "book_r03",
+        "output_key": "Kazuo Ishiguro",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/An_Artist_of_the_Floating_World"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Kazuo Ishiguro",
+        "output": "The Remains of the Day",
+        "input_key": "Kazuo Ishiguro",
+        "output_key": "film_r03_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Remains_of_the_Day_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Remains of the Day",
+        "output": "James Ivory",
+        "input_key": "film_r03_a",
+        "output_key": "James Ivory",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Remains_of_the_Day_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "James Ivory",
+        "output": "A Room with a View",
+        "input_key": "James Ivory",
+        "output_key": "film_r03_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Room_with_a_View_(1985_film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "A Room with a View",
+        "output": "Richard Robbins",
+        "input_key": "film_r03_b",
+        "output_key": "Richard Robbins",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Room_with_a_View_(1985_film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Richard Robbins",
+        "output": "The Ballad of the Sad Café",
+        "input_key": "Richard Robbins",
+        "output_key": "film_r03_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Ballad_of_the_Sad_Caf%C3%A9_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Ballad of the Sad Café",
+        "output": "Vanessa Redgrave",
+        "input_key": "film_r03_c",
+        "output_key": "Vanessa Redgrave",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Ballad_of_the_Sad_Caf%C3%A9_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Vanessa Redgrave",
+        "output": "Deep Impact",
+        "input_key": "Vanessa Redgrave",
+        "output_key": "film_r03_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Deep_Impact_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Deep Impact",
+        "output": "Mimi Leder",
+        "input_key": "film_r03_d",
+        "output_key": "Mimi Leder",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Deep_Impact_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Mimi Leder",
+        "output": "The Peacemaker",
+        "input_key": "Mimi Leder",
+        "output_key": "film_r03_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Peacemaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "The Peacemaker",
+        "output": "George Clooney",
+        "input_key": "film_r03_e",
+        "output_key": "George Clooney",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Peacemaker_(1997_film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "George Clooney",
+        "output": "From Dusk Till Dawn",
+        "input_key": "George Clooney",
+        "output_key": "film_r03_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/From_Dusk_Till_Dawn"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "From Dusk Till Dawn",
+        "output": "Graeme Revell",
+        "input_key": "film_r03_f",
+        "output_key": "Graeme Revell",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/From_Dusk_Till_Dawn"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Graeme Revell",
+        "output": "The Crow",
+        "input_key": "Graeme Revell",
+        "output_key": "film_r03_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Crow_(1994_film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Crow",
+        "output": "Alex Proyas",
+        "input_key": "film_r03_g",
+        "output_key": "Alex Proyas",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Crow_(1994_film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_004",
+    "answer": "He Ping",
+    "accepted_answers": [
+      "He Ping"
+    ],
+    "route_family": "r04",
+    "anchor": "Persuasion",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_1874c48d8bc7",
+      "fact_35c600615ff7",
+      "fact_26e7c13ccd29",
+      "fact_06c1b39c1e9f",
+      "fact_936dc81fb49e",
+      "fact_6838939c0bf4",
+      "fact_500b2243a91f",
+      "fact_9c70f2cd117b",
+      "fact_126a1a299ab2",
+      "fact_beb74f907308",
+      "fact_faaf86bfbeb1",
+      "fact_e58b973a356f",
+      "fact_6382af4984ad",
+      "fact_bf1b9df12e54",
+      "fact_b04b90443288"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_004_anchor_a",
+      "serial_15_new_004_anchor_b",
+      "serial_15_new_004_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Persuasion",
+        "output": "Jane Austen",
+        "input_key": "book_r04",
+        "output_key": "Jane Austen",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Persuasion_(novel)"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Jane Austen",
+        "output": "Sense and Sensibility",
+        "input_key": "Jane Austen",
+        "output_key": "film_r04_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sense_and_Sensibility_(1995_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Sense and Sensibility",
+        "output": "Ang Lee",
+        "input_key": "film_r04_a",
+        "output_key": "Ang Lee",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sense_and_Sensibility_(1995_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Ang Lee",
+        "output": "Crouching Tiger, Hidden Dragon",
+        "input_key": "Ang Lee",
+        "output_key": "film_r04_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Crouching_Tiger,_Hidden_Dragon"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Crouching Tiger, Hidden Dragon",
+        "output": "Tan Dun",
+        "input_key": "film_r04_b",
+        "output_key": "Tan Dun",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Crouching_Tiger,_Hidden_Dragon"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Tan Dun",
+        "output": "Hero",
+        "input_key": "Tan Dun",
+        "output_key": "film_r04_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Hero_(2002_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Hero",
+        "output": "Maggie Cheung",
+        "input_key": "film_r04_c",
+        "output_key": "Maggie Cheung",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Hero_(2002_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Maggie Cheung",
+        "output": "In the Mood for Love",
+        "input_key": "Maggie Cheung",
+        "output_key": "film_r04_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/In_the_Mood_for_Love"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "In the Mood for Love",
+        "output": "Wong Kar-wai",
+        "input_key": "film_r04_d",
+        "output_key": "Wong Kar-wai",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/In_the_Mood_for_Love"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Wong Kar-wai",
+        "output": "Ashes of Time",
+        "input_key": "Wong Kar-wai",
+        "output_key": "film_r04_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ashes_of_Time"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Ashes of Time",
+        "output": "Leslie Cheung",
+        "input_key": "film_r04_e",
+        "output_key": "Leslie Cheung",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ashes_of_Time"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Leslie Cheung",
+        "output": "Farewell My Concubine",
+        "input_key": "Leslie Cheung",
+        "output_key": "film_r04_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Farewell_My_Concubine_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Farewell My Concubine",
+        "output": "Zhao Jiping",
+        "input_key": "film_r04_f",
+        "output_key": "Zhao Jiping",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Farewell_My_Concubine_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Zhao Jiping",
+        "output": "Red Firecracker, Green Firecracker",
+        "input_key": "Zhao Jiping",
+        "output_key": "film_r04_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Red_Firecracker,_Green_Firecracker"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Red Firecracker, Green Firecracker",
+        "output": "He Ping",
+        "input_key": "film_r04_g",
+        "output_key": "He Ping",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Red_Firecracker,_Green_Firecracker"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_005",
+    "answer": "Kevin Smith",
+    "accepted_answers": [
+      "Kevin Smith"
+    ],
+    "route_family": "r05",
+    "anchor": "Where Angels Fear to Tread",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_e16a57323727",
+      "fact_b1a2ff669219",
+      "fact_8386a1cd36cf",
+      "fact_d7bcbc2bd7cf",
+      "fact_a26527628b3f",
+      "fact_81748b71a902",
+      "fact_ea2b8810e4d0",
+      "fact_15543fe19c7b",
+      "fact_baf85aca797b",
+      "fact_923b26ef9aa7",
+      "fact_dfa59e5066eb",
+      "fact_6b02d1cc1839",
+      "fact_9711fdfbf5e3",
+      "fact_ec8f44f86d95",
+      "fact_960150b829ac"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_005_anchor_a",
+      "serial_15_new_005_anchor_b",
+      "serial_15_new_005_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Where Angels Fear to Tread",
+        "output": "E. M. Forster",
+        "input_key": "book_r05",
+        "output_key": "E. M. Forster",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Where_Angels_Fear_to_Tread"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "E. M. Forster",
+        "output": "A Passage to India",
+        "input_key": "E. M. Forster",
+        "output_key": "film_r05_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Passage_to_India_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "A Passage to India",
+        "output": "David Lean",
+        "input_key": "film_r05_a",
+        "output_key": "David Lean",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Passage_to_India_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "David Lean",
+        "output": "Doctor Zhivago",
+        "input_key": "David Lean",
+        "output_key": "film_r05_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Doctor_Zhivago_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Doctor Zhivago",
+        "output": "Maurice Jarre",
+        "input_key": "film_r05_b",
+        "output_key": "Maurice Jarre",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Doctor_Zhivago_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Maurice Jarre",
+        "output": "Witness",
+        "input_key": "Maurice Jarre",
+        "output_key": "film_r05_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Witness_(1985_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Witness",
+        "output": "Kelly McGillis",
+        "input_key": "film_r05_c",
+        "output_key": "Kelly McGillis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Witness_(1985_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Kelly McGillis",
+        "output": "Top Gun",
+        "input_key": "Kelly McGillis",
+        "output_key": "film_r05_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Top_Gun"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Top Gun",
+        "output": "Tony Scott",
+        "input_key": "film_r05_d",
+        "output_key": "Tony Scott",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Top_Gun"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Tony Scott",
+        "output": "True Romance",
+        "input_key": "Tony Scott",
+        "output_key": "film_r05_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/True_Romance"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "True Romance",
+        "output": "Patricia Arquette",
+        "input_key": "film_r05_e",
+        "output_key": "Patricia Arquette",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/True_Romance"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Patricia Arquette",
+        "output": "Ed Wood",
+        "input_key": "Patricia Arquette",
+        "output_key": "film_r05_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ed_Wood_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Ed Wood",
+        "output": "Howard Shore",
+        "input_key": "film_r05_f",
+        "output_key": "Howard Shore",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ed_Wood_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Howard Shore",
+        "output": "Dogma",
+        "input_key": "Howard Shore",
+        "output_key": "film_r05_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dogma_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Dogma",
+        "output": "Kevin Smith",
+        "input_key": "film_r05_g",
+        "output_key": "Kevin Smith",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dogma_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_006",
+    "answer": "Mel Gibson",
+    "accepted_answers": [
+      "Mel Gibson"
+    ],
+    "route_family": "r06",
+    "anchor": "Sometimes a Great Notion",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_3e78e343e393",
+      "fact_b3509f720edb",
+      "fact_9acf13fdb603",
+      "fact_ce4e37045066",
+      "fact_d14c4a74d777",
+      "fact_9acdc0680726",
+      "fact_16c9a33b36d7",
+      "fact_9add203b494c",
+      "fact_eb0c20fc9406",
+      "fact_f6ea205f2ab1",
+      "fact_1ad74b2c3b19",
+      "fact_ec250f6fbcb1",
+      "fact_b3eacf65de4e",
+      "fact_4824e576f094",
+      "fact_f78dfffface7"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_006_anchor_a",
+      "serial_15_new_006_anchor_b",
+      "serial_15_new_006_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Sometimes a Great Notion",
+        "output": "Ken Kesey",
+        "input_key": "book_r06",
+        "output_key": "Ken Kesey",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sometimes_a_Great_Notion"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Ken Kesey",
+        "output": "One Flew Over the Cuckoo's Nest",
+        "input_key": "Ken Kesey",
+        "output_key": "film_r06_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/One_Flew_Over_the_Cuckoo%27s_Nest_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "One Flew Over the Cuckoo's Nest",
+        "output": "Miloš Forman",
+        "input_key": "film_r06_a",
+        "output_key": "Miloš Forman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/One_Flew_Over_the_Cuckoo%27s_Nest_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Miloš Forman",
+        "output": "Ragtime",
+        "input_key": "Miloš Forman",
+        "output_key": "film_r06_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ragtime_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Ragtime",
+        "output": "Randy Newman",
+        "input_key": "film_r06_b",
+        "output_key": "Randy Newman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ragtime_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Randy Newman",
+        "output": "The Natural",
+        "input_key": "Randy Newman",
+        "output_key": "film_r06_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Natural_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Natural",
+        "output": "Robert Redford",
+        "input_key": "film_r06_c",
+        "output_key": "Robert Redford",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Natural_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Robert Redford",
+        "output": "Sneakers",
+        "input_key": "Robert Redford",
+        "output_key": "film_r06_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sneakers_(1992_film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Sneakers",
+        "output": "Phil Alden Robinson",
+        "input_key": "film_r06_d",
+        "output_key": "Phil Alden Robinson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sneakers_(1992_film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Phil Alden Robinson",
+        "output": "Field of Dreams",
+        "input_key": "Phil Alden Robinson",
+        "output_key": "film_r06_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Field_of_Dreams"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Field of Dreams",
+        "output": "Ray Liotta",
+        "input_key": "film_r06_e",
+        "output_key": "Ray Liotta",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Field_of_Dreams"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Ray Liotta",
+        "output": "Unlawful Entry",
+        "input_key": "Ray Liotta",
+        "output_key": "film_r06_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Unlawful_Entry_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Unlawful Entry",
+        "output": "James Horner",
+        "input_key": "film_r06_f",
+        "output_key": "James Horner",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Unlawful_Entry_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "James Horner",
+        "output": "Braveheart",
+        "input_key": "James Horner",
+        "output_key": "film_r06_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Braveheart"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Braveheart",
+        "output": "Mel Gibson",
+        "input_key": "film_r06_g",
+        "output_key": "Mel Gibson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Braveheart"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_007",
+    "answer": "Rob Reiner",
+    "accepted_answers": [
+      "Rob Reiner"
+    ],
+    "route_family": "r07",
+    "anchor": "The Ballad of Peckham Rye",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_24bec612a4c7",
+      "fact_8c0e1090601a",
+      "fact_1b728aed55c3",
+      "fact_9e0fd67183cc",
+      "fact_e87354535154",
+      "fact_cc99492d332f",
+      "fact_a11e0a72a3cc",
+      "fact_273babe7c262",
+      "fact_d471913f3df4",
+      "fact_f55d1bd65191",
+      "fact_af405e41e86d",
+      "fact_8e935427ca54",
+      "fact_fa5ce5a8f93b",
+      "fact_578c7485c7b6",
+      "fact_9bdb012dbac0"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_007_anchor_a",
+      "serial_15_new_007_anchor_b",
+      "serial_15_new_007_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Ballad of Peckham Rye",
+        "output": "Muriel Spark",
+        "input_key": "book_r07",
+        "output_key": "Muriel Spark",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Ballad_of_Peckham_Rye"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Muriel Spark",
+        "output": "The Prime of Miss Jean Brodie",
+        "input_key": "Muriel Spark",
+        "output_key": "film_r07_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Prime_of_Miss_Jean_Brodie_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Prime of Miss Jean Brodie",
+        "output": "Ronald Neame",
+        "input_key": "film_r07_a",
+        "output_key": "Ronald Neame",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Prime_of_Miss_Jean_Brodie_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Ronald Neame",
+        "output": "The Poseidon Adventure",
+        "input_key": "Ronald Neame",
+        "output_key": "film_r07_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Poseidon_Adventure_(1972_film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Poseidon Adventure",
+        "output": "John Williams",
+        "input_key": "film_r07_b",
+        "output_key": "John Williams",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Poseidon_Adventure_(1972_film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "John Williams",
+        "output": "The Accidental Tourist",
+        "input_key": "John Williams",
+        "output_key": "film_r07_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Accidental_Tourist_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Accidental Tourist",
+        "output": "William Hurt",
+        "input_key": "film_r07_c",
+        "output_key": "William Hurt",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Accidental_Tourist_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "William Hurt",
+        "output": "Broadcast News",
+        "input_key": "William Hurt",
+        "output_key": "film_r07_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Broadcast_News_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Broadcast News",
+        "output": "James L. Brooks",
+        "input_key": "film_r07_d",
+        "output_key": "James L. Brooks",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Broadcast_News_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "James L. Brooks",
+        "output": "Terms of Endearment",
+        "input_key": "James L. Brooks",
+        "output_key": "film_r07_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Terms_of_Endearment"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Terms of Endearment",
+        "output": "Debra Winger",
+        "input_key": "film_r07_e",
+        "output_key": "Debra Winger",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Terms_of_Endearment"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Debra Winger",
+        "output": "An Officer and a Gentleman",
+        "input_key": "Debra Winger",
+        "output_key": "film_r07_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/An_Officer_and_a_Gentleman"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "An Officer and a Gentleman",
+        "output": "Jack Nitzsche",
+        "input_key": "film_r07_f",
+        "output_key": "Jack Nitzsche",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/An_Officer_and_a_Gentleman"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Jack Nitzsche",
+        "output": "Stand by Me",
+        "input_key": "Jack Nitzsche",
+        "output_key": "film_r07_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Stand_by_Me_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Stand by Me",
+        "output": "Rob Reiner",
+        "input_key": "film_r07_g",
+        "output_key": "Rob Reiner",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Stand_by_Me_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_008",
+    "answer": "Peter Cattaneo",
+    "accepted_answers": [
+      "Peter Cattaneo"
+    ],
+    "route_family": "r08",
+    "anchor": "The Mysteries of Pittsburgh",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_90df2d9cc96c",
+      "fact_1479e0f6cc5f",
+      "fact_6e065bea3c80",
+      "fact_af25060722ab",
+      "fact_47557ead7735",
+      "fact_e34a56cf72be",
+      "fact_90b20d2b758e",
+      "fact_e0cd14b4b3d8",
+      "fact_e1aedf38d191",
+      "fact_4a4d34332c22",
+      "fact_c73259c38be3",
+      "fact_fdb0516bd08e",
+      "fact_fa006f0463bf",
+      "fact_73c44f423eda",
+      "fact_6e00b283d943"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_008_anchor_a",
+      "serial_15_new_008_anchor_b",
+      "serial_15_new_008_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Mysteries of Pittsburgh",
+        "output": "Michael Chabon",
+        "input_key": "book_r08",
+        "output_key": "Michael Chabon",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mysteries_of_Pittsburgh"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Michael Chabon",
+        "output": "Wonder Boys",
+        "input_key": "Michael Chabon",
+        "output_key": "film_r08_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Wonder_Boys_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Wonder Boys",
+        "output": "Curtis Hanson",
+        "input_key": "film_r08_a",
+        "output_key": "Curtis Hanson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Wonder_Boys_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Curtis Hanson",
+        "output": "L.A. Confidential",
+        "input_key": "Curtis Hanson",
+        "output_key": "film_r08_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/L.A._Confidential_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "L.A. Confidential",
+        "output": "Jerry Goldsmith",
+        "input_key": "film_r08_b",
+        "output_key": "Jerry Goldsmith",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/L.A._Confidential_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Jerry Goldsmith",
+        "output": "Papillon",
+        "input_key": "Jerry Goldsmith",
+        "output_key": "film_r08_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Papillon_(1973_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Papillon",
+        "output": "Dustin Hoffman",
+        "input_key": "film_r08_c",
+        "output_key": "Dustin Hoffman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Papillon_(1973_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Dustin Hoffman",
+        "output": "Rain Man",
+        "input_key": "Dustin Hoffman",
+        "output_key": "film_r08_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rain_Man"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Rain Man",
+        "output": "Barry Levinson",
+        "input_key": "film_r08_d",
+        "output_key": "Barry Levinson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rain_Man"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Barry Levinson",
+        "output": "Good Morning, Vietnam",
+        "input_key": "Barry Levinson",
+        "output_key": "film_r08_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Good_Morning,_Vietnam"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Good Morning, Vietnam",
+        "output": "Forest Whitaker",
+        "input_key": "film_r08_e",
+        "output_key": "Forest Whitaker",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Good_Morning,_Vietnam"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Forest Whitaker",
+        "output": "The Crying Game",
+        "input_key": "Forest Whitaker",
+        "output_key": "film_r08_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Crying_Game"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Crying Game",
+        "output": "Anne Dudley",
+        "input_key": "film_r08_f",
+        "output_key": "Anne Dudley",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Crying_Game"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Anne Dudley",
+        "output": "The Full Monty",
+        "input_key": "Anne Dudley",
+        "output_key": "film_r08_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Full_Monty"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Full Monty",
+        "output": "Peter Cattaneo",
+        "input_key": "film_r08_g",
+        "output_key": "Peter Cattaneo",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Full_Monty"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_009",
+    "answer": "Ridley Scott",
+    "accepted_answers": [
+      "Ridley Scott"
+    ],
+    "route_family": "r09",
+    "anchor": "The Rules of Attraction",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_bc1a6003d350",
+      "fact_2ab7846247bb",
+      "fact_e92f4eb3facf",
+      "fact_1b83e71217c3",
+      "fact_e4f61a4ce946",
+      "fact_d7c60d6acb0b",
+      "fact_d6846a3151d0",
+      "fact_9f564e63a38a",
+      "fact_202717629ed6",
+      "fact_2cf49dae161d",
+      "fact_744de82a311b",
+      "fact_0ed512ebe51b",
+      "fact_d405ceece6da",
+      "fact_5c6498c617c2",
+      "fact_582738933c14"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_009_anchor_a",
+      "serial_15_new_009_anchor_b",
+      "serial_15_new_009_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Rules of Attraction",
+        "output": "Bret Easton Ellis",
+        "input_key": "book_r09",
+        "output_key": "Bret Easton Ellis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Rules_of_Attraction"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Bret Easton Ellis",
+        "output": "American Psycho",
+        "input_key": "Bret Easton Ellis",
+        "output_key": "film_r09_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/American_Psycho_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "American Psycho",
+        "output": "Mary Harron",
+        "input_key": "film_r09_a",
+        "output_key": "Mary Harron",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/American_Psycho_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Mary Harron",
+        "output": "The Notorious Bettie Page",
+        "input_key": "Mary Harron",
+        "output_key": "film_r09_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Notorious_Bettie_Page"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Notorious Bettie Page",
+        "output": "Mark Suozzo",
+        "input_key": "film_r09_b",
+        "output_key": "Mark Suozzo",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Notorious_Bettie_Page"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Mark Suozzo",
+        "output": "The Last Days of Disco",
+        "input_key": "Mark Suozzo",
+        "output_key": "film_r09_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Last_Days_of_Disco"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Last Days of Disco",
+        "output": "Chloë Sevigny",
+        "input_key": "film_r09_c",
+        "output_key": "Chloë Sevigny",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Last_Days_of_Disco"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Chloë Sevigny",
+        "output": "Boys Don't Cry",
+        "input_key": "Chloë Sevigny",
+        "output_key": "film_r09_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Boys_Don%27t_Cry_(1999_film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Boys Don't Cry",
+        "output": "Kimberly Peirce",
+        "input_key": "film_r09_d",
+        "output_key": "Kimberly Peirce",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Boys_Don%27t_Cry_(1999_film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Kimberly Peirce",
+        "output": "Stop-Loss",
+        "input_key": "Kimberly Peirce",
+        "output_key": "film_r09_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Stop-Loss_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Stop-Loss",
+        "output": "Joseph Gordon-Levitt",
+        "input_key": "film_r09_e",
+        "output_key": "Joseph Gordon-Levitt",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Stop-Loss_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Joseph Gordon-Levitt",
+        "output": "Inception",
+        "input_key": "Joseph Gordon-Levitt",
+        "output_key": "film_r09_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Inception"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Inception",
+        "output": "Hans Zimmer",
+        "input_key": "film_r09_f",
+        "output_key": "Hans Zimmer",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Inception"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Hans Zimmer",
+        "output": "Thelma & Louise",
+        "input_key": "Hans Zimmer",
+        "output_key": "film_r09_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Thelma_%26_Louise"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Thelma & Louise",
+        "output": "Ridley Scott",
+        "input_key": "film_r09_g",
+        "output_key": "Ridley Scott",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Thelma_%26_Louise"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_010",
+    "answer": "J. Lee Thompson",
+    "accepted_answers": [
+      "J. Lee Thompson",
+      "J Lee Thompson",
+      "John Lee Thompson"
+    ],
+    "route_family": "r10",
+    "anchor": "Mildred Pierce",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_f63a1ff8ddb4",
+      "fact_b74ed8fc43ca",
+      "fact_a0eb9397c66d",
+      "fact_cfba17e5e540",
+      "fact_8346cd6a0d0e",
+      "fact_3d4ff71bc758",
+      "fact_d5a3bfed56c3",
+      "fact_7f2d72563d66",
+      "fact_064dc896b51f",
+      "fact_191170dd9e4e",
+      "fact_5f3568b4ef53",
+      "fact_8a53b0fc0843",
+      "fact_814ed34aba08",
+      "fact_fea1b969f258",
+      "fact_14c0a0babaaa"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_010_anchor_a",
+      "serial_15_new_010_anchor_b",
+      "serial_15_new_010_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Mildred Pierce",
+        "output": "James M. Cain",
+        "input_key": "book_r10",
+        "output_key": "James M. Cain",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Mildred_Pierce_(novel)"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "James M. Cain",
+        "output": "Double Indemnity",
+        "input_key": "James M. Cain",
+        "output_key": "film_r10_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Double_Indemnity"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Double Indemnity",
+        "output": "Billy Wilder",
+        "input_key": "film_r10_a",
+        "output_key": "Billy Wilder",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Double_Indemnity"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Billy Wilder",
+        "output": "Sunset Boulevard",
+        "input_key": "Billy Wilder",
+        "output_key": "film_r10_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sunset_Boulevard_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Sunset Boulevard",
+        "output": "Franz Waxman",
+        "input_key": "film_r10_b",
+        "output_key": "Franz Waxman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sunset_Boulevard_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Franz Waxman",
+        "output": "Rear Window",
+        "input_key": "Franz Waxman",
+        "output_key": "film_r10_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rear_Window"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Rear Window",
+        "output": "Grace Kelly",
+        "input_key": "film_r10_c",
+        "output_key": "Grace Kelly",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rear_Window"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Grace Kelly",
+        "output": "High Noon",
+        "input_key": "Grace Kelly",
+        "output_key": "film_r10_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/High_Noon"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "High Noon",
+        "output": "Fred Zinnemann",
+        "input_key": "film_r10_d",
+        "output_key": "Fred Zinnemann",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/High_Noon"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Fred Zinnemann",
+        "output": "From Here to Eternity",
+        "input_key": "Fred Zinnemann",
+        "output_key": "film_r10_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/From_Here_to_Eternity"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "From Here to Eternity",
+        "output": "Montgomery Clift",
+        "input_key": "film_r10_e",
+        "output_key": "Montgomery Clift",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/From_Here_to_Eternity"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Montgomery Clift",
+        "output": "Red River",
+        "input_key": "Montgomery Clift",
+        "output_key": "film_r10_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Red_River_(1948_film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Red River",
+        "output": "Dimitri Tiomkin",
+        "input_key": "film_r10_f",
+        "output_key": "Dimitri Tiomkin",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Red_River_(1948_film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Dimitri Tiomkin",
+        "output": "The Guns of Navarone",
+        "input_key": "Dimitri Tiomkin",
+        "output_key": "film_r10_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Guns_of_Navarone_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Guns of Navarone",
+        "output": "J. Lee Thompson",
+        "input_key": "film_r10_g",
+        "output_key": "J. Lee Thompson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Guns_of_Navarone_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_011",
+    "answer": "Andrew Davis",
+    "accepted_answers": [
+      "Andrew Davis"
+    ],
+    "route_family": "r11",
+    "anchor": "The Beautiful and Damned",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_ab640080a19f",
+      "fact_1e00fa354976",
+      "fact_3411bc70b873",
+      "fact_d26e9c903375",
+      "fact_440c544e6ccc",
+      "fact_45249d45600a",
+      "fact_35bb2266ada2",
+      "fact_cef70396438f",
+      "fact_4682cf4a754a",
+      "fact_07c32b977942",
+      "fact_536c13b19f26",
+      "fact_853e8d9ef961",
+      "fact_6656fd2d6649",
+      "fact_13b6dde9235e",
+      "fact_7ad11372ab4e"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_011_anchor_a",
+      "serial_15_new_011_anchor_b",
+      "serial_15_new_011_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Beautiful and Damned",
+        "output": "F. Scott Fitzgerald",
+        "input_key": "book_r11",
+        "output_key": "F. Scott Fitzgerald",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Beautiful_and_Damned"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "F. Scott Fitzgerald",
+        "output": "The Great Gatsby",
+        "input_key": "F. Scott Fitzgerald",
+        "output_key": "film_r11_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Great_Gatsby_(1974_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Great Gatsby",
+        "output": "Jack Clayton",
+        "input_key": "film_r11_a",
+        "output_key": "Jack Clayton",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Great_Gatsby_(1974_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Jack Clayton",
+        "output": "Room at the Top",
+        "input_key": "Jack Clayton",
+        "output_key": "film_r11_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Room_at_the_Top_(1959_film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Room at the Top",
+        "output": "Mario Nascimbene",
+        "input_key": "film_r11_b",
+        "output_key": "Mario Nascimbene",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Room_at_the_Top_(1959_film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Mario Nascimbene",
+        "output": "The Barefoot Contessa",
+        "input_key": "Mario Nascimbene",
+        "output_key": "film_r11_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Barefoot_Contessa"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Barefoot Contessa",
+        "output": "Humphrey Bogart",
+        "input_key": "film_r11_c",
+        "output_key": "Humphrey Bogart",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Barefoot_Contessa"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Humphrey Bogart",
+        "output": "Sabrina",
+        "input_key": "Humphrey Bogart",
+        "output_key": "film_r11_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sabrina_(1954_film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Sabrina",
+        "output": "Billy Wilder",
+        "input_key": "film_r11_d",
+        "output_key": "Billy Wilder",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sabrina_(1954_film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Billy Wilder",
+        "output": "The Apartment",
+        "input_key": "Billy Wilder",
+        "output_key": "film_r11_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Apartment"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "The Apartment",
+        "output": "Jack Lemmon",
+        "input_key": "film_r11_e",
+        "output_key": "Jack Lemmon",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Apartment"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Jack Lemmon",
+        "output": "Glengarry Glen Ross",
+        "input_key": "Jack Lemmon",
+        "output_key": "film_r11_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Glengarry_Glen_Ross_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Glengarry Glen Ross",
+        "output": "James Newton Howard",
+        "input_key": "film_r11_f",
+        "output_key": "James Newton Howard",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Glengarry_Glen_Ross_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "James Newton Howard",
+        "output": "The Fugitive",
+        "input_key": "James Newton Howard",
+        "output_key": "film_r11_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Fugitive_(1993_film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Fugitive",
+        "output": "Andrew Davis",
+        "input_key": "film_r11_g",
+        "output_key": "Andrew Davis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Fugitive_(1993_film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_012",
+    "answer": "Jonathan Demme",
+    "accepted_answers": [
+      "Jonathan Demme"
+    ],
+    "route_family": "r12",
+    "anchor": "The Hunchback of Notre-Dame",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_aad6ffbcfe24",
+      "fact_285ddfcbec36",
+      "fact_6188916c52ba",
+      "fact_f8126f317e60",
+      "fact_6b51c3070ce1",
+      "fact_aa8c26095f53",
+      "fact_2931f4cd6397",
+      "fact_dfa9075042bc",
+      "fact_a0d39b4307ba",
+      "fact_f9359b9caf9e",
+      "fact_c585f13ef6d4",
+      "fact_13d9a3fb6054",
+      "fact_40f6a0205def",
+      "fact_d48be38fddd9",
+      "fact_8bab3be6fd02"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_012_anchor_a",
+      "serial_15_new_012_anchor_b",
+      "serial_15_new_012_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Hunchback of Notre-Dame",
+        "output": "Victor Hugo",
+        "input_key": "book_r12",
+        "output_key": "Victor Hugo",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Hunchback_of_Notre-Dame"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Victor Hugo",
+        "output": "Les Misérables",
+        "input_key": "Victor Hugo",
+        "output_key": "film_r12_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables_(1998_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Les Misérables",
+        "output": "Bille August",
+        "input_key": "film_r12_a",
+        "output_key": "Bille August",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables_(1998_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Bille August",
+        "output": "The House of the Spirits",
+        "input_key": "Bille August",
+        "output_key": "film_r12_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_House_of_the_Spirits_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The House of the Spirits",
+        "output": "Hans Zimmer",
+        "input_key": "film_r12_b",
+        "output_key": "Hans Zimmer",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_House_of_the_Spirits_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Hans Zimmer",
+        "output": "The Lion King",
+        "input_key": "Hans Zimmer",
+        "output_key": "film_r12_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Lion_King"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Lion King",
+        "output": "Jeremy Irons",
+        "input_key": "film_r12_c",
+        "output_key": "Jeremy Irons",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Lion_King"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Jeremy Irons",
+        "output": "Dead Ringers",
+        "input_key": "Jeremy Irons",
+        "output_key": "film_r12_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dead_Ringers_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Dead Ringers",
+        "output": "David Cronenberg",
+        "input_key": "film_r12_d",
+        "output_key": "David Cronenberg",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dead_Ringers_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "David Cronenberg",
+        "output": "Eastern Promises",
+        "input_key": "David Cronenberg",
+        "output_key": "film_r12_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Eastern_Promises"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Eastern Promises",
+        "output": "Viggo Mortensen",
+        "input_key": "film_r12_e",
+        "output_key": "Viggo Mortensen",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Eastern_Promises"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Viggo Mortensen",
+        "output": "A History of Violence",
+        "input_key": "Viggo Mortensen",
+        "output_key": "film_r12_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_History_of_Violence"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "A History of Violence",
+        "output": "Howard Shore",
+        "input_key": "film_r12_f",
+        "output_key": "Howard Shore",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_History_of_Violence"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Howard Shore",
+        "output": "The Silence of the Lambs",
+        "input_key": "Howard Shore",
+        "output_key": "film_r12_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Silence_of_the_Lambs_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Silence of the Lambs",
+        "output": "Jonathan Demme",
+        "input_key": "film_r12_g",
+        "output_key": "Jonathan Demme",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Silence_of_the_Lambs_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_013",
+    "answer": "Sydney Pollack",
+    "accepted_answers": [
+      "Sydney Pollack"
+    ],
+    "route_family": "r13",
+    "anchor": "The Queen of the Damned",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_3c4d04e86a1c",
+      "fact_183d05f6cb40",
+      "fact_b659a000c75d",
+      "fact_3c0c5299b839",
+      "fact_287440ff6149",
+      "fact_5ce64d34b716",
+      "fact_9db814802c25",
+      "fact_c28f10a7759c",
+      "fact_e7cae2a9843e",
+      "fact_a8add353a51b",
+      "fact_6c61ce148b0e",
+      "fact_e8a89948675e",
+      "fact_9077bd6e879b",
+      "fact_b5f4010defb8",
+      "fact_5a79f1bf73ee"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_013_anchor_a",
+      "serial_15_new_013_anchor_b",
+      "serial_15_new_013_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Queen of the Damned",
+        "output": "Anne Rice",
+        "input_key": "book_r13",
+        "output_key": "Anne Rice",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Queen_of_the_Damned"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Anne Rice",
+        "output": "Interview with the Vampire",
+        "input_key": "Anne Rice",
+        "output_key": "film_r13_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Interview_with_the_Vampire_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Interview with the Vampire",
+        "output": "Neil Jordan",
+        "input_key": "film_r13_a",
+        "output_key": "Neil Jordan",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Interview_with_the_Vampire_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Neil Jordan",
+        "output": "Michael Collins",
+        "input_key": "Neil Jordan",
+        "output_key": "film_r13_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Michael_Collins_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Michael Collins",
+        "output": "Elliot Goldenthal",
+        "input_key": "film_r13_b",
+        "output_key": "Elliot Goldenthal",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Michael_Collins_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Elliot Goldenthal",
+        "output": "Heat",
+        "input_key": "Elliot Goldenthal",
+        "output_key": "film_r13_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Heat_(1995_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Heat",
+        "output": "Al Pacino",
+        "input_key": "film_r13_c",
+        "output_key": "Al Pacino",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Heat_(1995_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Al Pacino",
+        "output": "Scarface",
+        "input_key": "Al Pacino",
+        "output_key": "film_r13_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Scarface_(1983_film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Scarface",
+        "output": "Brian De Palma",
+        "input_key": "film_r13_d",
+        "output_key": "Brian De Palma",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Scarface_(1983_film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Brian De Palma",
+        "output": "The Untouchables",
+        "input_key": "Brian De Palma",
+        "output_key": "film_r13_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Untouchables_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "The Untouchables",
+        "output": "Kevin Costner",
+        "input_key": "film_r13_e",
+        "output_key": "Kevin Costner",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Untouchables_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Kevin Costner",
+        "output": "Dances with Wolves",
+        "input_key": "Kevin Costner",
+        "output_key": "film_r13_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dances_with_Wolves"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Dances with Wolves",
+        "output": "John Barry",
+        "input_key": "film_r13_f",
+        "output_key": "John Barry",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dances_with_Wolves"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "John Barry",
+        "output": "Out of Africa",
+        "input_key": "John Barry",
+        "output_key": "film_r13_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Out_of_Africa_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Out of Africa",
+        "output": "Sydney Pollack",
+        "input_key": "film_r13_g",
+        "output_key": "Sydney Pollack",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Out_of_Africa_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_014",
+    "answer": "Robert Redford",
+    "accepted_answers": [
+      "Robert Redford"
+    ],
+    "route_family": "r14",
+    "anchor": "The Edible Woman",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_6f0b3a1b497d",
+      "fact_6410c008e975",
+      "fact_a11f95cab76a",
+      "fact_4cbba245993a",
+      "fact_6979de87221f",
+      "fact_f6ecbc841d32",
+      "fact_a19d7f1b4799",
+      "fact_03fbc846706c",
+      "fact_70414a9512a0",
+      "fact_3c0d40955d6c",
+      "fact_b98bafcf0a9f",
+      "fact_a0200327709f",
+      "fact_639cff154a7d",
+      "fact_ca04e8a546d7",
+      "fact_d17962ad1f01"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_014_anchor_a",
+      "serial_15_new_014_anchor_b",
+      "serial_15_new_014_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Edible Woman",
+        "output": "Margaret Atwood",
+        "input_key": "book_r14",
+        "output_key": "Margaret Atwood",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Edible_Woman"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Margaret Atwood",
+        "output": "The Handmaid's Tale",
+        "input_key": "Margaret Atwood",
+        "output_key": "film_r14_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Handmaid's Tale",
+        "output": "Volker Schlöndorff",
+        "input_key": "film_r14_a",
+        "output_key": "Volker Schlöndorff",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Volker Schlöndorff",
+        "output": "The Tin Drum",
+        "input_key": "Volker Schlöndorff",
+        "output_key": "film_r14_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Tin_Drum_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Tin Drum",
+        "output": "Maurice Jarre",
+        "input_key": "film_r14_b",
+        "output_key": "Maurice Jarre",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Tin_Drum_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Maurice Jarre",
+        "output": "Ghost",
+        "input_key": "Maurice Jarre",
+        "output_key": "film_r14_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ghost_(1990_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Ghost",
+        "output": "Whoopi Goldberg",
+        "input_key": "film_r14_c",
+        "output_key": "Whoopi Goldberg",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Ghost_(1990_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Whoopi Goldberg",
+        "output": "Sister Act",
+        "input_key": "Whoopi Goldberg",
+        "output_key": "film_r14_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sister_Act"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Sister Act",
+        "output": "Emile Ardolino",
+        "input_key": "film_r14_d",
+        "output_key": "Emile Ardolino",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sister_Act"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Emile Ardolino",
+        "output": "Dirty Dancing",
+        "input_key": "Emile Ardolino",
+        "output_key": "film_r14_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dirty_Dancing"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Dirty Dancing",
+        "output": "Patrick Swayze",
+        "input_key": "film_r14_e",
+        "output_key": "Patrick Swayze",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dirty_Dancing"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Patrick Swayze",
+        "output": "Point Break",
+        "input_key": "Patrick Swayze",
+        "output_key": "film_r14_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Point_Break"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Point Break",
+        "output": "Mark Isham",
+        "input_key": "film_r14_f",
+        "output_key": "Mark Isham",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Point_Break"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Mark Isham",
+        "output": "A River Runs Through It",
+        "input_key": "Mark Isham",
+        "output_key": "film_r14_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_River_Runs_Through_It_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "A River Runs Through It",
+        "output": "Robert Redford",
+        "input_key": "film_r14_g",
+        "output_key": "Robert Redford",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_River_Runs_Through_It_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_015",
+    "answer": "Paul Verhoeven",
+    "accepted_answers": [
+      "Paul Verhoeven"
+    ],
+    "route_family": "r15",
+    "anchor": "James and the Giant Peach",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_a55cd6a21f03",
+      "fact_18ae0825660f",
+      "fact_190b4ce42d1a",
+      "fact_16b70024b261",
+      "fact_ce756e465943",
+      "fact_7075652dd7f4",
+      "fact_ce6a64ce16a9",
+      "fact_1a225cc5ffec",
+      "fact_4f85775d6a61",
+      "fact_a248a6e0b90c",
+      "fact_046f235d5747",
+      "fact_62c40fc31211",
+      "fact_da7cc0e13e54",
+      "fact_50a6c236eb6a",
+      "fact_de10c04f672b"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_015_anchor_a",
+      "serial_15_new_015_anchor_b",
+      "serial_15_new_015_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "James and the Giant Peach",
+        "output": "Roald Dahl",
+        "input_key": "book_r15",
+        "output_key": "Roald Dahl",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/James_and_the_Giant_Peach"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Roald Dahl",
+        "output": "Fantastic Mr. Fox",
+        "input_key": "Roald Dahl",
+        "output_key": "film_r15_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Fantastic_Mr._Fox_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Fantastic Mr. Fox",
+        "output": "Wes Anderson",
+        "input_key": "film_r15_a",
+        "output_key": "Wes Anderson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Fantastic_Mr._Fox_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Wes Anderson",
+        "output": "The Grand Budapest Hotel",
+        "input_key": "Wes Anderson",
+        "output_key": "film_r15_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Grand Budapest Hotel",
+        "output": "Alexandre Desplat",
+        "input_key": "film_r15_b",
+        "output_key": "Alexandre Desplat",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Alexandre Desplat",
+        "output": "The Shape of Water",
+        "input_key": "Alexandre Desplat",
+        "output_key": "film_r15_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Shape_of_Water"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Shape of Water",
+        "output": "Sally Hawkins",
+        "input_key": "film_r15_c",
+        "output_key": "Sally Hawkins",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Shape_of_Water"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Sally Hawkins",
+        "output": "Paddington",
+        "input_key": "Sally Hawkins",
+        "output_key": "film_r15_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Paddington_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Paddington",
+        "output": "Paul King",
+        "input_key": "film_r15_d",
+        "output_key": "Paul King",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Paddington_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Paul King",
+        "output": "Wonka",
+        "input_key": "Paul King",
+        "output_key": "film_r15_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Wonka_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Wonka",
+        "output": "Hugh Grant",
+        "input_key": "film_r15_e",
+        "output_key": "Hugh Grant",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Wonka_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Hugh Grant",
+        "output": "Mickey Blue Eyes",
+        "input_key": "Hugh Grant",
+        "output_key": "film_r15_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Mickey_Blue_Eyes"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Mickey Blue Eyes",
+        "output": "Basil Poledouris",
+        "input_key": "film_r15_f",
+        "output_key": "Basil Poledouris",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Mickey_Blue_Eyes"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Basil Poledouris",
+        "output": "RoboCop",
+        "input_key": "Basil Poledouris",
+        "output_key": "film_r15_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/RoboCop"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "RoboCop",
+        "output": "Paul Verhoeven",
+        "input_key": "film_r15_g",
+        "output_key": "Paul Verhoeven",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/RoboCop"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_016",
+    "answer": "Miranda July",
+    "accepted_answers": [
+      "Miranda July"
+    ],
+    "route_family": "r16",
+    "anchor": "The Quiet American",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_880ee8cb2044",
+      "fact_934fb0016ef7",
+      "fact_816a62dade00",
+      "fact_f3d0d0a0d8f4",
+      "fact_31e6a7808bb3",
+      "fact_63d5a5dad397",
+      "fact_a859f04682d0",
+      "fact_5f236f7bda23",
+      "fact_fb40586ea0e0",
+      "fact_f1e66aa89837",
+      "fact_d41fba197639",
+      "fact_859535ce84b6",
+      "fact_681b79b7e560",
+      "fact_6b5597be2e00",
+      "fact_5a22736faaaa"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_016_anchor_a",
+      "serial_15_new_016_anchor_b",
+      "serial_15_new_016_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Quiet American",
+        "output": "Graham Greene",
+        "input_key": "book_r16",
+        "output_key": "Graham Greene",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Quiet_American"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Graham Greene",
+        "output": "Our Man in Havana",
+        "input_key": "Graham Greene",
+        "output_key": "film_r16_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Our_Man_in_Havana_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Our Man in Havana",
+        "output": "Carol Reed",
+        "input_key": "film_r16_a",
+        "output_key": "Carol Reed",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Our_Man_in_Havana_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Carol Reed",
+        "output": "The Agony and the Ecstasy",
+        "input_key": "Carol Reed",
+        "output_key": "film_r16_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Agony_and_the_Ecstasy_(film)",
+          "https://moviemusicuk.us/2021/02/08/the-agony-and-the-ecstasy-alex-north/"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Agony and the Ecstasy",
+        "output": "Alex North",
+        "input_key": "film_r16_b",
+        "output_key": "Alex North",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Agony_and_the_Ecstasy_(film)",
+          "https://moviemusicuk.us/2021/02/08/the-agony-and-the-ecstasy-alex-north/"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Alex North",
+        "output": "Cleopatra",
+        "input_key": "Alex North",
+        "output_key": "film_r16_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Cleopatra_(1963_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Cleopatra",
+        "output": "Elizabeth Taylor",
+        "input_key": "film_r16_c",
+        "output_key": "Elizabeth Taylor",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Cleopatra_(1963_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Elizabeth Taylor",
+        "output": "Who's Afraid of Virginia Woolf?",
+        "input_key": "Elizabeth Taylor",
+        "output_key": "film_r16_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Who%27s_Afraid_of_Virginia_Woolf%3F_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Who's Afraid of Virginia Woolf?",
+        "output": "Mike Nichols",
+        "input_key": "film_r16_d",
+        "output_key": "Mike Nichols",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Who%27s_Afraid_of_Virginia_Woolf%3F_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Mike Nichols",
+        "output": "The Graduate",
+        "input_key": "Mike Nichols",
+        "output_key": "film_r16_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Graduate"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "The Graduate",
+        "output": "Katharine Ross",
+        "input_key": "film_r16_e",
+        "output_key": "Katharine Ross",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Graduate"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Katharine Ross",
+        "output": "Donnie Darko",
+        "input_key": "Katharine Ross",
+        "output_key": "film_r16_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Donnie_Darko"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Donnie Darko",
+        "output": "Michael Andrews",
+        "input_key": "film_r16_f",
+        "output_key": "Michael Andrews",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Donnie_Darko"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Michael Andrews",
+        "output": "Me and You and Everyone We Know",
+        "input_key": "Michael Andrews",
+        "output_key": "film_r16_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Me_and_You_and_Everyone_We_Know"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Me and You and Everyone We Know",
+        "output": "Miranda July",
+        "input_key": "film_r16_g",
+        "output_key": "Miranda July",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Me_and_You_and_Everyone_We_Know"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_017",
+    "answer": "John Sturges",
+    "accepted_answers": [
+      "John Sturges"
+    ],
+    "route_family": "r17",
+    "anchor": "The Moon Is Down",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_a0ce13af7a54",
+      "fact_49fe187a3ee3",
+      "fact_99efeff2df43",
+      "fact_a9a54500db7f",
+      "fact_dc4244fa0fdb",
+      "fact_097dfde86ab4",
+      "fact_24cd8f5e8dfc",
+      "fact_9c65715d5385",
+      "fact_0b061c57e63f",
+      "fact_61b7e628d342",
+      "fact_9b092a111208",
+      "fact_e6fc57551aff",
+      "fact_fabee3649bdc",
+      "fact_259fe72491de",
+      "fact_5885478f9c52"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_017_anchor_a",
+      "serial_15_new_017_anchor_b",
+      "serial_15_new_017_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Moon Is Down",
+        "output": "John Steinbeck",
+        "input_key": "book_r17",
+        "output_key": "John Steinbeck",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Moon_Is_Down"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "John Steinbeck",
+        "output": "The Grapes of Wrath",
+        "input_key": "John Steinbeck",
+        "output_key": "film_r17_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Grapes_of_Wrath_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Grapes of Wrath",
+        "output": "John Ford",
+        "input_key": "film_r17_a",
+        "output_key": "John Ford",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Grapes_of_Wrath_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "John Ford",
+        "output": "The Quiet Man",
+        "input_key": "John Ford",
+        "output_key": "film_r17_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Quiet_Man"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Quiet Man",
+        "output": "Victor Young",
+        "input_key": "film_r17_b",
+        "output_key": "Victor Young",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Quiet_Man"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Victor Young",
+        "output": "The Uninvited",
+        "input_key": "Victor Young",
+        "output_key": "film_r17_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Uninvited_(1944_film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Uninvited",
+        "output": "Ray Milland",
+        "input_key": "film_r17_c",
+        "output_key": "Ray Milland",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Uninvited_(1944_film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Ray Milland",
+        "output": "The Lost Weekend",
+        "input_key": "Ray Milland",
+        "output_key": "film_r17_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Lost_Weekend_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Lost Weekend",
+        "output": "Billy Wilder",
+        "input_key": "film_r17_d",
+        "output_key": "Billy Wilder",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Lost_Weekend_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Billy Wilder",
+        "output": "Some Like It Hot",
+        "input_key": "Billy Wilder",
+        "output_key": "film_r17_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Some_Like_It_Hot"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Some Like It Hot",
+        "output": "Tony Curtis",
+        "input_key": "film_r17_e",
+        "output_key": "Tony Curtis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Some_Like_It_Hot"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Tony Curtis",
+        "output": "Sweet Smell of Success",
+        "input_key": "Tony Curtis",
+        "output_key": "film_r17_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sweet_Smell_of_Success",
+          "https://www.criterion.com/current/posts/1761-sweet-smell-of-success-the-fantastic-falco"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Sweet Smell of Success",
+        "output": "Elmer Bernstein",
+        "input_key": "film_r17_f",
+        "output_key": "Elmer Bernstein",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sweet_Smell_of_Success",
+          "https://www.criterion.com/current/posts/1761-sweet-smell-of-success-the-fantastic-falco"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Elmer Bernstein",
+        "output": "The Great Escape",
+        "input_key": "Elmer Bernstein",
+        "output_key": "film_r17_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Great_Escape_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Great Escape",
+        "output": "John Sturges",
+        "input_key": "film_r17_g",
+        "output_key": "John Sturges",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Great_Escape_(film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_018",
+    "answer": "Stephen Frears",
+    "accepted_answers": [
+      "Stephen Frears"
+    ],
+    "route_family": "r18",
+    "anchor": "Dandelion Wine",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_988ecfa6e9f0",
+      "fact_f32422c2035d",
+      "fact_d1e849562372",
+      "fact_dc8e39964c50",
+      "fact_f5c6a42bd7c2",
+      "fact_564ad013990d",
+      "fact_d2e5bb497819",
+      "fact_f605cd427dd0",
+      "fact_9318808b8cf2",
+      "fact_48d383b41366",
+      "fact_e44085b406f2",
+      "fact_946dacb356a3",
+      "fact_901dc9a79589",
+      "fact_d617f4923c53",
+      "fact_74ab2d19e6e7"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_018_anchor_a",
+      "serial_15_new_018_anchor_b",
+      "serial_15_new_018_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "Dandelion Wine",
+        "output": "Ray Bradbury",
+        "input_key": "book_r18",
+        "output_key": "Ray Bradbury",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dandelion_Wine"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Ray Bradbury",
+        "output": "Something Wicked This Way Comes",
+        "input_key": "Ray Bradbury",
+        "output_key": "film_r18_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Something_Wicked_This_Way_Comes_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Something Wicked This Way Comes",
+        "output": "Jack Clayton",
+        "input_key": "film_r18_a",
+        "output_key": "Jack Clayton",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Something_Wicked_This_Way_Comes_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Jack Clayton",
+        "output": "The Pumpkin Eater",
+        "input_key": "Jack Clayton",
+        "output_key": "film_r18_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Pumpkin_Eater"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Pumpkin Eater",
+        "output": "Georges Delerue",
+        "input_key": "film_r18_b",
+        "output_key": "Georges Delerue",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Pumpkin_Eater"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Georges Delerue",
+        "output": "Platoon",
+        "input_key": "Georges Delerue",
+        "output_key": "film_r18_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Platoon_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Platoon",
+        "output": "Willem Dafoe",
+        "input_key": "film_r18_c",
+        "output_key": "Willem Dafoe",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Platoon_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Willem Dafoe",
+        "output": "The Life Aquatic with Steve Zissou",
+        "input_key": "Willem Dafoe",
+        "output_key": "film_r18_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Life_Aquatic_with_Steve_Zissou"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Life Aquatic with Steve Zissou",
+        "output": "Wes Anderson",
+        "input_key": "film_r18_d",
+        "output_key": "Wes Anderson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Life_Aquatic_with_Steve_Zissou"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Wes Anderson",
+        "output": "Rushmore",
+        "input_key": "Wes Anderson",
+        "output_key": "film_r18_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rushmore_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Rushmore",
+        "output": "Bill Murray",
+        "input_key": "film_r18_e",
+        "output_key": "Bill Murray",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Rushmore_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Bill Murray",
+        "output": "Groundhog Day",
+        "input_key": "Bill Murray",
+        "output_key": "film_r18_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Groundhog_Day_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Groundhog Day",
+        "output": "George Fenton",
+        "input_key": "film_r18_f",
+        "output_key": "George Fenton",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Groundhog_Day_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "George Fenton",
+        "output": "Dangerous Liaisons",
+        "input_key": "George Fenton",
+        "output_key": "film_r18_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dangerous_Liaisons"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Dangerous Liaisons",
+        "output": "Stephen Frears",
+        "input_key": "film_r18_g",
+        "output_key": "Stephen Frears",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Dangerous_Liaisons"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_019",
+    "answer": "Roland Joffé",
+    "accepted_answers": [
+      "Roland Joffé",
+      "Roland Joffe"
+    ],
+    "route_family": "r19",
+    "anchor": "The Painted Veil",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_bd582a7c7ef3",
+      "fact_94a4bc5265ad",
+      "fact_b6d553e10301",
+      "fact_92812927f820",
+      "fact_5aa5bf76fa26",
+      "fact_9ba82db5ca8a",
+      "fact_512f057c5cda",
+      "fact_41312cb29311",
+      "fact_199107096acf",
+      "fact_fc8e716df847",
+      "fact_8d702d6905d9",
+      "fact_83417a00ecdf",
+      "fact_b25c631da6de",
+      "fact_58a878a4e17f",
+      "fact_6eac8ddd0814"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_019_anchor_a",
+      "serial_15_new_019_anchor_b",
+      "serial_15_new_019_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Painted Veil",
+        "output": "W. Somerset Maugham",
+        "input_key": "book_r19",
+        "output_key": "W. Somerset Maugham",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Painted_Veil_(novel)"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "W. Somerset Maugham",
+        "output": "Of Human Bondage",
+        "input_key": "W. Somerset Maugham",
+        "output_key": "film_r19_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Of_Human_Bondage_(1934_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Of Human Bondage",
+        "output": "John Cromwell",
+        "input_key": "film_r19_a",
+        "output_key": "John Cromwell",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Of_Human_Bondage_(1934_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "John Cromwell",
+        "output": "The Prisoner of Zenda",
+        "input_key": "John Cromwell",
+        "output_key": "film_r19_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Prisoner_of_Zenda_(1937_film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "The Prisoner of Zenda",
+        "output": "Alfred Newman",
+        "input_key": "film_r19_b",
+        "output_key": "Alfred Newman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Prisoner_of_Zenda_(1937_film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Alfred Newman",
+        "output": "All About Eve",
+        "input_key": "Alfred Newman",
+        "output_key": "film_r19_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_About_Eve"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "All About Eve",
+        "output": "Bette Davis",
+        "input_key": "film_r19_c",
+        "output_key": "Bette Davis",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_About_Eve"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Bette Davis",
+        "output": "What Ever Happened to Baby Jane?",
+        "input_key": "Bette Davis",
+        "output_key": "film_r19_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/What_Ever_Happened_to_Baby_Jane%3F_(film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "What Ever Happened to Baby Jane?",
+        "output": "Robert Aldrich",
+        "input_key": "film_r19_d",
+        "output_key": "Robert Aldrich",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/What_Ever_Happened_to_Baby_Jane%3F_(film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Robert Aldrich",
+        "output": "The Dirty Dozen",
+        "input_key": "Robert Aldrich",
+        "output_key": "film_r19_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Dirty_Dozen"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "The Dirty Dozen",
+        "output": "Charles Bronson",
+        "input_key": "film_r19_e",
+        "output_key": "Charles Bronson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Dirty_Dozen"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Charles Bronson",
+        "output": "Once Upon a Time in the West",
+        "input_key": "Charles Bronson",
+        "output_key": "film_r19_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_the_West"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Once Upon a Time in the West",
+        "output": "Ennio Morricone",
+        "input_key": "film_r19_f",
+        "output_key": "Ennio Morricone",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_the_West"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Ennio Morricone",
+        "output": "The Mission",
+        "input_key": "Ennio Morricone",
+        "output_key": "film_r19_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mission_(1986_film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Mission",
+        "output": "Roland Joffé",
+        "input_key": "film_r19_g",
+        "output_key": "Roland Joffé",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Mission_(1986_film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_020",
+    "answer": "Roger Spottiswoode",
+    "accepted_answers": [
+      "Roger Spottiswoode"
+    ],
+    "route_family": "r20",
+    "anchor": "To the White Sea",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_c60168792283",
+      "fact_85c002b85440",
+      "fact_ca677f573392",
+      "fact_02d52c01ab00",
+      "fact_d215970bf227",
+      "fact_fd2e7ef42a3e",
+      "fact_67ba4894d0a4",
+      "fact_89da5a624bb4",
+      "fact_1d63f1c37fda",
+      "fact_6f6ee95859ef",
+      "fact_9d38d3b5fdf2",
+      "fact_c44168d84ccc",
+      "fact_8bd578d93c3c",
+      "fact_bb62c108ff7a",
+      "fact_6f1623101308"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_020_anchor_a",
+      "serial_15_new_020_anchor_b",
+      "serial_15_new_020_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "To the White Sea",
+        "output": "James Dickey",
+        "input_key": "book_r20",
+        "output_key": "James Dickey",
+        "source_urls": [
+          "https://www.kirkusreviews.com/book-reviews/james-dickey/to-the-white-sea/"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "James Dickey",
+        "output": "Deliverance",
+        "input_key": "James Dickey",
+        "output_key": "film_r20_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Deliverance"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Deliverance",
+        "output": "John Boorman",
+        "input_key": "film_r20_a",
+        "output_key": "John Boorman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Deliverance"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "John Boorman",
+        "output": "Excalibur",
+        "input_key": "John Boorman",
+        "output_key": "film_r20_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Excalibur_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Excalibur",
+        "output": "Trevor Jones",
+        "input_key": "film_r20_b",
+        "output_key": "Trevor Jones",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Excalibur_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Trevor Jones",
+        "output": "Runaway Train",
+        "input_key": "Trevor Jones",
+        "output_key": "film_r20_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Runaway_Train_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "Runaway Train",
+        "output": "Jon Voight",
+        "input_key": "film_r20_c",
+        "output_key": "Jon Voight",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Runaway_Train_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Jon Voight",
+        "output": "Midnight Cowboy",
+        "input_key": "Jon Voight",
+        "output_key": "film_r20_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Midnight_Cowboy"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Midnight Cowboy",
+        "output": "John Schlesinger",
+        "input_key": "film_r20_d",
+        "output_key": "John Schlesinger",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Midnight_Cowboy"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "John Schlesinger",
+        "output": "Marathon Man",
+        "input_key": "John Schlesinger",
+        "output_key": "film_r20_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Marathon_Man_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Marathon Man",
+        "output": "Roy Scheider",
+        "input_key": "film_r20_e",
+        "output_key": "Roy Scheider",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Marathon_Man_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Roy Scheider",
+        "output": "Blue Thunder",
+        "input_key": "Roy Scheider",
+        "output_key": "film_r20_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Blue_Thunder"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Blue Thunder",
+        "output": "Arthur B. Rubinstein",
+        "input_key": "film_r20_f",
+        "output_key": "Arthur B. Rubinstein",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Blue_Thunder"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Arthur B. Rubinstein",
+        "output": "The Best of Times",
+        "input_key": "Arthur B. Rubinstein",
+        "output_key": "film_r20_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Times_(1986_film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Best of Times",
+        "output": "Roger Spottiswoode",
+        "input_key": "film_r20_g",
+        "output_key": "Roger Spottiswoode",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Best_of_Times_(1986_film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_021",
+    "answer": "Roman Polanski",
+    "accepted_answers": [
+      "Roman Polanski"
+    ],
+    "route_family": "r21",
+    "anchor": "The Crossing",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_b34b673a3b3a",
+      "fact_5b9f95421c65",
+      "fact_bbc0cec3b3d3",
+      "fact_038ab483cb6a",
+      "fact_347e26354f6d",
+      "fact_664c5d5f064b",
+      "fact_e8a9394ac3c1",
+      "fact_f40840f6f840",
+      "fact_1929db703093",
+      "fact_6aaddcb30699",
+      "fact_3ae47f35f457",
+      "fact_55b15db4036b",
+      "fact_c20191c3096a",
+      "fact_c93cff73940b",
+      "fact_89b383e1ce53"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_021_anchor_a",
+      "serial_15_new_021_anchor_b",
+      "serial_15_new_021_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Crossing",
+        "output": "Cormac McCarthy",
+        "input_key": "book_r21",
+        "output_key": "Cormac McCarthy",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Crossing_(McCarthy_novel)"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Cormac McCarthy",
+        "output": "All the Pretty Horses",
+        "input_key": "Cormac McCarthy",
+        "output_key": "film_r21_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_the_Pretty_Horses_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "All the Pretty Horses",
+        "output": "Billy Bob Thornton",
+        "input_key": "film_r21_a",
+        "output_key": "Billy Bob Thornton",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/All_the_Pretty_Horses_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Billy Bob Thornton",
+        "output": "Sling Blade",
+        "input_key": "Billy Bob Thornton",
+        "output_key": "film_r21_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sling_Blade"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Sling Blade",
+        "output": "Daniel Lanois",
+        "input_key": "film_r21_b",
+        "output_key": "Daniel Lanois",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Sling_Blade"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Daniel Lanois",
+        "output": "The Million Dollar Hotel",
+        "input_key": "Daniel Lanois",
+        "output_key": "film_r21_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Million_Dollar_Hotel"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Million Dollar Hotel",
+        "output": "Milla Jovovich",
+        "input_key": "film_r21_c",
+        "output_key": "Milla Jovovich",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Million_Dollar_Hotel"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Milla Jovovich",
+        "output": "The Fifth Element",
+        "input_key": "Milla Jovovich",
+        "output_key": "film_r21_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Fifth_Element"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Fifth Element",
+        "output": "Luc Besson",
+        "input_key": "film_r21_d",
+        "output_key": "Luc Besson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Fifth_Element"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Luc Besson",
+        "output": "Léon: The Professional",
+        "input_key": "Luc Besson",
+        "output_key": "film_r21_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/L%C3%A9on:_The_Professional"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Léon: The Professional",
+        "output": "Gary Oldman",
+        "input_key": "film_r21_e",
+        "output_key": "Gary Oldman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/L%C3%A9on:_The_Professional"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Gary Oldman",
+        "output": "Bram Stoker's Dracula",
+        "input_key": "Gary Oldman",
+        "output_key": "film_r21_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bram_Stoker%27s_Dracula_(1992_film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Bram Stoker's Dracula",
+        "output": "Wojciech Kilar",
+        "input_key": "film_r21_f",
+        "output_key": "Wojciech Kilar",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Bram_Stoker%27s_Dracula_(1992_film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Wojciech Kilar",
+        "output": "The Pianist",
+        "input_key": "Wojciech Kilar",
+        "output_key": "film_r21_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Pianist_(2002_film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Pianist",
+        "output": "Roman Polanski",
+        "input_key": "film_r21_g",
+        "output_key": "Roman Polanski",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Pianist_(2002_film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_022",
+    "answer": "Boris Sagal",
+    "accepted_answers": [
+      "Boris Sagal"
+    ],
+    "route_family": "r22",
+    "anchor": "The Drowned World",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_952fba0b76fc",
+      "fact_590284136a94",
+      "fact_c6862e50da45",
+      "fact_e20d244ecfbb",
+      "fact_4cf67f64e59f",
+      "fact_ec2faee92dc0",
+      "fact_d8463225459e",
+      "fact_7b7fec571b2c",
+      "fact_2a601b1257cb",
+      "fact_d293003ab02f",
+      "fact_e44d64ac6c0d",
+      "fact_a64641e7cd31",
+      "fact_5dcbbfe0aeb4",
+      "fact_97fbc8db6644",
+      "fact_60545f1597ae"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_022_anchor_a",
+      "serial_15_new_022_anchor_b",
+      "serial_15_new_022_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Drowned World",
+        "output": "J. G. Ballard",
+        "input_key": "book_r22",
+        "output_key": "J. G. Ballard",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Drowned_World"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "J. G. Ballard",
+        "output": "Empire of the Sun",
+        "input_key": "J. G. Ballard",
+        "output_key": "film_r22_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Empire_of_the_Sun_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Empire of the Sun",
+        "output": "Steven Spielberg",
+        "input_key": "film_r22_a",
+        "output_key": "Steven Spielberg",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Empire_of_the_Sun_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Steven Spielberg",
+        "output": "Catch Me If You Can",
+        "input_key": "Steven Spielberg",
+        "output_key": "film_r22_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Catch_Me_If_You_Can"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Catch Me If You Can",
+        "output": "John Williams",
+        "input_key": "film_r22_b",
+        "output_key": "John Williams",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Catch_Me_If_You_Can"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "John Williams",
+        "output": "The Witches of Eastwick",
+        "input_key": "John Williams",
+        "output_key": "film_r22_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Witches_of_Eastwick_(film)"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "The Witches of Eastwick",
+        "output": "Cher",
+        "input_key": "film_r22_c",
+        "output_key": "Cher",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Witches_of_Eastwick_(film)"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Cher",
+        "output": "Moonstruck",
+        "input_key": "Cher",
+        "output_key": "film_r22_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Moonstruck"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Moonstruck",
+        "output": "Norman Jewison",
+        "input_key": "film_r22_d",
+        "output_key": "Norman Jewison",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Moonstruck"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Norman Jewison",
+        "output": "In the Heat of the Night",
+        "input_key": "Norman Jewison",
+        "output_key": "film_r22_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/In_the_Heat_of_the_Night_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "In the Heat of the Night",
+        "output": "Sidney Poitier",
+        "input_key": "film_r22_e",
+        "output_key": "Sidney Poitier",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/In_the_Heat_of_the_Night_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Sidney Poitier",
+        "output": "To Sir, with Love",
+        "input_key": "Sidney Poitier",
+        "output_key": "film_r22_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/To_Sir,_with_Love"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "To Sir, with Love",
+        "output": "Ron Grainer",
+        "input_key": "film_r22_f",
+        "output_key": "Ron Grainer",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/To_Sir,_with_Love"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Ron Grainer",
+        "output": "The Omega Man",
+        "input_key": "Ron Grainer",
+        "output_key": "film_r22_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Omega_Man"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Omega Man",
+        "output": "Boris Sagal",
+        "input_key": "film_r22_g",
+        "output_key": "Boris Sagal",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Omega_Man"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_023",
+    "answer": "Tony Richardson",
+    "accepted_answers": [
+      "Tony Richardson"
+    ],
+    "route_family": "r23",
+    "anchor": "A Perfect Spy",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_68ca0de45a1e",
+      "fact_7bd2a3ef8cb8",
+      "fact_0e99e387d4b0",
+      "fact_41e7a4194968",
+      "fact_07e8096bd757",
+      "fact_2954e3705cf4",
+      "fact_2f9881985c5f",
+      "fact_1f81f864cc9b",
+      "fact_25e1241c5074",
+      "fact_db3730b6fba8",
+      "fact_13166298b5b1",
+      "fact_9173dc6e0759",
+      "fact_d2257e051f83",
+      "fact_c9df2ce4ec90",
+      "fact_d138c8b66a60"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_023_anchor_a",
+      "serial_15_new_023_anchor_b",
+      "serial_15_new_023_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "A Perfect Spy",
+        "output": "John le Carré",
+        "input_key": "book_r23",
+        "output_key": "John le Carré",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Perfect_Spy"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "John le Carré",
+        "output": "Tinker Tailor Soldier Spy",
+        "input_key": "John le Carré",
+        "output_key": "film_r23_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Tinker_Tailor_Soldier_Spy_(film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Tinker Tailor Soldier Spy",
+        "output": "Tomas Alfredson",
+        "input_key": "film_r23_a",
+        "output_key": "Tomas Alfredson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Tinker_Tailor_Soldier_Spy_(film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Tomas Alfredson",
+        "output": "Let the Right One In",
+        "input_key": "Tomas Alfredson",
+        "output_key": "film_r23_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Let_the_Right_One_In_(film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Let the Right One In",
+        "output": "Johan Söderqvist",
+        "input_key": "film_r23_b",
+        "output_key": "Johan Söderqvist",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Let_the_Right_One_In_(film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "Johan Söderqvist",
+        "output": "In a Better World",
+        "input_key": "Johan Söderqvist",
+        "output_key": "film_r23_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/In_a_Better_World"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "In a Better World",
+        "output": "Mikael Persbrandt",
+        "input_key": "film_r23_c",
+        "output_key": "Mikael Persbrandt",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/In_a_Better_World"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Mikael Persbrandt",
+        "output": "Everlasting Moments",
+        "input_key": "Mikael Persbrandt",
+        "output_key": "film_r23_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Everlasting_Moments"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Everlasting Moments",
+        "output": "Jan Troell",
+        "input_key": "film_r23_d",
+        "output_key": "Jan Troell",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Everlasting_Moments"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Jan Troell",
+        "output": "The Emigrants",
+        "input_key": "Jan Troell",
+        "output_key": "film_r23_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Emigrants_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "The Emigrants",
+        "output": "Liv Ullmann",
+        "input_key": "film_r23_e",
+        "output_key": "Liv Ullmann",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Emigrants_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Liv Ullmann",
+        "output": "A Bridge Too Far",
+        "input_key": "Liv Ullmann",
+        "output_key": "film_r23_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Bridge_Too_Far_(film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "A Bridge Too Far",
+        "output": "John Addison",
+        "input_key": "film_r23_f",
+        "output_key": "John Addison",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/A_Bridge_Too_Far_(film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "John Addison",
+        "output": "Tom Jones",
+        "input_key": "John Addison",
+        "output_key": "film_r23_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Tom_Jones_(1963_film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Tom Jones",
+        "output": "Tony Richardson",
+        "input_key": "film_r23_g",
+        "output_key": "Tony Richardson",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Tom_Jones_(1963_film)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serial_15_new_024",
+    "answer": "Kasi Lemmons",
+    "accepted_answers": [
+      "Kasi Lemmons"
+    ],
+    "route_family": "r24",
+    "anchor": "The Osterman Weekend",
+    "intended_route_edges": 15,
+    "empirically_calibrated": false,
+    "component_probe_ids": [
+      "fact_073bd31bd97f",
+      "fact_8274573e7b71",
+      "fact_4ee43ee0c5c1",
+      "fact_1a39268a4704",
+      "fact_78f501c0ebe1",
+      "fact_c8679aeb8992",
+      "fact_046e4bd81a56",
+      "fact_4087b061aa46",
+      "fact_38a6b893e762",
+      "fact_24532b2bc24c",
+      "fact_ffbc33a53dd4",
+      "fact_f79d1661899d",
+      "fact_826ee34e7669",
+      "fact_90531e8ee3cd",
+      "fact_9061c788d7e8"
+    ],
+    "matched_anchor_variants": [
+      "serial_15_new_024_anchor_a",
+      "serial_15_new_024_anchor_b",
+      "serial_15_new_024_anchor_c"
+    ],
+    "evidence_path": [
+      {
+        "position": 1,
+        "relation": "book_author",
+        "candidate_group": null,
+        "input": "The Osterman Weekend",
+        "output": "Robert Ludlum",
+        "input_key": "book_r24",
+        "output_key": "Robert Ludlum",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Osterman_Weekend"
+        ]
+      },
+      {
+        "position": 2,
+        "relation": "select_source_author",
+        "candidate_group": "A",
+        "input": "Robert Ludlum",
+        "output": "The Bourne Identity",
+        "input_key": "Robert Ludlum",
+        "output_key": "film_r24_a",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Bourne_Identity_(2002_film)"
+        ]
+      },
+      {
+        "position": 3,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "The Bourne Identity",
+        "output": "Doug Liman",
+        "input_key": "film_r24_a",
+        "output_key": "Doug Liman",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/The_Bourne_Identity_(2002_film)"
+        ]
+      },
+      {
+        "position": 4,
+        "relation": "select_director",
+        "candidate_group": "B",
+        "input": "Doug Liman",
+        "output": "Mr. & Mrs. Smith",
+        "input_key": "Doug Liman",
+        "output_key": "film_r24_b",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Mr._%26_Mrs._Smith_(2005_film)"
+        ]
+      },
+      {
+        "position": 5,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Mr. & Mrs. Smith",
+        "output": "John Powell",
+        "input_key": "film_r24_b",
+        "output_key": "John Powell",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Mr._%26_Mrs._Smith_(2005_film)"
+        ]
+      },
+      {
+        "position": 6,
+        "relation": "select_composer",
+        "candidate_group": "C",
+        "input": "John Powell",
+        "output": "I Am Sam",
+        "input_key": "John Powell",
+        "output_key": "film_r24_c",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/I_Am_Sam"
+        ]
+      },
+      {
+        "position": 7,
+        "relation": "select_cast_member",
+        "candidate_group": "X",
+        "input": "I Am Sam",
+        "output": "Dakota Fanning",
+        "input_key": "film_r24_c",
+        "output_key": "Dakota Fanning",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/I_Am_Sam"
+        ]
+      },
+      {
+        "position": 8,
+        "relation": "select_cast",
+        "candidate_group": "D",
+        "input": "Dakota Fanning",
+        "output": "Man on Fire",
+        "input_key": "Dakota Fanning",
+        "output_key": "film_r24_d",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Man_on_Fire_(2004_film)"
+        ]
+      },
+      {
+        "position": 9,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Man on Fire",
+        "output": "Tony Scott",
+        "input_key": "film_r24_d",
+        "output_key": "Tony Scott",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Man_on_Fire_(2004_film)"
+        ]
+      },
+      {
+        "position": 10,
+        "relation": "select_director",
+        "candidate_group": "E",
+        "input": "Tony Scott",
+        "output": "Crimson Tide",
+        "input_key": "Tony Scott",
+        "output_key": "film_r24_e",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Crimson_Tide_(film)"
+        ]
+      },
+      {
+        "position": 11,
+        "relation": "select_cast_member",
+        "candidate_group": "Y",
+        "input": "Crimson Tide",
+        "output": "Denzel Washington",
+        "input_key": "film_r24_e",
+        "output_key": "Denzel Washington",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Crimson_Tide_(film)"
+        ]
+      },
+      {
+        "position": 12,
+        "relation": "select_cast",
+        "candidate_group": "F",
+        "input": "Denzel Washington",
+        "output": "Malcolm X",
+        "input_key": "Denzel Washington",
+        "output_key": "film_r24_f",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)"
+        ]
+      },
+      {
+        "position": 13,
+        "relation": "composer",
+        "candidate_group": null,
+        "input": "Malcolm X",
+        "output": "Terence Blanchard",
+        "input_key": "film_r24_f",
+        "output_key": "Terence Blanchard",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)"
+        ]
+      },
+      {
+        "position": 14,
+        "relation": "select_composer",
+        "candidate_group": "G",
+        "input": "Terence Blanchard",
+        "output": "Harriet",
+        "input_key": "Terence Blanchard",
+        "output_key": "film_r24_g",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Harriet_(film)"
+        ]
+      },
+      {
+        "position": 15,
+        "relation": "director",
+        "candidate_group": null,
+        "input": "Harriet",
+        "output": "Kasi Lemmons",
+        "input_key": "film_r24_g",
+        "output_key": "Kasi Lemmons",
+        "source_urls": [
+          "https://en.wikipedia.org/wiki/Harriet_(film)"
+        ]
+      }
+    ]
+  }
+]

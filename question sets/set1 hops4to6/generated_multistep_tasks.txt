@@ -1,0 +1,534 @@
+Task 1 | 4-step | arithmetic_chain
+Start with x = 9.
+1. multiply by 4.
+2. add 4.
+3. divide by 4.
+4. subtract 4.
+What is the final value of x?
+Answer: 6
+
+========================================================================
+
+Task 2 | 4-step | function_composition
+Define:
+- r(x) = -x + 2
+- i(x) = 3x - 2
+- e(x) = 2x + 1
+- j(x) = 2x + 1
+
+What is j(e(i(r(1))))?
+Answer: 7
+
+========================================================================
+
+Task 3 | 4-step | lookup_chain
+Use this codebook:
+- DFHH -> 900
+- XXY -> 328
+- ADSRZ -> UIAMG
+- VBDRAZ -> VZYL
+- FOS -> RUNPM
+- PLXNI -> XXY
+- YRT -> FEQG
+- TFJD -> BHZFN
+- VJKRPZ -> 151
+- FEQG -> PLXNI
+
+Starting from YRT, follow exactly 4 lookups. What value do you reach?
+Answer: 328
+
+========================================================================
+
+Task 4 | 4-step | function_composition
+Define:
+- a(x) = -x - 4
+- k(x) = -x - 4
+- d(x) = -x + 3
+- g(x) = 2x - 2
+
+What is g(d(k(a(5))))?
+Answer: -6
+
+========================================================================
+
+Task 5 | 4-step | function_composition
+Define:
+- g(x) = -x - 3
+- s(x) = -x + 1
+- q(x) = 2x - 3
+- a(x) = 3x - 1
+
+What is a(q(s(g(2))))?
+Answer: 26
+
+========================================================================
+
+Task 6 | 4-step | lookup_chain
+Use this codebook:
+- OEINN -> TRHZEO
+- VFSH -> OEINN
+- IGDRVO -> 546
+- DYS -> 592
+- XEC -> 614
+- TRHZEO -> OLTANC
+- XQGG -> FAFIBD
+- JWAFWS -> 315
+- OLTANC -> 787
+- WZMVR -> XHC
+
+Starting from VFSH, follow exactly 4 lookups. What value do you reach?
+Answer: 787
+
+========================================================================
+
+Task 7 | 4-step | arithmetic_chain
+Start with x = 11.
+1. add 7.
+2. subtract 5.
+3. replace x by 2x + 1.
+4. subtract 3.
+What is the final value of x?
+Answer: 24
+
+========================================================================
+
+Task 8 | 4-step | mixed_state
+Start with x = 15.
+1. x <- x - 1.
+2. x <- x/2.
+3. x <- x - 7.
+4. x <- x + 8.
+What is the final value of x?
+Answer: 8
+
+========================================================================
+
+Task 9 | 4-step | lookup_chain
+Use this codebook:
+- IDJ -> AOST
+- XIEABZ -> JNUWYI
+- PUMRC -> 429
+- PHEGMR -> NWZ
+- YWJTYG -> 693
+- JNUWYI -> 214
+- UKL -> 987
+- JVESNQ -> QWMKZD
+- WHZACY -> ZCL
+- QWMKZD -> XIEABZ
+
+Starting from JVESNQ, follow exactly 4 lookups. What value do you reach?
+Answer: 214
+
+========================================================================
+
+Task 10 | 4-step | lookup_chain
+Use this codebook:
+- VDHULW -> 526
+- ZMJ -> BTC
+- PGQV -> 219
+- EBUIS -> VDHULW
+- BTC -> EBUIS
+- TOXO -> IHBON
+- FSLODZ -> ERKEV
+- WNQL -> 793
+- HYA -> GLR
+- PJF -> USLAMQ
+
+Starting from ZMJ, follow exactly 4 lookups. What value do you reach?
+Answer: 526
+
+========================================================================
+
+Task 11 | 4-step | lookup_chain
+Use this codebook:
+- TOJ -> AFD
+- RLAMCP -> OUQ
+- HNAM -> 208
+- LHPR -> URLHHX
+- BMQL -> 802
+- WYPS -> WJEVKV
+- WJEVKV -> BMQL
+- WIIAM -> WYPS
+- IQPSJJ -> UGR
+- ZTK -> 152
+
+Starting from WIIAM, follow exactly 4 lookups. What value do you reach?
+Answer: 802
+
+========================================================================
+
+Task 12 | 4-step | arithmetic_chain
+Start with x = 19.
+1. add 8.
+2. add 8.
+3. subtract 5.
+4. replace x by 2x - 5.
+What is the final value of x?
+Answer: 55
+
+========================================================================
+
+Task 13 | 5-step | lookup_chain
+Use this codebook:
+- UHLHXZ -> VCFJZ
+- MXJ -> MBN
+- MBN -> CPIMW
+- UPNZRY -> SFT
+- OTONY -> MXJ
+- YIUF -> 969
+- CVCC -> QCPAO
+- CPIMW -> 540
+- PEX -> 589
+- TIUIB -> OTONY
+- VVZZHC -> VLHZD
+- VSADJ -> CYZE
+
+Starting from TIUIB, follow exactly 5 lookups. What value do you reach?
+Answer: 540
+
+========================================================================
+
+Task 14 | 5-step | lookup_chain
+Use this codebook:
+- JNQC -> AHKC
+- BKQ -> JNQC
+- FXQKPG -> BKQ
+- KHTL -> BZMJN
+- AHKC -> ELTKO
+- JLMFY -> WZFO
+- ELTKO -> 859
+- LPETPH -> 443
+- ULUDT -> 257
+- WTB -> MDCY
+- TZS -> 268
+- DWI -> GQBWTA
+
+Starting from FXQKPG, follow exactly 5 lookups. What value do you reach?
+Answer: 859
+
+========================================================================
+
+Task 15 | 5-step | arithmetic_chain
+Start with x = 14.
+1. multiply by 2.
+2. divide by 2.
+3. add 10.
+4. subtract 9.
+5. add 2.
+What is the final value of x?
+Answer: 17
+
+========================================================================
+
+Task 16 | 5-step | function_composition
+Define:
+- k(x) = 3x - 3
+- g(x) = x^2 + 0
+- j(x) = 3x + 3
+- v(x) = -x - 3
+- b(x) = 3x - 3
+
+What is b(v(j(g(k(3)))))?
+Answer: -345
+
+========================================================================
+
+Task 17 | 5-step | function_composition
+Define:
+- r(x) = 2x - 4
+- n(x) = 2x + 0
+- d(x) = 2x + 1
+- v(x) = -x + 0
+- o(x) = x^2 + 4
+
+What is o(v(d(n(r(4)))))?
+Answer: 293
+
+========================================================================
+
+Task 18 | 5-step | mixed_state
+Start with x = 7.
+1. x <- x + 4.
+2. x <- 2x + 1.
+3. x <- x + 2.
+4. x <- 2x + 1.
+5. x <- x + 2.
+What is the final value of x?
+Answer: 53
+
+========================================================================
+
+Task 19 | 5-step | function_composition
+Define:
+- y(x) = x^2 + 0
+- w(x) = x^2 + 0
+- f(x) = 2x - 4
+- k(x) = -x - 5
+- e(x) = 2x + 0
+
+What is e(k(f(w(y(2)))))?
+Answer: -66
+
+========================================================================
+
+Task 20 | 5-step | lookup_chain
+Use this codebook:
+- NMU -> RZXXUG
+- BIE -> ZKKTL
+- ICZ -> MBAE
+- NIS -> 698
+- EFBPC -> WZXPKT
+- NQG -> RTN
+- ZWOT -> YFNUZX
+- CFC -> NQG
+- QDYLT -> NXKXZ
+- QFCSN -> UDHBO
+- RTN -> EFBPC
+- WZXPKT -> 410
+
+Starting from CFC, follow exactly 5 lookups. What value do you reach?
+Answer: 410
+
+========================================================================
+
+Task 21 | 5-step | lookup_chain
+Use this codebook:
+- GZCSG -> 843
+- MMAVC -> ABZYO
+- XIT -> GIY
+- EPEX -> 661
+- LTHTAP -> HBSXJ
+- ABZYO -> POUF
+- HVZVVY -> FSKWZ
+- CWCM -> MSSCTV
+- MBQL -> MMAVC
+- OHZKW -> JWVEUV
+- POUF -> GZCSG
+- LGFJO -> PSFL
+
+Starting from MBQL, follow exactly 5 lookups. What value do you reach?
+Answer: 843
+
+========================================================================
+
+Task 22 | 5-step | function_composition
+Define:
+- q(x) = 3x + 1
+- r(x) = 2x - 2
+- p(x) = -x - 4
+- j(x) = 2x - 3
+- u(x) = x^2 + 4
+
+What is u(j(p(r(q(1)))))?
+Answer: 533
+
+========================================================================
+
+Task 23 | 5-step | function_composition
+Define:
+- o(x) = 3x + 1
+- z(x) = 3x - 3
+- i(x) = 3x + 0
+- a(x) = x^2 + 1
+- t(x) = -x + 2
+
+What is t(a(i(z(o(6)))))?
+Answer: -26243
+
+========================================================================
+
+Task 24 | 5-step | mixed_state
+Start with x = 36.
+1. x <- x/2.
+2. x <- x + 6.
+3. x <- x mod 11.
+4. x <- x + 5.
+5. x <- x mod 23.
+What is the final value of x?
+Answer: 7
+
+========================================================================
+
+Task 25 | 6-step | arithmetic_chain
+Start with x = 3.
+1. subtract 3.
+2. replace x by 3x + 5.
+3. divide by 5.
+4. add 4.
+5. add 12.
+6. multiply by 3.
+What is the final value of x?
+Answer: 51
+
+========================================================================
+
+Task 26 | 6-step | function_composition
+Define:
+- l(x) = x^2 + 3
+- z(x) = -x + 4
+- w(x) = 3x + 1
+- j(x) = x^2 + 1
+- d(x) = -x + 2
+- r(x) = 3x - 1
+
+What is r(d(j(w(z(l(1))))))?
+Answer: -1
+
+========================================================================
+
+Task 27 | 6-step | function_composition
+Define:
+- c(x) = 2x - 3
+- a(x) = 3x - 1
+- s(x) = -x + 1
+- h(x) = -x + 1
+- p(x) = -x + 4
+- z(x) = -x - 1
+
+What is z(p(h(s(a(c(1))))))?
+Answer: -9
+
+========================================================================
+
+Task 28 | 6-step | lookup_chain
+Use this codebook:
+- XUBW -> ZXAAY
+- PNMUV -> NSM
+- YZCZTE -> UWJ
+- ELPN -> UIPC
+- WKF -> IABZP
+- MFEBC -> 382
+- OYLC -> CJED
+- NIDHUR -> XUBW
+- SPAZ -> MFEBC
+- ZXAAY -> CXQR
+- LXRVDX -> 680
+- CXQR -> SPAZ
+- DCV -> VWHVTL
+- TDUSS -> RSBQ
+
+Starting from NIDHUR, follow exactly 6 lookups. What value do you reach?
+Answer: 382
+
+========================================================================
+
+Task 29 | 6-step | function_composition
+Define:
+- a(x) = x^2 + 3
+- z(x) = -x - 4
+- q(x) = x^2 + 0
+- f(x) = 3x + 1
+- c(x) = -x + 2
+- m(x) = 3x - 3
+
+What is m(c(f(q(z(a(3))))))?
+Answer: -2304
+
+========================================================================
+
+Task 30 | 6-step | lookup_chain
+Use this codebook:
+- EGVKRM -> 838
+- AUWPY -> SPIF
+- EBQVR -> AZUKOE
+- JOGLEC -> FNSY
+- SPIF -> YFGU
+- OQQZ -> AUWPY
+- NKUJKL -> SQJPRR
+- KLLJ -> 881
+- FUS -> JAH
+- ZFYPZO -> 750
+- YFGU -> GRVHCP
+- BOYW -> LSFZ
+- IBH -> WULXBF
+- GRVHCP -> EGVKRM
+
+Starting from OQQZ, follow exactly 6 lookups. What value do you reach?
+Answer: 838
+
+========================================================================
+
+Task 31 | 6-step | mixed_state
+Start with x = 40.
+1. x <- x/2.
+2. x <- x - 7.
+3. x <- x - 5.
+4. x <- x mod 19.
+5. x <- 2x + 1.
+6. x <- x - 1.
+What is the final value of x?
+Answer: 16
+
+========================================================================
+
+Task 32 | 6-step | mixed_state
+Start with x = 24.
+1. x <- x/2.
+2. x <- x - 7.
+3. x <- x mod 11.
+4. x <- x mod 17.
+5. x <- x + 8.
+6. x <- 2x + 1.
+What is the final value of x?
+Answer: 27
+
+========================================================================
+
+Task 33 | 6-step | arithmetic_chain
+Start with x = 16.
+1. multiply by 3.
+2. divide by 4.
+3. add 6.
+4. multiply by 4.
+5. multiply by 3.
+6. replace x by 2x - 2.
+What is the final value of x?
+Answer: 430
+
+========================================================================
+
+Task 34 | 6-step | arithmetic_chain
+Start with x = 9.
+1. multiply by 3.
+2. divide by 3.
+3. add 2.
+4. replace x by 3x + 4.
+5. subtract 9.
+6. multiply by 2.
+What is the final value of x?
+Answer: 56
+
+========================================================================
+
+Task 35 | 6-step | mixed_state
+Start with x = 39.
+1. x <- x + 5.
+2. x <- x - 5.
+3. x <- 2x + 1.
+4. x <- x - 8.
+5. x <- x - 9.
+6. x <- x + 9.
+What is the final value of x?
+Answer: 71
+
+========================================================================
+
+Task 36 | 6-step | lookup_chain
+Use this codebook:
+- ISQJ -> DLP
+- UDIPEG -> KPRA
+- LKVXED -> 369
+- JSKFSI -> RIHIBC
+- EZXH -> INVHM
+- OXUBS -> 569
+- DVY -> ZTLYPF
+- RIHIBC -> AQY
+- ZTLPZA -> 292
+- AQY -> DVY
+- JJC -> ZYC
+- AZUHC -> NXJD
+- MWF -> VXDT
+- ZTLYPF -> OXUBS
+
+Starting from JSKFSI, follow exactly 6 lookups. What value do you reach?
+Answer: 569

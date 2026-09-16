@@ -1,0 +1,11 @@
+ANSWER KEY
+
+Problem 1 | depth 4 | toy_crc4 | 0011
+Problem 2 | depth 4 | mini_hash | 222
+Problem 3 | depth 4 | lcg_prng | 5
+Problem 4 | depth 5 | toy_crc4 | 0000
+Problem 5 | depth 5 | mini_hash | 173
+Problem 6 | depth 5 | lcg_prng | 5
+Problem 7 | depth 6 | toy_crc4 | 1110
+Problem 8 | depth 6 | mini_hash | 116
+Problem 9 | depth 6 | lcg_prng | 24

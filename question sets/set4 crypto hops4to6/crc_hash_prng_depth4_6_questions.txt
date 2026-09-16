@@ -1,0 +1,115 @@
+CRC / MINI-HASH / PRNG SET — DEPTHS 4 TO 6
+
+================================================================================
+Problem 1 | depth 4 | toy_crc4
+
+Toy CRC-4 challenge — 4 hops
+
+Start with R = 0011.
+Input bits: 0010
+
+For each input bit b:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After 4 updates, what is R in 4-bit binary?
+
+================================================================================
+Problem 2 | depth 4 | mini_hash
+
+Mini-hash challenge — 4 hops
+
+Start with H = 206.
+Data values: 18, 8, 28, 10
+
+For each x, perform one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 4 rounds, what is H?
+
+================================================================================
+Problem 3 | depth 4 | lcg_prng
+
+PRNG challenge — 4 hops
+
+Start with x0 = 1.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 4 times. What is x_4?
+
+================================================================================
+Problem 4 | depth 5 | toy_crc4
+
+Toy CRC-4 challenge — 5 hops
+
+Start with R = 0001.
+Input bits: 00010
+
+For each input bit b:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After 5 updates, what is R in 4-bit binary?
+
+================================================================================
+Problem 5 | depth 5 | mini_hash
+
+Mini-hash challenge — 5 hops
+
+Start with H = 142.
+Data values: 31, 29, 10, 31, 7
+
+For each x, perform one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 5 rounds, what is H?
+
+================================================================================
+Problem 6 | depth 5 | lcg_prng
+
+PRNG challenge — 5 hops
+
+Start with x0 = 13.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 5 times. What is x_5?
+
+================================================================================
+Problem 7 | depth 6 | toy_crc4
+
+Toy CRC-4 challenge — 6 hops
+
+Start with R = 1001.
+Input bits: 011010
+
+For each input bit b:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After 6 updates, what is R in 4-bit binary?
+
+================================================================================
+Problem 8 | depth 6 | mini_hash
+
+Mini-hash challenge — 6 hops
+
+Start with H = 158.
+Data values: 29, 9, 19, 9, 10, 0
+
+For each x, perform one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 6 rounds, what is H?
+
+================================================================================
+Problem 9 | depth 6 | lcg_prng
+
+PRNG challenge — 6 hops
+
+Start with x0 = 25.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 6 times. What is x_6?

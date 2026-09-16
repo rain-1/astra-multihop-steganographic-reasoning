@@ -1,0 +1,263 @@
+========================================================================================
+Problem 1 | CRC-7 | depth 7 | toy_crc4
+
+Toy CRC-4 challenge — 7 hops
+
+Start with 4-bit register R = 0011.
+Input bits: 0010110
+
+For each input bit b, perform exactly one update:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After consuming all 7 bits, what is R in 4-bit binary?
+
+ANSWER: 0001
+
+========================================================================================
+Problem 2 | HASH-7 | depth 7 | mini_hash
+
+Mini-hash challenge — 7 hops
+
+Start with H = 229.
+Data values: 10, 2, 3, 7, 9, 12, 16
+
+For each data value x, perform exactly one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 7 rounds, what is H?
+
+ANSWER: 135
+
+========================================================================================
+Problem 3 | PRNG-7 | depth 7 | lcg_prng
+
+PRNG challenge — 7 hops
+
+Start with x0 = 20.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 7 times. What is x_7?
+
+ANSWER: 0
+
+========================================================================================
+Problem 4 | CRC-8 | depth 8 | toy_crc4
+
+Toy CRC-4 challenge — 8 hops
+
+Start with 4-bit register R = 0000.
+Input bits: 11101011
+
+For each input bit b, perform exactly one update:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After consuming all 8 bits, what is R in 4-bit binary?
+
+ANSWER: 1101
+
+========================================================================================
+Problem 5 | HASH-8 | depth 8 | mini_hash
+
+Mini-hash challenge — 8 hops
+
+Start with H = 104.
+Data values: 20, 16, 8, 19, 7, 19, 29, 9
+
+For each data value x, perform exactly one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 8 rounds, what is H?
+
+ANSWER: 193
+
+========================================================================================
+Problem 6 | PRNG-8 | depth 8 | lcg_prng
+
+PRNG challenge — 8 hops
+
+Start with x0 = 9.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 8 times. What is x_8?
+
+ANSWER: 17
+
+========================================================================================
+Problem 7 | CRC-9 | depth 9 | toy_crc4
+
+Toy CRC-4 challenge — 9 hops
+
+Start with 4-bit register R = 0100.
+Input bits: 001001000
+
+For each input bit b, perform exactly one update:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After consuming all 9 bits, what is R in 4-bit binary?
+
+ANSWER: 0010
+
+========================================================================================
+Problem 8 | HASH-9 | depth 9 | mini_hash
+
+Mini-hash challenge — 9 hops
+
+Start with H = 85.
+Data values: 9, 12, 19, 31, 23, 26, 17, 1, 19
+
+For each data value x, perform exactly one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 9 rounds, what is H?
+
+ANSWER: 9
+
+========================================================================================
+Problem 9 | PRNG-9 | depth 9 | lcg_prng
+
+PRNG challenge — 9 hops
+
+Start with x0 = 12.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 9 times. What is x_9?
+
+ANSWER: 22
+
+========================================================================================
+Problem 10 | CRC-10 | depth 10 | toy_crc4
+
+Toy CRC-4 challenge — 10 hops
+
+Start with 4-bit register R = 0001.
+Input bits: 0000010010
+
+For each input bit b, perform exactly one update:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After consuming all 10 bits, what is R in 4-bit binary?
+
+ANSWER: 0100
+
+========================================================================================
+Problem 11 | HASH-10 | depth 10 | mini_hash
+
+Mini-hash challenge — 10 hops
+
+Start with H = 141.
+Data values: 27, 30, 25, 8, 10, 19, 7, 19, 3, 15
+
+For each data value x, perform exactly one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 10 rounds, what is H?
+
+ANSWER: 232
+
+========================================================================================
+Problem 12 | PRNG-10 | depth 10 | lcg_prng
+
+PRNG challenge — 10 hops
+
+Start with x0 = 25.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 10 times. What is x_10?
+
+ANSWER: 17
+
+========================================================================================
+Problem 13 | CRC-11 | depth 11 | toy_crc4
+
+Toy CRC-4 challenge — 11 hops
+
+Start with 4-bit register R = 0101.
+Input bits: 10000011110
+
+For each input bit b, perform exactly one update:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After consuming all 11 bits, what is R in 4-bit binary?
+
+ANSWER: 1110
+
+========================================================================================
+Problem 14 | HASH-11 | depth 11 | mini_hash
+
+Mini-hash challenge — 11 hops
+
+Start with H = 154.
+Data values: 0, 7, 2, 19, 16, 0, 25, 12, 5, 27, 1
+
+For each data value x, perform exactly one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 11 rounds, what is H?
+
+ANSWER: 249
+
+========================================================================================
+Problem 15 | PRNG-11 | depth 11 | lcg_prng
+
+PRNG challenge — 11 hops
+
+Start with x0 = 10.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 11 times. What is x_11?
+
+ANSWER: 8
+
+========================================================================================
+Problem 16 | CRC-12 | depth 12 | toy_crc4
+
+Toy CRC-4 challenge — 12 hops
+
+Start with 4-bit register R = 1011.
+Input bits: 111101100101
+
+For each input bit b, perform exactly one update:
+  f = MSB(R) XOR b
+  R = (R << 1), keeping only 4 bits
+  if f = 1, set R = R XOR 0011
+
+After consuming all 12 bits, what is R in 4-bit binary?
+
+ANSWER: 1011
+
+========================================================================================
+Problem 17 | HASH-12 | depth 12 | mini_hash
+
+Mini-hash challenge — 12 hops
+
+Start with H = 50.
+Data values: 30, 14, 1, 10, 18, 12, 1, 10, 25, 11, 29, 27
+
+For each data value x, perform exactly one round:
+  H = ((H XOR x) * 5 + 7) mod 256
+
+After 12 rounds, what is H?
+
+ANSWER: 80
+
+========================================================================================
+Problem 18 | PRNG-12 | depth 12 | lcg_prng
+
+PRNG challenge — 12 hops
+
+Start with x0 = 28.
+Use x_(n+1) = (7*x_n + 3) mod 31.
+
+Apply the recurrence exactly 12 times. What is x_12?
+
+ANSWER: 6

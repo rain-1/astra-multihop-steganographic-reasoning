@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "depth": 7,
+    "family": "person→element→country",
+    "question": "Answer only; do not show working. Apply exactly 7 transformations.\nStart with: Emmy Noether\nOrdered country list: Sweden, Denmark, Ireland, Japan, Australia, Portugal, Austria, Iceland, Greece, Norway, Italy, Canada, Belgium, France, Poland, Finland, Switzerland, Spain, Germany, Netherlands\n\n1. Replace the person's name by their age at death.\n2. Replace x by ((x + 2 - 1) mod 30) + 1.\n3. Replace the number by the chemical element having that atomic number.\n4. Replace the element by the number of letters in its English name.\n5. Replace x by ((x + 9 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n\nWhat value or name do you end on?",
+    "answer": "Madrid",
+    "trace": [
+      53,
+      25,
+      "Manganese",
+      9,
+      18,
+      "Spain",
+      "Madrid"
+    ]
+  },
+  {
+    "id": 2,
+    "depth": 7,
+    "family": "country→person→element",
+    "question": "Answer only; do not show working. Apply exactly 7 transformations.\nStart with: Canada\nOrdered people list: Rosalind Franklin, Marie Curie, Wolfgang Amadeus Mozart, Albert Einstein, Charles Darwin, Leonhard Euler, Richard Feynman, Ada Lovelace, Nikola Tesla, Emmy Noether, Carl Friedrich Gauss, Srinivasa Ramanujan\n\n1. Replace the country by its capital city.\n2. Replace the capital by its number of letters, ignoring spaces and punctuation.\n3. Replace x by the x-th prime number.\n4. Replace x by the sum of its decimal digits.\n5. Replace x by ((x + 18 - 1) mod 12) + 1.\n6. Replace x by the person in position x of the supplied ordered people list.\n7. Replace the person's name by their age at death.\n\nWhat value or name do you end on?",
+    "answer": "53",
+    "trace": [
+      "Ottawa",
+      6,
+      13,
+      4,
+      10,
+      "Emmy Noether",
+      53
+    ]
+  },
+  {
+    "id": 3,
+    "depth": 7,
+    "family": "element→planet→country",
+    "question": "Answer only; do not show working. Apply exactly 7 transformations.\nStart with: Potassium\nOrdered country list: Japan, Finland, Italy, Austria, Norway, Portugal, Germany, Sweden, France, Ireland, Iceland, Poland, Netherlands, Switzerland, Belgium, Spain, Denmark, Canada, Australia, Greece\n\n1. Replace the element by its atomic number.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by ((x + 4 - 1) mod 8) + 1.\n4. Replace x by the x-th planet from the Sun.\n5. Replace the planet by the number of letters in its English name.\n6. Replace x by the x-th prime number.\n7. Replace x by the sum of its decimal digits.\n\nWhat value or name do you end on?",
+    "answer": "4",
+    "trace": [
+      19,
+      10,
+      6,
+      "Saturn",
+      6,
+      13,
+      4
+    ]
+  },
+  {
+    "id": 4,
+    "depth": 7,
+    "family": "person→codebook→geography",
+    "question": "Answer only; do not show working. Apply exactly 7 transformations.\nStart with: Marie Curie\nOrdered country list: Ireland, Switzerland, Netherlands, Greece, Portugal, Finland, Norway, Iceland, Japan, Poland, Spain, Italy, Denmark, France, Austria, Belgium, Germany, Sweden, Australia, Canada\n\n1. Replace the person's name by their age at death.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by the x-th prime number.\n4. Use this numeric codebook to replace x: 1->68, 3->42, 36->184, 37->163, 8->128, 17->27, 20->101, 26->115.\n5. Replace x by ((x + 5 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n\nWhat value or name do you end on?",
+    "answer": "Reykjavik",
+    "trace": [
+      66,
+      12,
+      37,
+      163,
+      8,
+      "Iceland",
+      "Reykjavik"
+    ]
+  },
+  {
+    "id": 5,
+    "depth": 8,
+    "family": "person→element→country",
+    "question": "Answer only; do not show working. Apply exactly 8 transformations.\nStart with: Charles Darwin\nOrdered country list: Canada, Portugal, Italy, Belgium, Spain, Ireland, Denmark, Netherlands, Greece, Norway, Germany, Japan, Austria, Australia, France, Finland, Iceland, Sweden, Poland, Switzerland\n\n1. Replace the person's name by their age at death.\n2. Replace x by ((x + 7 - 1) mod 30) + 1.\n3. Replace the number by the chemical element having that atomic number.\n4. Replace the element by the number of letters in its English name.\n5. Replace x by ((x + 10 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n\nWhat value or name do you end on?",
+    "answer": "9",
+    "trace": [
+      73,
+      20,
+      "Calcium",
+      7,
+      17,
+      "Iceland",
+      "Reykjavik",
+      9
+    ]
+  },
+  {
+    "id": 6,
+    "depth": 8,
+    "family": "country→person→element",
+    "question": "Answer only; do not show working. Apply exactly 8 transformations.\nStart with: Belgium\nOrdered people list: Nikola Tesla, Srinivasa Ramanujan, Albert Einstein, Marie Curie, Charles Darwin, Leonhard Euler, Richard Feynman, Ada Lovelace, Emmy Noether, Carl Friedrich Gauss, Wolfgang Amadeus Mozart, Rosalind Franklin\n\n1. Replace the country by its capital city.\n2. Replace the capital by its number of letters, ignoring spaces and punctuation.\n3. Replace x by the x-th prime number.\n4. Replace x by the sum of its decimal digits.\n5. Replace x by ((x + 20 - 1) mod 12) + 1.\n6. Replace x by the person in position x of the supplied ordered people list.\n7. Replace the person's name by their age at death.\n8. Replace x by ((x + 18 - 1) mod 30) + 1.\n\nWhat value or name do you end on?",
+    "answer": "4",
+    "trace": [
+      "Brussels",
+      8,
+      19,
+      10,
+      6,
+      "Leonhard Euler",
+      76,
+      4
+    ]
+  },
+  {
+    "id": 7,
+    "depth": 8,
+    "family": "element→planet→country",
+    "question": "Answer only; do not show working. Apply exactly 8 transformations.\nStart with: Oxygen\nOrdered country list: Italy, Greece, Germany, Denmark, Norway, Australia, Finland, Portugal, Switzerland, Belgium, Japan, Spain, France, Austria, Sweden, Poland, Netherlands, Iceland, Ireland, Canada\n\n1. Replace the element by its atomic number.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by ((x + 9 - 1) mod 8) + 1.\n4. Replace x by the x-th planet from the Sun.\n5. Replace the planet by the number of letters in its English name.\n6. Replace x by the x-th prime number.\n7. Replace x by the sum of its decimal digits.\n8. Replace x by ((x + 7 - 1) mod 20) + 1.\n\nWhat value or name do you end on?",
+    "answer": "15",
+    "trace": [
+      8,
+      8,
+      1,
+      "Mercury",
+      7,
+      17,
+      8,
+      15
+    ]
+  },
+  {
+    "id": 8,
+    "depth": 8,
+    "family": "person→codebook→geography",
+    "question": "Answer only; do not show working. Apply exactly 8 transformations.\nStart with: Wolfgang Amadeus Mozart\nOrdered country list: Iceland, Austria, Ireland, Belgium, Poland, Finland, Australia, Switzerland, Norway, Japan, Germany, Denmark, Spain, Sweden, Portugal, Netherlands, Canada, France, Italy, Greece\n\n1. Replace the person's name by their age at death.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by the x-th prime number.\n4. Use this numeric codebook to replace x: 34->84, 37->100, 7->84, 11->162, 17->31, 18->140, 19->34, 24->147.\n5. Replace x by ((x + 8 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n\nWhat value or name do you end on?",
+    "answer": "6",
+    "trace": [
+      35,
+      8,
+      19,
+      34,
+      2,
+      "Austria",
+      "Vienna",
+      6
+    ]
+  },
+  {
+    "id": 9,
+    "depth": 9,
+    "family": "person→element→country",
+    "question": "Answer only; do not show working. Apply exactly 9 transformations.\nStart with: Rosalind Franklin\nOrdered country list: Norway, France, Sweden, Austria, Poland, Canada, Denmark, Finland, Japan, Iceland, Portugal, Italy, Switzerland, Belgium, Greece, Spain, Australia, Germany, Ireland, Netherlands\n\n1. Replace the person's name by their age at death.\n2. Replace x by ((x + 17 - 1) mod 30) + 1.\n3. Replace the number by the chemical element having that atomic number.\n4. Replace the element by the number of letters in its English name.\n5. Replace x by ((x + 6 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by the x-th prime number (2 is the 1st prime).\n\nWhat value or name do you end on?",
+    "answer": "19",
+    "trace": [
+      37,
+      24,
+      "Chromium",
+      8,
+      14,
+      "Belgium",
+      "Brussels",
+      8,
+      19
+    ]
+  },
+  {
+    "id": 10,
+    "depth": 9,
+    "family": "country→person→element",
+    "question": "Answer only; do not show working. Apply exactly 9 transformations.\nStart with: Japan\nOrdered people list: Nikola Tesla, Srinivasa Ramanujan, Marie Curie, Rosalind Franklin, Leonhard Euler, Ada Lovelace, Emmy Noether, Albert Einstein, Wolfgang Amadeus Mozart, Carl Friedrich Gauss, Charles Darwin, Richard Feynman\n\n1. Replace the country by its capital city.\n2. Replace the capital by its number of letters, ignoring spaces and punctuation.\n3. Replace x by the x-th prime number.\n4. Replace x by the sum of its decimal digits.\n5. Replace x by ((x + 17 - 1) mod 12) + 1.\n6. Replace x by the person in position x of the supplied ordered people list.\n7. Replace the person's name by their age at death.\n8. Replace x by ((x + 23 - 1) mod 30) + 1.\n9. Replace the number by the chemical element having that atomic number.\n\nWhat value or name do you end on?",
+    "answer": "Sulfur",
+    "trace": [
+      "Tokyo",
+      5,
+      11,
+      2,
+      7,
+      "Emmy Noether",
+      53,
+      16,
+      "Sulfur"
+    ]
+  },
+  {
+    "id": 11,
+    "depth": 9,
+    "family": "element→planet→country",
+    "question": "Answer only; do not show working. Apply exactly 9 transformations.\nStart with: Copper\nOrdered country list: Ireland, Australia, Switzerland, Iceland, Japan, Sweden, Greece, Belgium, Netherlands, Poland, Canada, Spain, Denmark, France, Italy, Norway, Austria, Germany, Finland, Portugal\n\n1. Replace the element by its atomic number.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by ((x + 9 - 1) mod 8) + 1.\n4. Replace x by the x-th planet from the Sun.\n5. Replace the planet by the number of letters in its English name.\n6. Replace x by the x-th prime number.\n7. Replace x by the sum of its decimal digits.\n8. Replace x by ((x + 17 - 1) mod 20) + 1.\n9. Replace x by the country in position x of the supplied ordered country list.\n\nWhat value or name do you end on?",
+    "answer": "Iceland",
+    "trace": [
+      29,
+      11,
+      4,
+      "Mars",
+      4,
+      7,
+      7,
+      4,
+      "Iceland"
+    ]
+  },
+  {
+    "id": 12,
+    "depth": 9,
+    "family": "person→codebook→geography",
+    "question": "Answer only; do not show working. Apply exactly 9 transformations.\nStart with: Srinivasa Ramanujan\nOrdered country list: Poland, Portugal, Italy, Canada, Germany, Denmark, Austria, Switzerland, Norway, Spain, Finland, Netherlands, Australia, Iceland, Sweden, Ireland, France, Greece, Belgium, Japan\n\n1. Replace the person's name by their age at death.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by the x-th prime number.\n4. Use this numeric codebook to replace x: 36->39, 5->155, 6->32, 38->129, 8->143, 11->149, 23->134, 24->89.\n5. Replace x by ((x + 1 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by ((x + 3 - 1) mod 30) + 1.\n\nWhat value or name do you end on?",
+    "answer": "9",
+    "trace": [
+      32,
+      5,
+      11,
+      149,
+      10,
+      "Spain",
+      "Madrid",
+      6,
+      9
+    ]
+  },
+  {
+    "id": 13,
+    "depth": 10,
+    "family": "person→element→country",
+    "question": "Answer only; do not show working. Apply exactly 10 transformations.\nStart with: Marie Curie\nOrdered country list: Switzerland, Norway, Germany, Finland, Belgium, Austria, Poland, Spain, Canada, Ireland, Italy, Australia, Japan, Denmark, Iceland, Netherlands, Sweden, Portugal, France, Greece\n\n1. Replace the person's name by their age at death.\n2. Replace x by ((x + 3 - 1) mod 30) + 1.\n3. Replace the number by the chemical element having that atomic number.\n4. Replace the element by the number of letters in its English name.\n5. Replace x by ((x + 8 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by the x-th prime number (2 is the 1st prime).\n10. Replace x by the sum of its decimal digits.\n\nWhat value or name do you end on?",
+    "answer": "5",
+    "trace": [
+      66,
+      9,
+      "Fluorine",
+      8,
+      16,
+      "Netherlands",
+      "Amsterdam",
+      9,
+      23,
+      5
+    ]
+  },
+  {
+    "id": 14,
+    "depth": 10,
+    "family": "country→person→element",
+    "question": "Answer only; do not show working. Apply exactly 10 transformations.\nStart with: Poland\nOrdered people list: Richard Feynman, Charles Darwin, Ada Lovelace, Carl Friedrich Gauss, Wolfgang Amadeus Mozart, Leonhard Euler, Emmy Noether, Marie Curie, Albert Einstein, Nikola Tesla, Rosalind Franklin, Srinivasa Ramanujan\n\n1. Replace the country by its capital city.\n2. Replace the capital by its number of letters, ignoring spaces and punctuation.\n3. Replace x by the x-th prime number.\n4. Replace x by the sum of its decimal digits.\n5. Replace x by ((x + 19 - 1) mod 12) + 1.\n6. Replace x by the person in position x of the supplied ordered people list.\n7. Replace the person's name by their age at death.\n8. Replace x by ((x + 13 - 1) mod 30) + 1.\n9. Replace the number by the chemical element having that atomic number.\n10. Replace the element by its chemical symbol.\n\nWhat value or name do you end on?",
+    "answer": "Ca",
+    "trace": [
+      "Warsaw",
+      6,
+      13,
+      4,
+      11,
+      "Rosalind Franklin",
+      37,
+      20,
+      "Calcium",
+      "Ca"
+    ]
+  },
+  {
+    "id": 15,
+    "depth": 10,
+    "family": "element→planet→country",
+    "question": "Answer only; do not show working. Apply exactly 10 transformations.\nStart with: Chromium\nOrdered country list: Portugal, Germany, Austria, France, Sweden, Switzerland, Australia, Spain, Norway, Ireland, Italy, Iceland, Greece, Japan, Denmark, Netherlands, Finland, Belgium, Canada, Poland\n\n1. Replace the element by its atomic number.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by ((x + 7 - 1) mod 8) + 1.\n4. Replace x by the x-th planet from the Sun.\n5. Replace the planet by the number of letters in its English name.\n6. Replace x by the x-th prime number.\n7. Replace x by the sum of its decimal digits.\n8. Replace x by ((x + 17 - 1) mod 20) + 1.\n9. Replace x by the country in position x of the supplied ordered country list.\n10. Replace the country by its capital city.\n\nWhat value or name do you end on?",
+    "answer": "Stockholm",
+    "trace": [
+      24,
+      6,
+      5,
+      "Jupiter",
+      7,
+      17,
+      8,
+      5,
+      "Sweden",
+      "Stockholm"
+    ]
+  },
+  {
+    "id": 16,
+    "depth": 10,
+    "family": "person→codebook→geography",
+    "question": "Answer only; do not show working. Apply exactly 10 transformations.\nStart with: Ada Lovelace\nOrdered country list: Portugal, Denmark, Germany, Iceland, Japan, Sweden, Australia, Finland, Netherlands, Italy, Belgium, France, Canada, Austria, Ireland, Norway, Switzerland, Spain, Greece, Poland\n\n1. Replace the person's name by their age at death.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by the x-th prime number.\n4. Use this numeric codebook to replace x: 33->158, 38->71, 40->22, 14->139, 16->185, 23->156, 24->108, 31->76.\n5. Replace x by ((x + 2 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by ((x + 13 - 1) mod 30) + 1.\n10. Replace the number by the chemical element having that atomic number.\n\nWhat value or name do you end on?",
+    "answer": "Potassium",
+    "trace": [
+      36,
+      9,
+      23,
+      156,
+      18,
+      "Spain",
+      "Madrid",
+      6,
+      19,
+      "Potassium"
+    ]
+  },
+  {
+    "id": 17,
+    "depth": 11,
+    "family": "person→element→country",
+    "question": "Answer only; do not show working. Apply exactly 11 transformations.\nStart with: Rosalind Franklin\nOrdered country list: France, Spain, Italy, Switzerland, Austria, Iceland, Australia, Japan, Poland, Netherlands, Ireland, Sweden, Greece, Norway, Denmark, Portugal, Canada, Belgium, Finland, Germany\n\n1. Replace the person's name by their age at death.\n2. Replace x by ((x + 2 - 1) mod 30) + 1.\n3. Replace the number by the chemical element having that atomic number.\n4. Replace the element by the number of letters in its English name.\n5. Replace x by ((x + 13 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by the x-th prime number (2 is the 1st prime).\n10. Replace x by the sum of its decimal digits.\n11. Use this numeric codebook to replace x: 32->174, 33->139, 2->97, 34->57, 5->58, 7->37, 40->27, 30->64.\n\nWhat value or name do you end on?",
+    "answer": "97",
+    "trace": [
+      37,
+      9,
+      "Fluorine",
+      8,
+      1,
+      "France",
+      "Paris",
+      5,
+      11,
+      2,
+      97
+    ]
+  },
+  {
+    "id": 18,
+    "depth": 11,
+    "family": "country→person→element",
+    "question": "Answer only; do not show working. Apply exactly 11 transformations.\nStart with: Germany\nOrdered people list: Richard Feynman, Albert Einstein, Ada Lovelace, Carl Friedrich Gauss, Leonhard Euler, Srinivasa Ramanujan, Wolfgang Amadeus Mozart, Nikola Tesla, Marie Curie, Emmy Noether, Rosalind Franklin, Charles Darwin\n\n1. Replace the country by its capital city.\n2. Replace the capital by its number of letters, ignoring spaces and punctuation.\n3. Replace x by the x-th prime number.\n4. Replace x by the sum of its decimal digits.\n5. Replace x by ((x + 10 - 1) mod 12) + 1.\n6. Replace x by the person in position x of the supplied ordered people list.\n7. Replace the person's name by their age at death.\n8. Replace x by ((x + 8 - 1) mod 30) + 1.\n9. Replace the number by the chemical element having that atomic number.\n10. Replace the element by its chemical symbol.\n11. Replace the symbol by the sum of its letters' alphabet positions (A=1,...,Z=26).\n\nWhat value or name do you end on?",
+    "answer": "21",
+    "trace": [
+      "Berlin",
+      6,
+      13,
+      4,
+      2,
+      "Albert Einstein",
+      76,
+      24,
+      "Chromium",
+      "Cr",
+      21
+    ]
+  },
+  {
+    "id": 19,
+    "depth": 11,
+    "family": "element→planet→country",
+    "question": "Answer only; do not show working. Apply exactly 11 transformations.\nStart with: Silicon\nOrdered country list: Finland, Poland, Italy, Switzerland, Netherlands, Norway, Sweden, Germany, Canada, Spain, Iceland, Greece, Belgium, Japan, Denmark, Austria, France, Australia, Ireland, Portugal\n\n1. Replace the element by its atomic number.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by ((x + 9 - 1) mod 8) + 1.\n4. Replace x by the x-th planet from the Sun.\n5. Replace the planet by the number of letters in its English name.\n6. Replace x by the x-th prime number.\n7. Replace x by the sum of its decimal digits.\n8. Replace x by ((x + 4 - 1) mod 20) + 1.\n9. Replace x by the country in position x of the supplied ordered country list.\n10. Replace the country by its capital city.\n11. Replace the capital by its number of letters, ignoring spaces and punctuation.\n\nWhat value or name do you end on?",
+    "answer": "6",
+    "trace": [
+      14,
+      5,
+      6,
+      "Saturn",
+      6,
+      13,
+      4,
+      8,
+      "Germany",
+      "Berlin",
+      6
+    ]
+  },
+  {
+    "id": 20,
+    "depth": 11,
+    "family": "person→codebook→geography",
+    "question": "Answer only; do not show working. Apply exactly 11 transformations.\nStart with: Ada Lovelace\nOrdered country list: Norway, Denmark, Greece, Australia, Italy, Germany, Sweden, Belgium, Iceland, Netherlands, Spain, France, Finland, Canada, Poland, Portugal, Japan, Austria, Switzerland, Ireland\n\n1. Replace the person's name by their age at death.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by the x-th prime number.\n4. Use this numeric codebook to replace x: 32->132, 4->164, 7->71, 40->39, 9->191, 16->39, 19->42, 23->53.\n5. Replace x by ((x + 8 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by ((x + 3 - 1) mod 30) + 1.\n10. Replace the number by the chemical element having that atomic number.\n11. Replace the element by its chemical symbol.\n\nWhat value or name do you end on?",
+    "answer": "N",
+    "trace": [
+      36,
+      9,
+      23,
+      53,
+      1,
+      "Norway",
+      "Oslo",
+      4,
+      7,
+      "Nitrogen",
+      "N"
+    ]
+  },
+  {
+    "id": 21,
+    "depth": 12,
+    "family": "person→element→country",
+    "question": "Answer only; do not show working. Apply exactly 12 transformations.\nStart with: Ada Lovelace\nOrdered country list: Japan, Finland, Ireland, Netherlands, Spain, Poland, Australia, Portugal, Norway, Belgium, Canada, Germany, Greece, Austria, France, Iceland, Italy, Switzerland, Sweden, Denmark\n\n1. Replace the person's name by their age at death.\n2. Replace x by ((x + 7 - 1) mod 30) + 1.\n3. Replace the number by the chemical element having that atomic number.\n4. Replace the element by the number of letters in its English name.\n5. Replace x by ((x + 15 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by the x-th prime number (2 is the 1st prime).\n10. Replace x by the sum of its decimal digits.\n11. Use this numeric codebook to replace x: 5->20, 38->51, 11->99, 15->170, 16->89, 19->76, 24->41, 30->58.\n12. If x is even, replace it by 3x+1; otherwise replace it by 2x-1.\n\nWhat value or name do you end on?",
+    "answer": "61",
+    "trace": [
+      36,
+      13,
+      "Aluminium",
+      9,
+      4,
+      "Netherlands",
+      "Amsterdam",
+      9,
+      23,
+      5,
+      20,
+      61
+    ]
+  },
+  {
+    "id": 22,
+    "depth": 12,
+    "family": "country→person→element",
+    "question": "Answer only; do not show working. Apply exactly 12 transformations.\nStart with: Finland\nOrdered people list: Richard Feynman, Wolfgang Amadeus Mozart, Rosalind Franklin, Charles Darwin, Ada Lovelace, Albert Einstein, Emmy Noether, Leonhard Euler, Carl Friedrich Gauss, Srinivasa Ramanujan, Marie Curie, Nikola Tesla\n\n1. Replace the country by its capital city.\n2. Replace the capital by its number of letters, ignoring spaces and punctuation.\n3. Replace x by the x-th prime number.\n4. Replace x by the sum of its decimal digits.\n5. Replace x by ((x + 17 - 1) mod 12) + 1.\n6. Replace x by the person in position x of the supplied ordered people list.\n7. Replace the person's name by their age at death.\n8. Replace x by ((x + 11 - 1) mod 30) + 1.\n9. Replace the number by the chemical element having that atomic number.\n10. Replace the element by its chemical symbol.\n11. Replace the symbol by the sum of its letters' alphabet positions (A=1,...,Z=26).\n12. Replace x by x mod 29.\n\nWhat value or name do you end on?",
+    "answer": "19",
+    "trace": [
+      "Helsinki",
+      8,
+      19,
+      10,
+      3,
+      "Rosalind Franklin",
+      37,
+      18,
+      "Argon",
+      "Ar",
+      19,
+      19
+    ]
+  },
+  {
+    "id": 23,
+    "depth": 12,
+    "family": "element→planet→country",
+    "question": "Answer only; do not show working. Apply exactly 12 transformations.\nStart with: Sulfur\nOrdered country list: Austria, Greece, Portugal, Poland, Denmark, Ireland, Sweden, Iceland, Germany, France, Italy, Belgium, Norway, Switzerland, Canada, Australia, Finland, Netherlands, Japan, Spain\n\n1. Replace the element by its atomic number.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by ((x + 8 - 1) mod 8) + 1.\n4. Replace x by the x-th planet from the Sun.\n5. Replace the planet by the number of letters in its English name.\n6. Replace x by the x-th prime number.\n7. Replace x by the sum of its decimal digits.\n8. Replace x by ((x + 10 - 1) mod 20) + 1.\n9. Replace x by the country in position x of the supplied ordered country list.\n10. Replace the country by its capital city.\n11. Replace the capital by its number of letters, ignoring spaces and punctuation.\n12. Use this numeric codebook to replace x: 34->46, 4->179, 12->171, 14->84, 20->179, 23->85, 26->187, 29->111.\n\nWhat value or name do you end on?",
+    "answer": "179",
+    "trace": [
+      16,
+      7,
+      7,
+      "Uranus",
+      6,
+      13,
+      4,
+      14,
+      "Switzerland",
+      "Bern",
+      4,
+      179
+    ]
+  },
+  {
+    "id": 24,
+    "depth": 12,
+    "family": "person→codebook→geography",
+    "question": "Answer only; do not show working. Apply exactly 12 transformations.\nStart with: Emmy Noether\nOrdered country list: Finland, Norway, Austria, Portugal, France, Canada, Australia, Japan, Spain, Denmark, Switzerland, Netherlands, Sweden, Italy, Ireland, Belgium, Poland, Iceland, Greece, Germany\n\n1. Replace the person's name by their age at death.\n2. Replace x by the sum of its decimal digits.\n3. Replace x by the x-th prime number.\n4. Use this numeric codebook to replace x: 6->100, 39->28, 10->119, 12->94, 15->124, 19->167, 22->31, 24->46.\n5. Replace x by ((x + 13 - 1) mod 20) + 1.\n6. Replace x by the country in position x of the supplied ordered country list.\n7. Replace the country by its capital city.\n8. Replace the capital by its number of letters, ignoring spaces and punctuation.\n9. Replace x by ((x + 4 - 1) mod 30) + 1.\n10. Replace the number by the chemical element having that atomic number.\n11. Replace the element by its chemical symbol.\n12. Replace the symbol by the sum of its letters' alphabet positions (A=1,...,Z=26).\n\nWhat value or name do you end on?",
+    "answer": "19",
+    "trace": [
+      53,
+      8,
+      19,
+      167,
+      20,
+      "Germany",
+      "Berlin",
+      6,
+      10,
+      "Neon",
+      "Ne",
+      19
+    ]
+  }
+]
