@@ -1,0 +1,327 @@
+{
+  "audit_date": "2026-10-13",
+  "audited_commit": "599d8fde3381c1630d91517cce6921808d875a28",
+  "scope": "Existing GitHub public evaluation JSON files; counts are stored records, not unique article rollouts. Hugging Face contents unverified.",
+  "files": [
+    {
+      "path": "experiment-1/eval/dots.json",
+      "records": 12,
+      "sha256": "635e94baccf1ec2d8598f9f002332ad73d82e57fa76cf93cd52b9b01265d7f7b",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-1/eval/punctuation.json",
+      "records": 12,
+      "sha256": "854dce2acd94f3f894c26accf5e2a3352a67652d81625011f079c0c35358181b",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-1/eval/scenes-punctuation.json",
+      "records": 12,
+      "sha256": "605f06b2cc7379a0a1d32a22fa419e15e88778b389923c0ed1aadad90db485f9",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-1/eval/unrelated.json",
+      "records": 12,
+      "sha256": "43da20487d9656a1f7907a95e37500d9a49ff6dd5a49f3b5e7fcc7ee9bf0545b",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-1/eval/unrestricted.json",
+      "records": 12,
+      "sha256": "1d081c343bae214f1ae82c3fb7fa74e2bd860896cc0a383182eab3c764d42a55",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche1/punctuation.json",
+      "records": 60,
+      "sha256": "e710b64681f66582c67433ba1adc30ab7ce3abadd462ba671106e1cb71ee94ad",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche1/unrelated-punctuation.json",
+      "records": 60,
+      "sha256": "4d0c18dc26073c60376dbb60494ce4f0231d0268771f07e014f408ac871e922c",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche1/unrelated.json",
+      "records": 60,
+      "sha256": "7348bc1e960a296a32cac38adea0424d4066390f5a16d9b00433fdce0c638808",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche1/unrestricted.json",
+      "records": 10,
+      "sha256": "7502046e828d5599e4b110f4ff3a84376d31bd3ebcbecb50df0d28cb46dcf93d",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche2/punctuation.json",
+      "records": 42,
+      "sha256": "d81b74e94275dc5b2e74dbdc4d923e7226b00b01c21a66e82ccba45f5c10b47c",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche2/unrelated-punctuation.json",
+      "records": 42,
+      "sha256": "6b25dc443807f6a1359176c872eeae75e97c13edc8e165547aa58efe37a8afb0",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche2/unrelated.json",
+      "records": 42,
+      "sha256": "2b0d8f349d307038ba4a92084902f61e766c29493f22f4a5a7fa7f58a5e8e4d9",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/crc-scaled-tranche2/unrestricted.json",
+      "records": 7,
+      "sha256": "f75c72b73aa335f028ee47ecf2bd8c843e8db1df67be6ce283f64da0c5a3299e",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/depths-4-6/punctuation.json",
+      "records": 9,
+      "sha256": "c6b054e0e873555dfa03edd704e4f953493aa6eac32d02c197bc8ca31382effd",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/depths-4-6/unrelated-punctuation.json",
+      "records": 9,
+      "sha256": "5b841df5f070bafd491a8617da7154ec8d6b713989e43c3c2dcc93035d644e19",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/depths-4-6/unrelated.json",
+      "records": 9,
+      "sha256": "11ed21b5f8e248a20cb7112511b3c8e5e1309a1539242c0572e837b5be9d5828",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-easy-tranche1/punctuation.json",
+      "records": 18,
+      "sha256": "efd00a27ff46ed710fc029c4001804528e1b508a1ed6dc5dc817b7584a0a744a",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-easy-tranche1/unrelated-punctuation.json",
+      "records": 18,
+      "sha256": "890e7c55c233c433dd6298cedd8e8d336a91563e9545d1ee96b3fb9bfc4b2606",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-easy-tranche1/unrelated.json",
+      "records": 18,
+      "sha256": "5bd5a30650a312730adcd56259c2abafa8eb121f84104b534cf25e7c57ed454d",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-easy-tranche1/unrestricted.json",
+      "records": 3,
+      "sha256": "eec5585c55ae728f3024f129e5e411b4b72b31846271c15d3311098af0ae7b65",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-scaled-tranche1/punctuation.json",
+      "records": 60,
+      "sha256": "71dba866d79cf220a34f5965c90250809f9b235dd8718c54f049765005a1fe13",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-scaled-tranche1/unrelated-punctuation.json",
+      "records": 60,
+      "sha256": "32f2f0010fed4b55d7eac3cbf2f62d63106beb89cbca8b655f54a16db3b0e3d7",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-scaled-tranche1/unrelated.json",
+      "records": 60,
+      "sha256": "cba0afc2513640a73ab84d63bc39a8572b607dd4835e5cf371b83e17320cb626",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/hash-scaled-tranche1/unrestricted.json",
+      "records": 10,
+      "sha256": "ceff2d4e892b094f827c76ed0bac87466d0e849a2c17c4ecdc58f64fbe8ff594",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled/punctuation.json",
+      "records": 36,
+      "sha256": "e73caa47b154d80f1e51ac8fedc878fdc14e0644f49bdc9fa983c3dabd75f90c",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled/unrelated-punctuation.json",
+      "records": 36,
+      "sha256": "9e1d6132018cf23d1bb439647bcd22f59c7dea90003e6efc26fa09bf162a9d60",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled/unrelated.json",
+      "records": 36,
+      "sha256": "2297ec07edeca10b28e72835fce587baf3abeb820ea49c41f4e16f62e3a1066a",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled/unrestricted.json",
+      "records": 12,
+      "sha256": "c69800b69afba108e589c2fe7caf5fb6ea5c847fbcadc5ab8dd9833f1fba0ed1",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled-tranche1/punctuation.json",
+      "records": 60,
+      "sha256": "56db604cd6dc9bfe3b591e2c1b6487b613578d5fd7286a83bcbf6d4835677bb9",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled-tranche1/unrelated-punctuation.json",
+      "records": 60,
+      "sha256": "d15bb2a5c824ca734753325eeab34adba158d269845c426aa7a9edcd16d84b96",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled-tranche1/unrelated.json",
+      "records": 60,
+      "sha256": "c190526ecc2359210d563d8d5ddd955c8c1e062c68a66d93b9964566c479a688",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/lcg-scaled-tranche1/unrestricted.json",
+      "records": 10,
+      "sha256": "525acdbfe71b95c9e99c4e953edf98de4e198550d9f6469d20006561de929482",
+      "models": [
+        "openai/gpt-6-astra:batch"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/punctuation.json",
+      "records": 18,
+      "sha256": "a9cb29f226ee45238e58dc041df5d93d660bfccad30d3e768ba9347132ec0f79",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/unrelated-punctuation.json",
+      "records": 18,
+      "sha256": "747490e50f7e03cf9e82937b653be8503819af3c6fb11f72e1bb27745690957f",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/unrelated.json",
+      "records": 18,
+      "sha256": "9da65d9c79b638fe64fc47a46762844fa49e8c4c38a0e9bc46a1b197ccd2954a",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-2/eval/unrestricted.json",
+      "records": 18,
+      "sha256": "a73902180037c0d272a942bb8ee950ffaa334bc882e92fd8896dc091fa9e3199",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-3/eval/dots.json",
+      "records": 24,
+      "sha256": "8407eadb1ca58dada20cc0b03bbfa0c5bc434af8250d97efd83dc64e112948d1",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-3/eval/unrestricted.json",
+      "records": 24,
+      "sha256": "b87fd55c51487918076304cffbcae69b95cbae1095c17c48237113178693d38e",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-3/eval/woodland-fragments.json",
+      "records": 24,
+      "sha256": "ed0be0684a3b1b2f5f813318ceed55ccd934f78b5592963f14e5757657466257",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    },
+    {
+      "path": "experiment-3/eval/woodland-journey.json",
+      "records": 24,
+      "sha256": "93b352af7d4dc162cd17340a7379688f27e3bc2deadf586c34b7742bc6faf554",
+      "models": [
+        "openai/gpt-6-astra"
+      ]
+    }
+  ]
+}
